@@ -1,0 +1,182 @@
+name: spv5-main
+
+mgmt:
+  network: spv5-mgmt
+  ipv4-subnet: 172.20.30.0/24
+
+topology:
+  kinds:
+    cisco_xrv9k:
+      image: vrnetlab/cisco_xrv9k:7.7.1
+    cisco_xrd:
+      image: ios-xr/xrd-control-plane:7.9.2
+    cisco_csr1000v:
+      image: vrnetlab/cisco_csr1000v:16.09.08
+    cisco_iol:
+      image: vrnetlab/cisco_iol:17.15.01
+
+  nodes:
+    A-P1:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.11
+      startup-config: lab_configs/A-P1/baseline.cfg
+    A-P2:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.12
+      startup-config: lab_configs/A-P2/baseline.cfg
+    A-P3:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.13
+      startup-config: lab_configs/A-P3/baseline.cfg
+    A-P4:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.14
+      startup-config: lab_configs/A-P4/baseline.cfg
+    A-PE1:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.15
+      startup-config: lab_configs/A-PE1/baseline.cfg
+    A-PE2:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.16
+      startup-config: lab_configs/A-PE2/baseline.cfg
+    A-RR:
+      kind: cisco_xrd
+      startup-delay: 30
+      mgmt-ipv4: 172.20.30.17
+      startup-config: lab_configs/A-RR/baseline.cfg
+    A-ASBR:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.18
+      startup-config: lab_configs/A-ASBR/baseline.cfg
+
+    B-P1:
+      kind: cisco_xrv9k
+      startup-delay: 600
+      mgmt-ipv4: 172.20.30.21
+      startup-config: lab_configs/B-P1/baseline.cfg
+    B-P2:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.22
+      startup-config: lab_configs/B-P2/baseline.cfg
+    B-P3:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.23
+      startup-config: lab_configs/B-P3/baseline.cfg
+    B-P4:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.24
+      startup-config: lab_configs/B-P4/baseline.cfg
+    B-PE1:
+      kind: cisco_xrv9k
+      startup-delay: 600
+      mgmt-ipv4: 172.20.30.25
+      startup-config: lab_configs/B-PE1/baseline.cfg
+    B-PE2:
+      kind: cisco_xrv9k
+      startup-delay: 600
+      mgmt-ipv4: 172.20.30.26
+      startup-config: lab_configs/B-PE2/baseline.cfg
+    B-RR:
+      kind: cisco_xrd
+      startup-delay: 30
+      mgmt-ipv4: 172.20.30.27
+      startup-config: lab_configs/B-RR/baseline.cfg
+    B-ASBR:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.28
+      startup-config: lab_configs/B-ASBR/baseline.cfg
+
+    CustA-HQ:
+      kind: cisco_iol
+      mgmt-ipv4: 172.20.30.101
+      startup-config: lab_configs/CustA-HQ/baseline.partial.cfg
+    CustA-Br1:
+      kind: cisco_iol
+      mgmt-ipv4: 172.20.30.102
+      startup-config: lab_configs/CustA-Br1/baseline.partial.cfg
+    CustA-Br2:
+      kind: cisco_iol
+      mgmt-ipv4: 172.20.30.103
+      startup-config: lab_configs/CustA-Br2/baseline.partial.cfg
+
+    CustB-Hub:
+      kind: cisco_iol
+      mgmt-ipv4: 172.20.30.111
+      startup-config: lab_configs/CustB-Hub/baseline.partial.cfg
+    CustB-Spk1:
+      kind: cisco_iol
+      mgmt-ipv4: 172.20.30.112
+      startup-config: lab_configs/CustB-Spk1/baseline.partial.cfg
+    CustB-Spk2:
+      kind: cisco_iol
+      mgmt-ipv4: 172.20.30.113
+      startup-config: lab_configs/CustB-Spk2/baseline.partial.cfg
+
+    CustC-Core1:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.121
+      startup-config: lab_configs/CustC-Core1/baseline.cfg
+    CustC-Core2:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.122
+      startup-config: lab_configs/CustC-Core2/baseline.cfg
+    CustC-Core3:
+      kind: cisco_csr1000v
+      startup-delay: 300
+      mgmt-ipv4: 172.20.30.123
+      startup-config: lab_configs/CustC-Core3/baseline.cfg
+
+  links:
+    - endpoints: ["A-P1:eth1", "A-P2:eth1"]
+    - endpoints: ["A-P2:eth2", "A-P3:eth2"]
+    - endpoints: ["A-P3:eth3", "A-P4:eth2"]
+    - endpoints: ["A-P1:eth3", "A-P4:eth1"]
+    - endpoints: ["A-P1:eth2", "A-P3:eth1"]
+    - endpoints: ["A-P1:eth4", "A-PE1:eth1"]
+    - endpoints: ["A-P2:eth3", "A-PE1:eth2"]
+    - endpoints: ["A-P3:eth4", "A-PE2:eth1"]
+    - endpoints: ["A-P4:eth3", "A-PE2:eth2"]
+    - endpoints: ["A-P1:eth5", "A-RR:Gi0-0-0-0"]
+    - endpoints: ["A-P1:eth6", "A-ASBR:eth1"]
+    - endpoints: ["A-P4:eth4", "A-ASBR:eth2"]
+
+    - endpoints: ["A-PE1:eth3", "CustA-HQ:eth1"]
+    - endpoints: ["A-PE1:eth4", "CustB-Hub:eth1"]
+    - endpoints: ["A-PE2:eth3", "CustA-Br1:eth1"]
+    - endpoints: ["A-PE2:eth4", "CustB-Spk1:eth1"]
+    - endpoints: ["A-PE2:eth5", "CustC-Core1:eth1"]
+
+    - endpoints: ["B-P1:eth1", "B-P2:eth1"]
+    - endpoints: ["B-P2:eth2", "B-P3:eth2"]
+    - endpoints: ["B-P3:eth3", "B-P4:eth2"]
+    - endpoints: ["B-P1:eth3", "B-P4:eth1"]
+    - endpoints: ["B-P1:eth2", "B-P3:eth1"]
+    - endpoints: ["B-P1:eth4", "B-PE1:eth1"]
+    - endpoints: ["B-P2:eth3", "B-PE1:eth2"]
+    - endpoints: ["B-P3:eth4", "B-PE2:eth1"]
+    - endpoints: ["B-P4:eth3", "B-PE2:eth2"]
+    - endpoints: ["B-P1:eth7", "B-PE2:eth5"]
+    - endpoints: ["B-P1:eth5", "B-RR:Gi0-0-0-0"]
+    - endpoints: ["B-P1:eth6", "B-ASBR:eth1"]
+    - endpoints: ["B-P4:eth4", "B-ASBR:eth2"]
+
+    - endpoints: ["B-PE1:eth3", "CustA-Br2:eth1"]
+    - endpoints: ["B-PE1:eth4", "CustC-Core2:eth1"]
+    - endpoints: ["B-PE2:eth3", "CustB-Spk2:eth1"]
+    - endpoints: ["B-PE2:eth4", "CustC-Core3:eth1"]
+
+    - endpoints: ["A-ASBR:eth3", "B-ASBR:eth3"]

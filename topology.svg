@@ -1,0 +1,377 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="1290" viewBox="0 0 1820 1290">
+<rect width="1820" height="1290" fill="#ffffff"/>
+<rect x="46" y="196" width="800" height="1020" rx="18" fill="#eef4fb" stroke="#c3d8ec" stroke-width="2"/>
+<rect x="974" y="196" width="800" height="1020" rx="18" fill="#eff6ef" stroke="#c6dfc4" stroke-width="2"/>
+<text x="70" y="232" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#2c5c8f">SP-A &#183; AS 64501</text>
+<text x="1750" y="232" text-anchor="end" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#3d7a37">SP-B &#183; AS 64502</text>
+<text x="910" y="62" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#16202e">CCIE SP Lab - spv5-main</text>
+<text x="910" y="90" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" fill="#5c6b7a">25 nodes &#183; 35 point-to-point links &#183; numbers match the link tables in ipam.md</text>
+<g font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" fill="#3d4a58">
+<circle cx="560" cy="126" r="8" fill="#5a8fc4" stroke="#3f72a8" stroke-width="2.2"/>
+<text x="582" y="130">CSR1000v</text>
+<circle cx="735" cy="126" r="8" fill="#dd6b20" stroke="#c05621" stroke-width="2.2"/>
+<text x="757" y="130">XRv9k</text>
+<circle cx="910" cy="126" r="8" fill="#8560c0" stroke="#6b46a8" stroke-width="2.2"/>
+<text x="932" y="130">XRd-CP</text>
+<circle cx="1085" cy="126" r="8" fill="#639e55" stroke="#4a7a3f" stroke-width="2.2"/>
+<text x="1107" y="130">IOL</text>
+</g>
+<line x1="521" y1="530" x2="319" y2="530" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="420" cy="530" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="420" y="534.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">1</text>
+<line x1="290" y1="559" x2="290" y2="761" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="290" cy="660" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="290" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">2</text>
+<line x1="319" y1="790" x2="521" y2="790" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="420" cy="790" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="420" y="794.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">3</text>
+<line x1="550" y1="559" x2="550" y2="761" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="550" cy="660" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="550" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">4</text>
+<line x1="529.494" y1="550.506" x2="310.506" y2="769.494" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="420" cy="660" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="420" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">5</text>
+<line x1="532.384" y1="506.964" x2="437.616" y2="383.036" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="485" cy="445" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="485" y="449.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">6</text>
+<line x1="307.616" y1="506.964" x2="402.384" y2="383.036" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="355" cy="445" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="355" y="449.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">7</text>
+<line x1="307.616" y1="813.036" x2="402.384" y2="936.964" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="355" cy="875" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="355" y="879.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">8</text>
+<line x1="532.384" y1="813.036" x2="437.616" y2="936.964" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="485" cy="875" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="485" y="879.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">9</text>
+<line x1="573.386" y1="512.85" x2="676.614" y2="437.15" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="625" cy="475" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="625" y="479.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">10</text>
+<line x1="574.013" y1="546.259" x2="717.987" y2="643.741" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="646" cy="595" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="646" y="599.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">11</text>
+<line x1="574.013" y1="773.741" x2="717.987" y2="676.259" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="646" cy="725" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="646" y="729.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">12</text>
+<line x1="392.266" y1="351.526" x2="159.734" y2="280.474" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="276" cy="316" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="276" y="320.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">13</text>
+<line x1="391.461" y1="365.153" x2="160.539" y2="406.847" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="276" cy="386" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="276" y="390.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">14</text>
+<line x1="392.058" y1="952.238" x2="159.942" y2="887.762" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="276" cy="920" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="276" y="924.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">15</text>
+<line x1="391.427" y1="964.961" x2="160.573" y2="1005.04" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="276" cy="985" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="276" y="989.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">16</text>
+<line x1="395.408" y1="975.37" x2="156.592" y2="1124.63" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="276" cy="1050" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="276" y="1054.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">17</text>
+<line x1="1299" y1="530" x2="1501" y2="530" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1400" cy="530" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1400" y="534.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">18</text>
+<line x1="1530" y1="559" x2="1530" y2="761" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1530" cy="660" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1530" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">19</text>
+<line x1="1501" y1="790" x2="1299" y2="790" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1400" cy="790" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1400" y="794.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">20</text>
+<line x1="1270" y1="559" x2="1270" y2="761" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1270" cy="660" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1270" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">21</text>
+<line x1="1290.51" y1="550.506" x2="1509.49" y2="769.494" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1400" cy="660" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1400" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">22</text>
+<line x1="1287.62" y1="506.964" x2="1382.38" y2="383.036" stroke="#dd6b20" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="1335" cy="445" r="12.5" fill="#ffffff" stroke="#dd6b20" stroke-width="2"/>
+<text x="1335" y="449.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">23</text>
+<line x1="1512.38" y1="506.964" x2="1417.62" y2="383.036" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1465" cy="445" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1465" y="449.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">24</text>
+<line x1="1514.56" y1="814.545" x2="1433.44" y2="943.455" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1474" cy="879" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1474" y="883.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">25</text>
+<line x1="1288.54" y1="812.299" x2="1399.46" y2="945.701" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1344" cy="879" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1344" y="883.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">26</text>
+<line x1="1279.28" y1="557.474" x2="1408.72" y2="940.526" stroke="#dd6b20" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="1323.29" cy="687.712" r="12.5" fill="#ffffff" stroke="#dd6b20" stroke-width="2"/>
+<text x="1323.29" y="692.312" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">27</text>
+<line x1="1246.9" y1="512.467" x2="1127.1" y2="421.533" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1187" cy="467" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1187" y="471.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">28</text>
+<line x1="1245.99" y1="546.259" x2="1102.01" y2="643.741" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1174" cy="595" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1174" y="599.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">29</text>
+<line x1="1245.99" y1="773.741" x2="1102.01" y2="676.259" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1174" cy="725" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1174" y="729.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">30</text>
+<line x1="1427.73" y1="351.526" x2="1660.27" y2="280.474" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1544" cy="316" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1544" y="320.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">31</text>
+<line x1="1428.54" y1="365.153" x2="1659.46" y2="406.847" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1544" cy="386" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1544" y="390.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">32</text>
+<line x1="1445.57" y1="959.013" x2="1660.43" y2="888.987" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1553" cy="924" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1553" y="928.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">33</text>
+<line x1="1446.66" y1="972.458" x2="1659.34" y2="1005.54" stroke="#8795a5" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1553" cy="989" r="12.5" fill="#ffffff" stroke="#8795a5" stroke-width="2"/>
+<text x="1553" y="993.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">34</text>
+<line x1="771" y1="660" x2="1049" y2="660" stroke="#c53030" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="910" cy="660" r="12.5" fill="#ffffff" stroke="#c53030" stroke-width="2"/>
+<text x="910" y="664.6" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#2b3746">35</text>
+<g transform="translate(420,360)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="420" y="407" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-PE1</text>
+<text x="420" y="420" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(290,530)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="290" y="577" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-P2</text>
+<text x="290" y="590" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(550,530)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="550" y="577" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-P1</text>
+<text x="550" y="590" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(290,790)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="290" y="837" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-P3</text>
+<text x="290" y="850" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(550,790)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="550" y="837" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-P4</text>
+<text x="550" y="850" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(420,960)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="420" y="1007" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-PE2</text>
+<text x="420" y="1020" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(700,420)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#8560c0" stroke="#6b46a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="700" y="467" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-RR</text>
+<text x="700" y="480" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">XRd-CP</text>
+<g transform="translate(742,660)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="742" y="707" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">A-ASBR</text>
+<text x="742" y="720" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(132,272)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#639e55" stroke="#4a7a3f" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="132" y="319" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustA-HQ</text>
+<text x="132" y="332" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">IOL</text>
+<g transform="translate(132,412)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#639e55" stroke="#4a7a3f" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="132" y="459" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustB-Hub</text>
+<text x="132" y="472" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">IOL</text>
+<g transform="translate(132,880)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#639e55" stroke="#4a7a3f" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="132" y="927" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustA-Br1</text>
+<text x="132" y="940" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">IOL</text>
+<g transform="translate(132,1010)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#639e55" stroke="#4a7a3f" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="132" y="1057" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustB-Spk1</text>
+<text x="132" y="1070" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">IOL</text>
+<g transform="translate(132,1140)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="132" y="1187" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustC-Core1</text>
+<text x="132" y="1200" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(1400,360)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#dd6b20" stroke="#c05621" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1400" y="407" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-PE1</text>
+<text x="1400" y="420" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">XRv9k</text>
+<g transform="translate(1270,530)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#dd6b20" stroke="#c05621" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1270" y="577" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-P1</text>
+<text x="1270" y="590" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">XRv9k</text>
+<g transform="translate(1530,530)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1530" y="577" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-P2</text>
+<text x="1530" y="590" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(1270,790)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1270" y="837" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-P4</text>
+<text x="1270" y="850" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(1530,790)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1530" y="837" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-P3</text>
+<text x="1530" y="850" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(1418,968)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#dd6b20" stroke="#c05621" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1418" y="1015" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-PE2</text>
+<text x="1418" y="1028" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">XRv9k</text>
+<g transform="translate(1104,404)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#8560c0" stroke="#6b46a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1104" y="451" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-RR</text>
+<text x="1104" y="464" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">XRd-CP</text>
+<g transform="translate(1078,660)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1078" y="707" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">B-ASBR</text>
+<text x="1078" y="720" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(1688,272)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#639e55" stroke="#4a7a3f" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1688" y="319" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustA-Br2</text>
+<text x="1688" y="332" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">IOL</text>
+<g transform="translate(1688,412)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1688" y="459" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustC-Core2</text>
+<text x="1688" y="472" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<g transform="translate(1688,880)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#639e55" stroke="#4a7a3f" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1688" y="927" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustB-Spk2</text>
+<text x="1688" y="940" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">IOL</text>
+<g transform="translate(1688,1010)">
+<ellipse cx="0" cy="31" rx="20" ry="5.5" fill="#000" opacity="0.10"/>
+<circle cx="0" cy="0" r="23.3" fill="#5a8fc4" stroke="#3f72a8" stroke-width="3.4"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(45) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-45) translate(4,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(-135) translate(-20.5,0)" fill="#ffffff"/>
+<path d="M 0,-4.5 L 10,-4.5 L 10,-8.5 L 17,0 L 10,8.5 L 10,4.5 L 0,4.5 Z" transform="rotate(135) translate(4,0)" fill="#ffffff"/>
+</g>
+<text x="1688" y="1057" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#16202e" paint-order="stroke" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">CustC-Core3</text>
+<text x="1688" y="1070" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="10.5" fill="#7b8794" paint-order="stroke" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round">CSR1000v</text>
+<text x="910" y="640" text-anchor="middle" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#c53030">Inter-AS DMZ</text>
+<text x="1150" y="900" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#c05621">all-XR path</text>
+<text x="1150" y="916" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#c05621">links 23 + 27</text>
+</svg>
