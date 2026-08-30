@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 570" width="900" height="570" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="570" fill="#ffffff"/>
+
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a">SP-A OSPF - three areas, eight nodes, twelve links</text>
+  <text x="32" y="63" font-size="13" fill="#64748b">AS 64501. Every P-router is an ABR; every PE is dual-homed to two of them.</text>
+
+  <!-- ============ LINKS ============ -->
+  <g stroke-linecap="round" fill="none">
+    <!-- Area 0: core square + diagonal -->
+    <line x1="330" y1="230" x2="650" y2="230" stroke="#475569" stroke-width="2.5"/>
+    <line x1="680" y1="248" x2="680" y2="402" stroke="#475569" stroke-width="2.5"/>
+    <line x1="330" y1="420" x2="650" y2="420" stroke="#475569" stroke-width="2.5"/>
+    <line x1="300" y1="248" x2="300" y2="402" stroke="#475569" stroke-width="2.5"/>
+    <line x1="364" y1="256" x2="628" y2="400" stroke="#475569" stroke-width="2.5"/>
+    <!-- Area 0: RR and ASBR attachments -->
+    <line x1="168" y1="152" x2="288" y2="212" stroke="#475569" stroke-width="2.5"/>
+    <line x1="168" y1="338" x2="288" y2="248" stroke="#475569" stroke-width="2.5"/>
+    <line x1="168" y1="368" x2="288" y2="410" stroke="#475569" stroke-width="2.5"/>
+    <!-- Area 1: A-PE1 uplinks -->
+    <line x1="452" y1="128" x2="352" y2="212" stroke="#c2410c" stroke-width="3"/>
+    <line x1="528" y1="128" x2="628" y2="212" stroke="#c2410c" stroke-width="3"/>
+    <!-- Area 2: A-PE2 uplinks -->
+    <line x1="452" y1="492" x2="352" y2="438" stroke="#0f766e" stroke-width="3"/>
+    <line x1="528" y1="492" x2="628" y2="438" stroke="#0f766e" stroke-width="3"/>
+  </g>
+
+  <!-- diagonal callout -->
+  <text x="500" y="316" font-size="11" fill="#475569" text-anchor="middle" font-style="italic">diagonal</text>
+
+  <!-- ============ NODES ============ -->
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <!-- A-PE1 -->
+    <rect x="438" y="92" width="104" height="36" rx="6" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+    <text x="490" y="115" fill="#7c2d12">A-PE1</text>
+    <text x="490" y="82" font-size="11" font-weight="600" fill="#c2410c">Area 1 - internal</text>
+
+    <!-- A-P1 -->
+    <rect x="278" y="212" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="330" y="235" fill="#0f172a">A-P1</text>
+    <!-- A-P2 -->
+    <rect x="598" y="212" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="650" y="235" fill="#0f172a">A-P2</text>
+    <!-- A-P4 -->
+    <rect x="278" y="402" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="330" y="425" fill="#0f172a">A-P4</text>
+    <!-- A-P3 -->
+    <rect x="598" y="402" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="650" y="425" fill="#0f172a">A-P3</text>
+
+    <!-- A-PE2 -->
+    <rect x="438" y="492" width="104" height="36" rx="6" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.5"/>
+    <text x="490" y="515" fill="#134e4a">A-PE2</text>
+    <text x="490" y="547" font-size="11" font-weight="600" fill="#0f766e">Area 2 - internal</text>
+
+    <!-- A-RR -->
+    <rect x="64" y="134" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="116" y="157" fill="#0f172a">A-RR</text>
+    <text x="116" y="126" font-size="11" font-weight="500" fill="#64748b">control plane only</text>
+
+    <!-- A-ASBR -->
+    <rect x="64" y="335" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="116" y="358" fill="#0f172a">A-ASBR</text>
+    <text x="116" y="386" font-size="11" font-weight="500" fill="#64748b">to SP-B (Inter-AS)</text>
+  </g>
+
+  <!-- ABR badges -->
+  <g font-size="10" font-weight="700" text-anchor="middle" fill="#ffffff">
+    <rect x="306" y="252" width="48" height="16" rx="8" fill="#334155"/><text x="330" y="264">ABR 0/1</text>
+    <rect x="626" y="252" width="48" height="16" rx="8" fill="#334155"/><text x="650" y="264">ABR 0/1</text>
+    <rect x="306" y="382" width="48" height="16" rx="8" fill="#334155"/><text x="330" y="394">ABR 0/2</text>
+    <rect x="626" y="382" width="48" height="16" rx="8" fill="#334155"/><text x="650" y="394">ABR 0/2</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g font-size="12.5" fill="#334155">
+    <line x1="36" y1="470" x2="76" y2="470" stroke="#475569" stroke-width="2.5"/>
+    <text x="86" y="474">Area 0 - backbone</text>
+    <line x1="36" y1="494" x2="76" y2="494" stroke="#c2410c" stroke-width="3"/>
+    <text x="86" y="498">Area 1 - A-PE1 cloud</text>
+    <line x1="36" y1="518" x2="76" y2="518" stroke="#0f766e" stroke-width="3"/>
+    <text x="86" y="522">Area 2 - A-PE2 cloud</text>
+  </g>
+</svg>

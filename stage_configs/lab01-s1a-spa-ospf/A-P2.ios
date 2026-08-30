@@ -1,0 +1,36 @@
+interface Loopback0
+ ip ospf 1 area 0
+ ipv6 ospf 1 area 0
+!
+interface GigabitEthernet2
+ ip ospf 1 area 0
+ ipv6 ospf 1 area 0
+ ip ospf network point-to-point
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet3
+ ip ospf 1 area 0
+ ipv6 ospf 1 area 0
+ ip ospf network point-to-point
+ ospfv3 network point-to-point
+!
+interface GigabitEthernet4
+ ip ospf 1 area 1
+ ipv6 ospf 1 area 1
+ ip ospf network point-to-point
+ ospfv3 network point-to-point
+!
+router ospf 1
+ router-id 10.1.0.2
+ passive-interface default
+ no passive-interface GigabitEthernet2
+ no passive-interface GigabitEthernet3
+ no passive-interface GigabitEthernet4
+!
+router ospfv3 1
+ router-id 10.1.0.2
+ passive-interface default
+ no passive-interface GigabitEthernet2
+ no passive-interface GigabitEthernet3
+ no passive-interface GigabitEthernet4
+!
