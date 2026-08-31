@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="600" fill="#ffffff"/>
+
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a">SP-B IS-IS - one flat Level-2 domain, eight nodes, thirteen links</text>
+  <text x="32" y="63" font-size="13" fill="#64748b">AS 64502. B-P1 is adjacent to every other node; the B-P1 - B-PE2 link is the v2 addition that keeps the all-XR path off the IOS-XE nodes.</text>
+
+  <!-- ============ LINKS ============ -->
+  <g stroke-linecap="round" fill="none">
+    <line x1="434.9" y1="278.0" x2="345.1" y2="147.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="470.7" y1="278.0" x2="594.3" y2="147.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="470.7" y1="322.0" x2="594.3" y2="453.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="434.9" y1="322.0" x2="345.1" y2="453.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="394.0" y1="316.0" x2="174.0" y2="379.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="386.0" y1="125.0" x2="559.0" y2="125.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="278.2" y1="147.0" x2="169.8" y2="193.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="638.3" y1="147.0" x2="776.7" y2="278.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="638.3" y1="453.0" x2="776.7" y2="322.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="559.0" y1="475.0" x2="386.0" y2="475.0" stroke="#475569" stroke-width="2.5"/>
+    <line x1="615.0" y1="147.0" x2="615.0" y2="453.0" stroke="#475569" stroke-width="2.5"/>
+    <!-- all-XR path drawn last, with a white underlay so it bridges the B-P3 - B-P4 link -->
+    <line x1="394.0" y1="285.7" x2="174.0" y2="229.3" stroke="#ffffff" stroke-width="9"/>
+    <line x1="394.0" y1="285.7" x2="174.0" y2="229.3" stroke="#1d4ed8" stroke-width="3.5"/>
+    <line x1="506.0" y1="300.0" x2="744.0" y2="300.0" stroke="#ffffff" stroke-width="9"/>
+    <line x1="506.0" y1="300.0" x2="744.0" y2="300.0" stroke="#1d4ed8" stroke-width="3.5"/>
+  </g>
+
+  <!-- v2 link callout -->
+  <text x="672" y="291" font-size="11" fill="#1d4ed8" text-anchor="middle" font-style="italic">v2 link</text>
+
+  <!-- ============ NODES ============ -->
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <rect x="398" y="282" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="450" y="305" fill="#1e3a8a">B-P1</text>
+    <rect x="66" y="197" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="118" y="220" fill="#1e3a8a">B-PE1</text>
+    <rect x="66" y="377" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="118" y="400" fill="#1e3a8a">B-RR</text>
+    <text x="118" y="429" font-size="11" font-weight="500" fill="#64748b">control plane only</text>
+    <rect x="278" y="107" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="330" y="130" fill="#0f172a">B-P2</text>
+    <rect x="563" y="107" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="615" y="130" fill="#0f172a">B-P3</text>
+    <rect x="748" y="282" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="800" y="305" fill="#1e3a8a">B-PE2</text>
+    <rect x="563" y="457" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="615" y="480" fill="#0f172a">B-P4</text>
+    <rect x="278" y="457" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="330" y="480" fill="#0f172a">B-ASBR</text>
+    <text x="330" y="509" font-size="11" font-weight="500" fill="#64748b">to SP-A (Inter-AS)</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g font-size="12.5" fill="#334155">
+    <rect x="36" y="516" width="40" height="17" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="86" y="529">IOS-XR - Multi-Topology by default.</text>
+    <rect x="36" y="540" width="40" height="17" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="86" y="553">IOS-XE - Multi-Topology enabled explicitly.</text>
+    <line x1="36" y1="573" x2="76" y2="573" stroke="#1d4ed8" stroke-width="3.5"/>
+    <text x="86" y="577">All-XR path: B-PE1 - B-P1 - B-PE2, two hops, no IOS-XE node in between.</text>
+  </g>
+</svg>

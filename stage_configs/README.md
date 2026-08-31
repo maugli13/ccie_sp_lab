@@ -15,6 +15,7 @@ paste them into a router as they are.
 | Folder | Lab / stage | Topic | Article |
 |---|---|---|---|
 | `lab01-s1a-spa-ospf/` | Lab 01, Stage 1A | SP-A dual-stack multi-area OSPFv2 + OSPFv3 | SP-A IGP Foundation |
+| `lab01-s1b-spb-isis/` | Lab 01, Stage 1B | SP-B dual-stack single-level IS-IS, Multi-Topology | SP-B IGP Foundation |
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md`
 at the root of this repo.
