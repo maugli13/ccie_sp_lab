@@ -1,0 +1,7 @@
+router ospf 1
+ prefix-suppression
+!
+router ospfv3 1
+ address-family ipv6 unicast
+  prefix-suppression
+ exit-address-family

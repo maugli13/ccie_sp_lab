@@ -1,0 +1,5 @@
+router ospf 1
+ prefix-suppression
+!
+router ospfv3 1
+ prefix-suppression

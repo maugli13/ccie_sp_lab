@@ -1,0 +1,29 @@
+router isis 1
+ lsp-mtu 128
+ set-overload-bit on-startup 30
+ address-family ipv4 unicast
+  advertise passive-only
+ !
+ address-family ipv6 unicast
+  advertise passive-only
+ !
+ interface GigabitEthernet0/0/0/0
+  hello-padding sometimes
+ !
+ interface GigabitEthernet0/0/0/1
+  hello-padding sometimes
+ !
+ interface GigabitEthernet0/0/0/2
+  hello-padding sometimes
+ !
+ interface GigabitEthernet0/0/0/3
+  hello-padding sometimes
+ !
+ interface GigabitEthernet0/0/0/4
+  hello-padding sometimes
+ !
+ interface GigabitEthernet0/0/0/5
+  hello-padding sometimes
+ !
+ interface GigabitEthernet0/0/0/6
+  hello-padding sometimes

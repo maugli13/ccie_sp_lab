@@ -1,0 +1,8 @@
+router isis 1
+ lsp-mtu 128
+ set-overload-bit on-startup 30
+ address-family ipv4 unicast
+  advertise passive-only
+ !
+ address-family ipv6 unicast
+  advertise passive-only

@@ -1,0 +1,6 @@
+router isis
+ set-overload-bit on-startup 30
+ advertise passive-only
+ address-family ipv6
+  advertise passive-only
+ exit-address-family
