@@ -1,0 +1,14 @@
+mpls label range 16700 16799
+!
+mpls ldp
+ router-id 10.1.0.7
+ session protection
+ neighbor
+  password clear LDP_AUTH
+ !
+ interface GigabitEthernet0/0/0/0
+ !
+!
+router ospf 1
+ mpls ldp sync
+!

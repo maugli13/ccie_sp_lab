@@ -18,6 +18,7 @@ paste them into a router as they are.
 | `lab01-s1a-spa-ospf/` | Lab 01, Stage 1A | SP-A dual-stack multi-area OSPFv2 + OSPFv3 | SP-A IGP Foundation |
 | `lab01-s1b-spb-isis/` | Lab 01, Stage 1B | SP-B dual-stack single-level IS-IS, Multi-Topology | SP-B IGP Foundation |
 | `lab01-s1c-igp-opt/` | Lab 01, Stage 1C | Prefix suppression, overload bit, LSP MTU, hello padding - both providers | IGP Optimization |
+| `lab01-s2a-spa-ldp/` | Lab 01, Stage 2A | SP-A LDP transport: per-node label ranges, host-route allocation filtering, OSPF-LDP sync, session protection, MD5 auth, OSPF per-prefix LFA | SP-A MPLS Transport |
 
 ## One line to read before pasting
 
@@ -27,6 +28,15 @@ deliberate teaching setting for observing IS-IS LSP fragmentation, and it is
 Router-CAP TLV carrying the SRGB and the Prefix-SID sub-TLV do not reliably
 survive LSP re-origination. Keep it only as long as you are looking at
 fragments.
+
+`lab01-s2a-spa-ldp/A-RR.ios` is the only file here that is not a paste-alike of
+its neighbours. IOS-XR reserves the label space below 16000, so the per-node scheme
+that gives the XE routers 1100-1899 gives A-RR **16700-16799**. The range takes an
+optional label-table index - `mpls label range 16700 16799` is accepted as written
+and `show run mpls` renders it back as `mpls label range table 0 16700 16799`.
+A-RR's LDP password uses the default `neighbor` block, which is XR's equivalent of
+the `mpls ldp password fallback` the seven XE nodes carry. The router stores that
+password encrypted; `password clear LDP_AUTH` is the form you type.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md`
 at the root of this repo.

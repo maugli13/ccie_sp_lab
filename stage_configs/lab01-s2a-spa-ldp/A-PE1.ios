@@ -1,0 +1,17 @@
+mpls label range 1500 1599
+mpls ldp router-id Loopback0 force
+mpls ldp session protection
+mpls ldp password fallback LDP_AUTH
+mpls ldp label
+ allocate global host-routes
+!
+interface GigabitEthernet2
+ mpls ip
+!
+interface GigabitEthernet3
+ mpls ip
+!
+router ospf 1
+ mpls ldp sync
+ fast-reroute per-prefix enable area 1 prefix-priority high
+!
