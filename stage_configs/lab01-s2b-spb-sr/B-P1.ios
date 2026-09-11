@@ -1,0 +1,53 @@
+segment-routing
+ global-block 16000 16999
+!
+router isis 1
+ no lsp-mtu
+ address-family ipv4 unicast
+  segment-routing mpls
+ !
+ interface Loopback0
+  address-family ipv4 unicast
+   prefix-sid index 100
+  !
+ !
+ interface GigabitEthernet0/0/0/0
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
+  !
+ !
+ interface GigabitEthernet0/0/0/1
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
+  !
+ !
+ interface GigabitEthernet0/0/0/2
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
+  !
+ !
+ interface GigabitEthernet0/0/0/3
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
+  !
+ !
+ interface GigabitEthernet0/0/0/4
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
+  !
+ !
+ interface GigabitEthernet0/0/0/5
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa
+  !
+ !
+ interface GigabitEthernet0/0/0/6
+  address-family ipv4 unicast
+   fast-reroute per-prefix
+   fast-reroute per-prefix ti-lfa

@@ -1,0 +1,9 @@
+segment-routing mpls
+ connected-prefix-sid-map
+  address-family ipv4
+   10.2.0.8/32 index 800 range 1
+  exit-address-family
+!
+router isis
+ segment-routing mpls
+ fast-reroute per-prefix level-2 all
