@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#15803d"/>
+    </marker>
+  </defs>
+
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a">TI-LFA - S protects the link to E for destination D</text>
+  <text x="32" y="63" font-size="13" fill="#64748b">Link metrics on the lines. The primary path S-E-D costs 2. After S-E fails the network converges on S-A-N-M-D, cost 13,</text>
+  <text x="32" y="81" font-size="13" fill="#64748b">and that is the backup S pre-installs.</text>
+
+  <!-- ============ LINKS (plain) ============ -->
+  <g stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <line x1="172" y1="170" x2="418" y2="170"/>
+    <line x1="482" y1="170" x2="728" y2="170"/>
+  </g>
+  <!-- protected link marker -->
+  <g stroke="#dc2626" stroke-width="3.5" stroke-linecap="round">
+    <line x1="285" y1="160" x2="305" y2="180"/>
+    <line x1="305" y1="160" x2="285" y2="180"/>
+  </g>
+  <text x="295" y="200" font-size="12" font-weight="600" fill="#dc2626" text-anchor="middle">protected link</text>
+
+  <!-- ============ POST-CONVERGENCE PATH ============ -->
+  <g stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="140" y1="187" x2="140" y2="305" marker-end="url(#arrG)"/>
+    <line x1="172" y1="330" x2="410" y2="330" marker-end="url(#arrG)"/>
+    <line x1="482" y1="330" x2="720" y2="330" marker-end="url(#arrG)"/>
+    <line x1="760" y1="313" x2="760" y2="195" marker-end="url(#arrG)"/>
+  </g>
+
+  <!-- metrics -->
+  <g font-size="12" fill="#475569" font-weight="600">
+    <text x="230" y="160" text-anchor="middle">1</text>
+    <text x="605" y="160" text-anchor="middle">1</text>
+    <text x="156" y="252">1</text>
+    <text x="295" y="320" text-anchor="middle">1</text>
+    <text x="605" y="320" text-anchor="middle">10</text>
+    <text x="774" y="252">1</text>
+  </g>
+
+  <!-- ============ NODES ============ -->
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="108" y="153" width="64" height="34" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="140" y="175" fill="#1e3a8a">S</text>
+    <rect x="418" y="153" width="64" height="34" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="450" y="175" fill="#0f172a">E</text>
+    <rect x="728" y="153" width="64" height="34" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="760" y="175" fill="#0f172a">D</text>
+    <rect x="108" y="313" width="64" height="34" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+    <text x="140" y="335" fill="#14532d">A</text>
+    <rect x="418" y="313" width="64" height="34" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+    <text x="450" y="335" fill="#14532d">N</text>
+    <rect x="728" y="313" width="64" height="34" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2.5"/>
+    <text x="760" y="335" fill="#78350f">M</text>
+  </g>
+  <!-- roles -->
+  <g font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="140" y="140">point of local repair</text>
+    <text x="760" y="140">destination</text>
+    <text x="140" y="366">P-space</text>
+    <text x="450" y="366">P node</text>
+    <text x="760" y="366">Q node</text>
+  </g>
+
+  <!-- ============ REPAIR LIST ============ -->
+  <text x="32" y="405" font-size="13" font-weight="700" fill="#0f172a">Pushed by S when S-E fails</text>
+  <g font-size="12" font-weight="600">
+    <rect x="32" y="414" width="190" height="22" rx="4" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="127" y="429" fill="#14532d" text-anchor="middle">Prefix-SID of N</text>
+    <rect x="32" y="440" width="190" height="22" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <text x="127" y="455" fill="#78350f" text-anchor="middle">Adj-SID N-M</text>
+    <rect x="32" y="466" width="190" height="22" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+    <text x="127" y="481" fill="#475569" text-anchor="middle">Prefix-SID of D (unchanged)</text>
+  </g>
+  <text x="232" y="429" font-size="11" fill="#64748b">repair list</text>
+  <text x="232" y="481" font-size="11" fill="#64748b">the packet's own label</text>
+
+  <!-- ============ CALLOUT ============ -->
+  <g font-size="13" fill="#0f172a">
+    <text x="400" y="405"><tspan font-weight="700" fill="#14532d">P-space</tspan>: nodes S reaches without the S-E link. A and N.</text>
+    <text x="400" y="426"><tspan font-weight="700" fill="#78350f">Q-space</tspan>: nodes that reach D without the S-E link. Only M.</text>
+    <text x="400" y="447">N alone would forward to D by N-A-S-E-D (cost 4), back through S.</text>
+    <text x="400" y="468">The adj-SID forces the N-M link for one hop; from M, D is the plain shortest path.</text>
+  </g>
+</svg>

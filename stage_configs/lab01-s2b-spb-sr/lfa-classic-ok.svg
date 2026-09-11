@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#ffffff"/>
+  <defs>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#15803d"/>
+    </marker>
+  </defs>
+
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a">Classic LFA - with N-M at 1 and S-E at 2, A is loop-free</text>
+  <text x="32" y="63" font-size="13" fill="#64748b">A's shortest path to D is now A-N-M-D, cost 3, and never touches S. S installs A as the backup next-hop for D and pushes nothing extra:</text>
+  <text x="32" y="81" font-size="13" fill="#64748b">the packet carries only its own label.</text>
+
+  <!-- ============ LINKS (plain) ============ -->
+  <g stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <line x1="172" y1="170" x2="418" y2="170"/>
+    <line x1="482" y1="170" x2="728" y2="170"/>
+    <line x1="140" y1="187" x2="140" y2="313"/>
+  </g>
+  <!-- protected link marker -->
+  <g stroke="#dc2626" stroke-width="3.5" stroke-linecap="round">
+    <line x1="285" y1="160" x2="305" y2="180"/>
+    <line x1="305" y1="160" x2="285" y2="180"/>
+  </g>
+  <text x="295" y="200" font-size="12" font-weight="600" fill="#dc2626" text-anchor="middle">protected link</text>
+
+  <!-- ============ A's SHORTEST PATH TO D ============ -->
+  <g stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="172" y1="330" x2="410" y2="330" marker-end="url(#arrG)"/>
+    <line x1="482" y1="330" x2="720" y2="330" marker-end="url(#arrG)"/>
+    <line x1="760" y1="313" x2="760" y2="195" marker-end="url(#arrG)"/>
+  </g>
+  <text x="450" y="366" font-size="12" font-weight="600" fill="#15803d" text-anchor="middle">A's shortest path to D: A-N-M-D, cost 3</text>
+  <text x="605" y="146" font-size="12" fill="#94a3b8" text-anchor="middle">A-S-E-D costs 4; A never chooses it</text>
+
+  <!-- metrics -->
+  <g font-size="12" fill="#475569" font-weight="600">
+    <text x="230" y="160" text-anchor="middle" fill="#b45309">2</text>
+    <text x="605" y="160" text-anchor="middle">1</text>
+    <text x="156" y="252">1</text>
+    <text x="295" y="320" text-anchor="middle">1</text>
+    <text x="605" y="320" text-anchor="middle" fill="#b45309">1</text>
+    <text x="774" y="252">1</text>
+  </g>
+
+  <!-- ============ NODES ============ -->
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="108" y="153" width="64" height="34" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+    <text x="140" y="175" fill="#1e3a8a">S</text>
+    <rect x="418" y="153" width="64" height="34" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="450" y="175" fill="#0f172a">E</text>
+    <rect x="728" y="153" width="64" height="34" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="760" y="175" fill="#0f172a">D</text>
+    <rect x="108" y="313" width="64" height="34" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="2.5"/>
+    <text x="140" y="335" fill="#14532d">A</text>
+    <rect x="418" y="313" width="64" height="34" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="450" y="335" fill="#0f172a">N</text>
+    <rect x="728" y="313" width="64" height="34" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="760" y="335" fill="#0f172a">M</text>
+  </g>
+  <!-- roles -->
+  <g font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="140" y="140">computing router</text>
+    <text x="760" y="140">destination</text>
+    <text x="140" y="366" fill="#15803d">backup next-hop</text>
+  </g>
+
+  <!-- ============ CALLOUT ============ -->
+  <rect x="32" y="392" width="836" height="88" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <g font-size="13" fill="#0f172a">
+    <text x="48" y="416" font-weight="700">Loop-free condition (RFC 5286) at S, candidate A, destination D</text>
+    <text y="440" font-family="Menlo, Consolas, monospace"><tspan x="48">D(A,D) &lt; D(A,S) + D(S,D)</tspan><tspan x="330">3 &lt; 1 + 3</tspan><tspan x="470" font-weight="700" fill="#15803d">true</tspan></text>
+    <text x="48" y="466">Primary stays S-E-D at cost 3. When S-E fails, S forwards to A with the packet's own label and A carries it on without looping.</text>
+  </g>
+</svg>
