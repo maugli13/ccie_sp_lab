@@ -1,50 +1,26 @@
 # Stage configs
 
-Per-stage protocol configuration for the CCIE SPv5.1 two-provider lab, one folder
-per lab stage. These changes add only the protocol logic for
-that stage and the next layer of the configuration and assume the matching baseline from `lab_configs/` is already on the node. 
+One folder per lab stage, one `.ios` file per node, plus the diagram (SVG and PNG), where the companion article has one. Each file holds only the protocol configuration that stage adds; the IP-only baseline from `lab_configs/` is assumed to be on the node already.
 
-Each folder holds one `.ios` file per node, and where the companion article has
-a diagram, that too. Most folders cover one provider; a stage applied to both
-carries all sixteen nodes.
+The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS Code key off. The contents are plain configuration.
 
-The `.ios` extension is deliberate: it is what the Cisco IOS syntax-highlighting
-extensions for VS Code key off, so these files colour correctly in the editor
-rather than rendering as plain text. The contents are ordinary configuration -
-paste them into a router as they are.
+| Folder | Lab / stage | Nodes | Topic | Article |
+|---|---|---|---|---|
+| `lab01-s1a-spa-ospf/` | Lab 01, Stage 1A | 8 | SP-A dual-stack multi-area OSPFv2 + OSPFv3 | SP-A IGP Foundation |
+| `lab01-s1b-spb-isis/` | Lab 01, Stage 1B | 8 | SP-B dual-stack single-level IS-IS, Multi-Topology | SP-B IGP Foundation |
+| `lab01-s1c-igp-opt/` | Lab 01, Stage 1C | 16 | Prefix suppression, overload bit, LSP MTU, hello padding, both providers | IGP Optimization |
+| `lab01-s2a-spa-ldp/` | Lab 01, Stage 2A | 8 | SP-A LDP transport: per-node label ranges, host-route allocation filtering, OSPF-LDP sync, session protection, MD5 auth, OSPF per-prefix LFA | SP-A MPLS Transport |
+| `lab01-s2b-spb-sr/` | Lab 01, Stage 2B | 8 | SP-B SR-MPLS transport: SRGB, prefix-SIDs by index, TI-LFA on XR, classic LFA on XE | SP-B MPLS Transport |
+| `lab01-s3-bgp/` | Lab 01, Stage 3 | 8 | iBGP VPNv4 + VPNv6 on both providers: one route reflector per AS, BGP-free core, TCP MD5 auth | BGP Control Plane |
 
-| Folder | Lab / stage | Topic | Article |
-|---|---|---|---|
-| `lab01-s1a-spa-ospf/` | Lab 01, Stage 1A | SP-A dual-stack multi-area OSPFv2 + OSPFv3 | SP-A IGP Foundation |
-| `lab01-s1b-spb-isis/` | Lab 01, Stage 1B | SP-B dual-stack single-level IS-IS, Multi-Topology | SP-B IGP Foundation |
-| `lab01-s1c-igp-opt/` | Lab 01, Stage 1C | Prefix suppression, overload bit, LSP MTU, hello padding - both providers | IGP Optimization |
-| `lab01-s2a-spa-ldp/` | Lab 01, Stage 2A | SP-A LDP transport: per-node label ranges, host-route allocation filtering, OSPF-LDP sync, session protection, MD5 auth, OSPF per-prefix LFA | SP-A MPLS Transport |
-| `lab01-s2b-spb-sr/` | Lab 01, Stage 2B | SP-B SR-MPLS transport: SRGB, prefix-SIDs by index, TI-LFA on XR, classic LFA on XE | SP-B MPLS Transport |
-| `lab01-s3-bgp/` | Lab 01, Stage 3 | iBGP VPNv4 + VPNv6 on both providers: one route reflector per AS, BGP-free core, TCP MD5 auth - all eight BGP-speaking nodes | BGP Control Plane |
+Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
-## One line to read before pasting
+## Notes per folder
 
-`lab01-s1c-igp-opt/B-P1.ios` and `B-PE1.ios` carry `lsp-mtu 128`. That is a
-deliberate teaching setting for observing IS-IS LSP fragmentation, and it is
-**reverted in Stage 2B before Segment Routing goes on** - at 128 bytes the
-Router-CAP TLV carrying the SRGB and the Prefix-SID sub-TLV do not reliably
-survive LSP re-origination. Keep it only as long as you are looking at
-fragments.
+`lab01-s1c-igp-opt/B-P1.ios` and `B-PE1.ios` set `lsp-mtu 128` to make IS-IS LSP fragmentation visible. At 128 bytes the Router-CAP TLV carrying the SRGB and the Prefix-SID sub-TLV do not reliably survive LSP re-origination, so `lab01-s2b-spb-sr/B-P1.ios` and `B-PE1.ios` revert it with `no lsp-mtu` before Segment Routing goes on. `no lsp-mtu` is a negation and does not show in a running configuration.
 
-`lab01-s2b-spb-sr/B-P1.ios` and `B-PE1.ios` carry `no lsp-mtu`, which is that
-revert. It is a negation, so it is the one line in this folder that does not
-appear in a running config - what you see on the box afterwards is the absence of
-any `lsp-mtu` line, back at the interface default. Every other line in the folder
-was verified against the running configuration.
+`lab01-s2a-spa-ldp/A-RR.ios` uses the label range 16700-16799 where the XE nodes use 1100-1899, because IOS-XR reserves the labels below 16000. `mpls label range 16700 16799` is accepted as typed and reads back as `mpls label range table 0 16700 16799`. The LDP password sits under the default `neighbor` block, the XR equivalent of `mpls ldp password fallback` on XE; `password clear LDP_AUTH` is the form you type and the router stores it encrypted.
 
-`lab01-s2a-spa-ldp/A-RR.ios` is the only file here that is not a paste-alike of
-its neighbours. IOS-XR reserves the label space below 16000, so the per-node scheme
-that gives the XE routers 1100-1899 gives A-RR **16700-16799**. The range takes an
-optional label-table index - `mpls label range 16700 16799` is accepted as written
-and `show run mpls` renders it back as `mpls label range table 0 16700 16799`.
-A-RR's LDP password uses the default `neighbor` block, which is XR's equivalent of
-the `mpls ldp password fallback` the seven XE nodes carry. The router stores that
-password encrypted; `password clear LDP_AUTH` is the form you type.
+`lab01-s3-bgp/`: the SP-A BGP password on the live lab was changed after this stage. The four `BGP_AUTH` lines on A-RR, A-PE1, A-PE2 and A-ASBR carry the value the stage was built with.
 
-Topology and addressing for every node are in `topology.clab.yml` and `ipam.md`
-at the root of this repo.
+Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.
