@@ -1,0 +1,18 @@
+router bgp 64501
+ bgp router-id 10.1.0.8
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor 10.1.0.7 remote-as 64501
+ neighbor 10.1.0.7 update-source Loopback0
+ neighbor 10.1.0.7 password BGP_AUTH
+ !
+ address-family vpnv4
+  neighbor 10.1.0.7 activate
+  neighbor 10.1.0.7 send-community extended
+ exit-address-family
+ !
+ address-family vpnv6
+  neighbor 10.1.0.7 activate
+  neighbor 10.1.0.7 send-community extended
+ exit-address-family
+!

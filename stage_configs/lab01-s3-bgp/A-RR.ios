@@ -1,0 +1,40 @@
+router bgp 64501
+ bgp router-id 10.1.0.7
+ address-family vpnv4 unicast
+ !
+ address-family vpnv6 unicast
+ !
+ neighbor 10.1.0.5
+  remote-as 64501
+  update-source Loopback0
+  password clear BGP_AUTH
+  address-family vpnv4 unicast
+   route-reflector-client
+  !
+  address-family vpnv6 unicast
+   route-reflector-client
+  !
+ !
+ neighbor 10.1.0.6
+  remote-as 64501
+  update-source Loopback0
+  password clear BGP_AUTH
+  address-family vpnv4 unicast
+   route-reflector-client
+  !
+  address-family vpnv6 unicast
+   route-reflector-client
+  !
+ !
+ neighbor 10.1.0.8
+  remote-as 64501
+  update-source Loopback0
+  password clear BGP_AUTH
+  address-family vpnv4 unicast
+   route-reflector-client
+  !
+  address-family vpnv6 unicast
+   route-reflector-client
+  !
+ !
+!

@@ -1,0 +1,16 @@
+router bgp 64502
+ bgp router-id 10.2.0.6
+ address-family vpnv4 unicast
+ !
+ address-family vpnv6 unicast
+ !
+ neighbor 10.2.0.7
+  remote-as 64502
+  update-source Loopback0
+  password encrypted 072D067C71282C313F
+  address-family vpnv4 unicast
+  !
+  address-family vpnv6 unicast
+  !
+ !
+!

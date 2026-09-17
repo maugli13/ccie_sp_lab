@@ -20,6 +20,7 @@ paste them into a router as they are.
 | `lab01-s1c-igp-opt/` | Lab 01, Stage 1C | Prefix suppression, overload bit, LSP MTU, hello padding - both providers | IGP Optimization |
 | `lab01-s2a-spa-ldp/` | Lab 01, Stage 2A | SP-A LDP transport: per-node label ranges, host-route allocation filtering, OSPF-LDP sync, session protection, MD5 auth, OSPF per-prefix LFA | SP-A MPLS Transport |
 | `lab01-s2b-spb-sr/` | Lab 01, Stage 2B | SP-B SR-MPLS transport: SRGB, prefix-SIDs by index, TI-LFA on XR, classic LFA on XE | SP-B MPLS Transport |
+| `lab01-s3-bgp/` | Lab 01, Stage 3 | iBGP VPNv4 + VPNv6 on both providers: one route reflector per AS, BGP-free core, TCP MD5 auth - all eight BGP-speaking nodes | BGP Control Plane |
 
 ## One line to read before pasting
 
