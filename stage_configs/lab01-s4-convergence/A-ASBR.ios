@@ -1,0 +1,14 @@
+interface GigabitEthernet2
+ bfd interval 500 min_rx 500 multiplier 3
+ no bfd echo
+!
+interface GigabitEthernet3
+ bfd interval 500 min_rx 500 multiplier 3
+ no bfd echo
+!
+router ospf 1
+ bfd all-interfaces
+!
+router ospfv3 1
+ bfd all-interfaces
+!

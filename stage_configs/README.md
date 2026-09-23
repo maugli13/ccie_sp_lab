@@ -12,6 +12,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab01-s2a-spa-ldp/` | Lab 01, Stage 2A | 8 | SP-A LDP transport: per-node label ranges, host-route allocation filtering, OSPF-LDP sync, session protection, MD5 auth, OSPF per-prefix LFA | SP-A MPLS Transport |
 | `lab01-s2b-spb-sr/` | Lab 01, Stage 2B | 8 | SP-B SR-MPLS transport: SRGB, prefix-SIDs by index, TI-LFA on XR, classic LFA on XE | SP-B MPLS Transport |
 | `lab01-s3-bgp/` | Lab 01, Stage 3 | 8 | iBGP VPNv4 + VPNv6 on both providers: one route reflector per AS, BGP-free core, TCP MD5 auth | BGP Control Plane |
+| `lab01-s4-convergence/` | Lab 01, Stage 4 | 14 | BFD on every IGP adjacency on both providers, per protocol and per address family; IPv6 TI-LFA on the IOS-XR nodes | Convergence |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -22,5 +23,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab01-s2a-spa-ldp/A-RR.ios` uses the label range 16700-16799 where the XE nodes use 1100-1899, because IOS-XR reserves the labels below 16000. `mpls label range 16700 16799` is accepted as typed and reads back as `mpls label range table 0 16700 16799`. The LDP password sits under the default `neighbor` block, the XR equivalent of `mpls ldp password fallback` on XE; `password clear LDP_AUTH` is the form you type and the router stores it encrypted.
 
 `lab01-s3-bgp/`: the SP-A BGP password on the live lab was changed after this stage. The four `BGP_AUTH` lines on A-RR, A-PE1, A-PE2 and A-ASBR carry the value the stage was built with.
+
+`lab01-s4-convergence/` holds 14 of the 16 nodes. A-RR and B-RR run the XRd control-plane image and take no configuration in this stage, so they have no file. IS-IS binds BFD per topology on IOS-XE: the four SP-B XE nodes carry `bfd all-interfaces` under `router isis` for the IPv4 topology and again under `address-family ipv6` for the IPv6 one.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.
