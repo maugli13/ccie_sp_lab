@@ -1,0 +1,13 @@
+interface Loopback0
+ ip ospf 1 area 0
+ ipv6 ospf 1 area 0
+!
+interface Ethernet0/1
+ ip ospf 1 area 0
+ ipv6 ospf 1 area 0
+!
+router ospf 1
+ router-id 10.10.0.1
+!
+ipv6 router ospf 1
+ router-id 10.10.0.1

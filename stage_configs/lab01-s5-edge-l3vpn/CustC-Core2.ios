@@ -1,0 +1,15 @@
+router bgp 64530
+ bgp router-id 10.30.0.2
+ bgp log-neighbor-changes
+ neighbor 10.2.12.1 remote-as 64502
+ neighbor 2001:DB8:2:24::1 remote-as 64502
+ !
+ address-family ipv4
+  network 10.30.0.2 mask 255.255.255.255
+  neighbor 10.2.12.1 activate
+ exit-address-family
+ !
+ address-family ipv6
+  network 2001:DB8:30::2/128
+  neighbor 2001:DB8:2:24::1 activate
+ exit-address-family

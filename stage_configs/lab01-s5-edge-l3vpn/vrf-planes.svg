@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" width="900" height="660" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="660" fill="#ffffff"/>
+
+  <text x="32" y="40" font-size="19" font-weight="700" fill="#0f172a">Two VRF planes - six sites, four PEs, two orphans</text>
+  <text x="32" y="61" font-size="13" fill="#64748b">Each VRF is drawn as its own plane. A-PE2 and B-PE1 sit in both planes.</text>
+  <text x="32" y="79" font-size="13" fill="#64748b">No route crosses between SP-A and SP-B in this stage.</text>
+
+  <!-- provider headers -->
+  <g font-size="14" font-weight="700" fill="#334155" text-anchor="middle">
+    <text x="237" y="106">SP-A - AS 64501</text>
+    <text x="663" y="106">SP-B - AS 64502</text>
+  </g>
+
+  <!-- ============ PLANES ============ -->
+  <rect x="20" y="116" width="860" height="212" rx="12" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+  <text x="36" y="138" font-size="13" font-weight="700" fill="#c2410c">VRF CustA</text>
+
+  <rect x="20" y="344" width="860" height="212" rx="12" fill="#f0fdfa" stroke="#5eead4" stroke-width="1.5"/>
+  <text x="36" y="366" font-size="13" font-weight="700" fill="#0f766e">VRF CustC</text>
+
+  <!-- provider divider -->
+  <line x1="450" y1="92" x2="450" y2="570" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+  <!-- ============ LINKS ============ -->
+  <g stroke-linecap="round" fill="none">
+    <!-- CustA PE-CE (OSPF) -->
+    <line x1="130" y1="186" x2="130" y2="256" stroke="#c2410c" stroke-width="2"/>
+    <line x1="344" y1="186" x2="344" y2="256" stroke="#c2410c" stroke-width="2"/>
+    <line x1="560" y1="186" x2="560" y2="256" stroke="#c2410c" stroke-width="2"/>
+    <!-- CustA VPN A-PE1 - A-PE2 -->
+    <line x1="188" y1="274" x2="286" y2="274" stroke="#c2410c" stroke-width="3.5"/>
+
+    <!-- CustC PE-CE (eBGP) -->
+    <line x1="344" y1="418" x2="344" y2="488" stroke="#0f766e" stroke-width="2"/>
+    <line x1="560" y1="418" x2="560" y2="488" stroke="#0f766e" stroke-width="2"/>
+    <line x1="776" y1="418" x2="776" y2="488" stroke="#0f766e" stroke-width="2"/>
+    <!-- CustC VPN B-PE1 - B-PE2 -->
+    <line x1="618" y1="400" x2="718" y2="400" stroke="#0f766e" stroke-width="3.5"/>
+
+    <!-- same router in both planes -->
+    <line x1="344" y1="292" x2="344" y2="382" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2 4"/>
+    <line x1="560" y1="292" x2="560" y2="382" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2 4"/>
+  </g>
+
+  <!-- link labels -->
+  <g font-size="11" font-weight="600">
+    <text x="138" y="225" fill="#9a3412">OSPFv2/v3</text>
+    <text x="352" y="225" fill="#9a3412">OSPFv2/v3</text>
+    <text x="568" y="225" fill="#9a3412">OSPFv2/v3</text>
+    <text x="237" y="266" fill="#c2410c" text-anchor="middle">RT 64501:10</text>
+    <text x="237" y="290" fill="#64748b" font-weight="500" text-anchor="middle">via A-RR</text>
+    <text x="628" y="278" fill="#c2410c">RT 64502:10</text>
+
+    <text x="352" y="457" fill="#115e59">eBGP v4/v6</text>
+    <text x="568" y="457" fill="#115e59">eBGP v4/v6</text>
+    <text x="784" y="457" fill="#115e59">eBGP v4/v6</text>
+    <text x="668" y="392" fill="#0f766e" text-anchor="middle">RT 64502:30</text>
+    <text x="668" y="416" fill="#64748b" font-weight="500" text-anchor="middle">via B-RR</text>
+    <text x="278" y="404" fill="#0f766e" text-anchor="end">RT 64501:30</text>
+  </g>
+  <g font-size="10.5" font-style="italic" fill="#475569">
+    <text x="352" y="340">same router</text>
+    <text x="568" y="340">same router</text>
+  </g>
+
+  <!-- ============ NODES ============ -->
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <!-- CustA CEs -->
+    <rect x="72" y="150" width="116" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+    <text x="130" y="173" fill="#0f172a">CustA-HQ</text>
+    <rect x="286" y="150" width="116" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+    <text x="344" y="173" fill="#0f172a">CustA-Br1</text>
+    <rect x="502" y="150" width="116" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5" stroke-dasharray="7 4"/>
+    <text x="560" y="173" fill="#0f172a">CustA-Br2</text>
+
+    <!-- CustA PEs -->
+    <rect x="72" y="256" width="116" height="36" rx="6" fill="#ffffff" stroke="#c2410c" stroke-width="2.5"/>
+    <text x="130" y="279" fill="#7c2d12">A-PE1</text>
+    <rect x="286" y="256" width="116" height="36" rx="6" fill="#ffffff" stroke="#c2410c" stroke-width="2.5"/>
+    <text x="344" y="279" fill="#7c2d12">A-PE2</text>
+    <rect x="502" y="256" width="116" height="36" rx="6" fill="#ffffff" stroke="#c2410c" stroke-width="2.5"/>
+    <text x="560" y="279" fill="#7c2d12">B-PE1</text>
+
+    <!-- CustC PEs -->
+    <rect x="286" y="382" width="116" height="36" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/>
+    <text x="344" y="405" fill="#134e4a">A-PE2</text>
+    <rect x="502" y="382" width="116" height="36" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/>
+    <text x="560" y="405" fill="#134e4a">B-PE1</text>
+    <rect x="718" y="382" width="116" height="36" rx="6" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/>
+    <text x="776" y="405" fill="#134e4a">B-PE2</text>
+
+    <!-- CustC CEs -->
+    <rect x="286" y="488" width="116" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5" stroke-dasharray="7 4"/>
+    <text x="344" y="511" fill="#0f172a">CustC-Core1</text>
+    <rect x="502" y="488" width="116" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+    <text x="560" y="511" fill="#0f172a">CustC-Core2</text>
+    <rect x="718" y="488" width="116" height="36" rx="6" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+    <text x="776" y="511" fill="#0f172a">CustC-Core3</text>
+  </g>
+
+  <!-- orphan badges -->
+  <g font-size="10" font-weight="700" text-anchor="middle" fill="#ffffff">
+    <rect x="628" y="160" width="52" height="16" rx="8" fill="#334155"/><text x="654" y="172">orphan</text>
+    <rect x="222" y="498" width="52" height="16" rx="8" fill="#334155"/><text x="248" y="510">orphan</text>
+  </g>
+  <g font-size="11" font-weight="500" fill="#64748b">
+    <text x="688" y="172">only CustA site in SP-B</text>
+    <text x="214" y="510" text-anchor="end">only CustC site in SP-A</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g font-size="12.5" fill="#334155">
+    <line x1="36" y1="590" x2="76" y2="590" stroke="#475569" stroke-width="3.5"/>
+    <text x="86" y="594">VPN routes between PEs, reflected by the provider's RR</text>
+    <line x1="36" y1="614" x2="76" y2="614" stroke="#475569" stroke-width="2"/>
+    <text x="86" y="618">PE-CE routing, dual-stack</text>
+    <rect x="36" y="630" width="40" height="18" rx="4" fill="#ffffff" stroke="#334155" stroke-width="2" stroke-dasharray="6 3"/>
+    <text x="86" y="643">orphan site: the only site of its customer in its provider</text>
+  </g>
+</svg>

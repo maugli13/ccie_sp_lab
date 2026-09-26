@@ -13,6 +13,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab01-s2b-spb-sr/` | Lab 01, Stage 2B | 8 | SP-B SR-MPLS transport: SRGB, prefix-SIDs by index, TI-LFA on XR, classic LFA on XE | SP-B MPLS Transport |
 | `lab01-s3-bgp/` | Lab 01, Stage 3 | 8 | iBGP VPNv4 + VPNv6 on both providers: one route reflector per AS, BGP-free core, TCP MD5 auth | BGP Control Plane |
 | `lab01-s4-convergence/` | Lab 01, Stage 4 | 14 | BFD on every IGP adjacency on both providers, per protocol and per address family; IPv6 TI-LFA on the IOS-XR nodes | Convergence |
+| `lab01-s5-edge-l3vpn/` | Lab 01, Stage 5 | 10 | Dual-stack intra-AS L3VPN on both providers: per-PE RDs, per-provider RTs, PE-CE OSPFv2 + OSPFv3 on IOS-XE, PE-CE eBGP with `as-override` on IOS-XR, two orphan sites | Intra-AS L3VPN |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -25,5 +26,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab01-s3-bgp/`: the SP-A BGP password on the live lab was changed after this stage. The four `BGP_AUTH` lines on A-RR, A-PE1, A-PE2 and A-ASBR carry the value the stage was built with.
 
 `lab01-s4-convergence/` holds 14 of the 16 nodes. A-RR and B-RR run the XRd control-plane image and take no configuration in this stage, so they have no file. IS-IS binds BFD per topology on IOS-XE: the four SP-B XE nodes carry `bfd all-interfaces` under `router isis` for the IPv4 topology and again under `address-family ipv6` for the IPv6 one.
+
+`lab01-s5-edge-l3vpn/` holds the four PEs and six CEs; no P router or route reflector takes configuration in this stage. On B-PE1 and B-PE2 the IPv4 PE-CE neighbor sits under `address-family ipv4 unicast`. The live lab shows `address-family ipv4 labeled-unicast` there, because the Carrier Supporting Carrier stage in Lab 04 changed it. `vrf-planes.svg` and `vrf-planes.png` are the article's diagram.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.

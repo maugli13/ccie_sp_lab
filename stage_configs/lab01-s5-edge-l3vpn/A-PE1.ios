@@ -1,0 +1,34 @@
+vrf definition CustA
+ rd 10.1.0.5:10
+ address-family ipv4
+  route-target export 64501:10
+  route-target import 64501:10
+ exit-address-family
+ address-family ipv6
+  route-target export 64501:10
+  route-target import 64501:10
+ exit-address-family
+!
+interface GigabitEthernet4
+ vrf forwarding CustA
+ ip address 10.1.10.1 255.255.255.252
+ ipv6 address 2001:DB8:1:20::1/64
+ ip ospf 10 area 0
+ ospfv3 10 ipv6 area 0
+!
+router ospf 10 vrf CustA
+ router-id 10.1.10.1
+ redistribute bgp 64501 subnets
+!
+router ospfv3 10
+ address-family ipv6 unicast vrf CustA
+  redistribute bgp 64501
+ exit-address-family
+!
+router bgp 64501
+ address-family ipv4 vrf CustA
+  redistribute ospf 10
+ exit-address-family
+ address-family ipv6 vrf CustA
+  redistribute ospf 10
+ exit-address-family

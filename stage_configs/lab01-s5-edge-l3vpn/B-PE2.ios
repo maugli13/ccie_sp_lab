@@ -1,0 +1,48 @@
+vrf CustC
+ address-family ipv4 unicast
+  import route-target
+   64502:30
+  !
+  export route-target
+   64502:30
+  !
+ !
+ address-family ipv6 unicast
+  import route-target
+   64502:30
+  !
+  export route-target
+   64502:30
+  !
+ !
+!
+interface GigabitEthernet0/0/0/3
+ vrf CustC
+ ipv4 address 10.2.12.5 255.255.255.252
+ ipv6 address 2001:db8:2:25::1/64
+!
+route-policy PASS
+  pass
+end-policy
+!
+router bgp 64502
+ vrf CustC
+  rd 10.2.0.6:30
+  address-family ipv4 unicast
+  !
+  address-family ipv6 unicast
+  !
+  neighbor 10.2.12.6
+   remote-as 64530
+   address-family ipv4 unicast
+    route-policy PASS in
+    route-policy PASS out
+    as-override
+   !
+  !
+  neighbor 2001:db8:2:25::2
+   remote-as 64530
+   address-family ipv6 unicast
+    route-policy PASS in
+    route-policy PASS out
+    as-override
