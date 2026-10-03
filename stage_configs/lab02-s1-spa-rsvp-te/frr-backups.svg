@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1000" height="700" fill="#ffffff"/>
+
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a">FRR at A-P1 - two backup tunnels for Gi4</text>
+  <text x="32" y="63" font-size="13" fill="#64748b">Backup paths from the tunnels-brief output on A-P3, A-P4 and A-PE2; protection state from A-P1.</text>
+
+  <!-- ============ PROTECTED LSP HALO (Tunnel10 NORTH, LSP 616) ============ -->
+  <g stroke-linecap="round" fill="none" stroke-width="14" stroke-opacity="0.28" stroke="#3b82f6">
+    <line x1="470" y1="163" x2="360" y2="257"/>
+    <line x1="330" y1="303" x2="330" y2="447"/>
+    <line x1="360" y1="493" x2="470" y2="587"/>
+  </g>
+
+  <!-- ============ LINKS ============ -->
+  <g stroke-linecap="round" fill="none">
+    <line x1="386" y1="280" x2="614" y2="280" stroke="#475569" stroke-width="2.5"/>
+    <line x1="330" y1="303" x2="330" y2="447" stroke="#475569" stroke-width="2.5"/>
+    <line x1="670" y1="303" x2="670" y2="447" stroke="#475569" stroke-width="2.5"/>
+    <line x1="386" y1="470" x2="614" y2="470" stroke="#475569" stroke-width="2.5"/>
+    <line x1="386" y1="303" x2="614" y2="447" stroke="#475569" stroke-width="2.5"/>
+    <line x1="470" y1="163" x2="360" y2="257" stroke="#c2410c" stroke-width="3"/>
+    <line x1="530" y1="163" x2="640" y2="257" stroke="#c2410c" stroke-width="3"/>
+    <line x1="360" y1="493" x2="470" y2="587" stroke="#0f766e" stroke-width="3"/>
+    <line x1="640" y1="493" x2="530" y2="587" stroke="#0f766e" stroke-width="3"/>
+  </g>
+
+  <!-- ============ BACKUP TUNNELS (dashed) ============ -->
+  <g fill="none" stroke-width="3" stroke-dasharray="9 5" stroke-linejoin="round">
+    <!-- Tunnel100 NHOP: A-P1 > diagonal > A-P3 > A-P4 -->
+    <polyline points="335.6,281.8 645.7,477.6 330,479" stroke="#b45309"/>
+    <!-- Tunnel101 NNHOP: A-P1 > diagonal > A-P3 > A-PE2 -->
+    <polyline points="345.2,266.6 655.3,462.4 667.9,481 519.4,607.9" stroke="#be185d"/>
+  </g>
+
+  <!-- direction arrows -->
+  <g>
+    <path d="M-6,-6 L7,0 L-6,6 z" fill="#1d4ed8" transform="translate(330,390) rotate(90)"/>
+    <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(470,366.7) rotate(32.3)"/>
+    <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(470,478.4) rotate(180)"/>
+    <path d="M-6,-6 L7,0 L-6,6 z" fill="#be185d" transform="translate(540,389.7) rotate(32.3)"/>
+    <path d="M-6,-6 L7,0 L-6,6 z" fill="#be185d" transform="translate(585,551.5) rotate(139.5)"/>
+  </g>
+
+  <!-- ============ LABELS ON THE DRAWING ============ -->
+  <text x="342" y="364" font-size="11.5" font-weight="600" fill="#1d4ed8">Gi4 - protected</text>
+  <text x="500" y="499" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">Tunnel100</text>
+  <text x="608" y="560" font-size="11.5" font-weight="600" fill="#be185d">Tunnel101</text>
+  <text x="560" y="372" font-size="11" fill="#475569" font-style="italic">diagonal</text>
+
+  <!-- ============ INTERFACE TAGS (interface at that end of the link) ============ -->
+  <g font-size="10" font-weight="600" fill="#334155" text-anchor="middle">
+    <rect x="443.5" y="167.3" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="456.8" y="177.9">Gi2</text>
+    <rect x="362.1" y="236.8" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="375.4" y="247.4">Gi5</text>
+    <rect x="529.9" y="167.3" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="543.2" y="177.9">Gi3</text>
+    <rect x="611.3" y="236.8" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="624.6" y="247.4">Gi4</text>
+    <rect x="395.5" y="273.0" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="408.8" y="283.6">Gi2</text>
+    <rect x="577.9" y="273.0" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="591.2" y="283.6">Gi2</text>
+    <rect x="316.7" y="313.3" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="330.0" y="323.9">Gi4</text>
+    <rect x="316.7" y="422.7" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="330.0" y="433.3">Gi2</text>
+    <rect x="656.7" y="313.3" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="670.0" y="323.9">Gi3</text>
+    <rect x="656.7" y="422.7" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="670.0" y="433.3">Gi3</text>
+    <rect x="395.5" y="463.0" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="408.8" y="473.6">Gi3</text>
+    <rect x="577.9" y="463.0" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="591.2" y="473.6">Gi4</text>
+    <rect x="400.1" y="313.3" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="413.4" y="323.9">Gi3</text>
+    <rect x="573.3" y="422.7" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="586.6" y="433.3">Gi2</text>
+    <rect x="364.3" y="501.0" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="377.6" y="511.6">Gi4</text>
+    <rect x="445.7" y="570.6" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="459.0" y="581.2">Gi3</text>
+    <rect x="609.1" y="501.0" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="622.4" y="511.6">Gi5</text>
+    <rect x="527.7" y="570.6" width="26.6" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="541.0" y="581.2">Gi2</text>
+  </g>
+
+  <!-- ============ NODES ============ -->
+  <g text-anchor="middle">
+    <text x="500" y="106" font-size="11" font-weight="600" fill="#c2410c">Area 1</text>
+    <rect x="444" y="117" width="112" height="46" rx="6" fill="#fff7ed" stroke="#c2410c" stroke-width="2.5"/>
+    <text x="500" y="137" font-size="15" font-weight="600" fill="#7c2d12">A-PE1</text>
+    <text x="500" y="154" font-size="11" fill="#9a3412">10.1.0.5</text>
+
+    <rect x="274" y="257" width="112" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="330" y="277" font-size="15" font-weight="600" fill="#0f172a">A-P1</text>
+    <text x="330" y="294" font-size="11" fill="#475569">10.1.0.1</text>
+    <rect x="614" y="257" width="112" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="670" y="277" font-size="15" font-weight="600" fill="#0f172a">A-P2</text>
+    <text x="670" y="294" font-size="11" fill="#475569">10.1.0.2</text>
+    <rect x="274" y="447" width="112" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="330" y="467" font-size="15" font-weight="600" fill="#0f172a">A-P4</text>
+    <text x="330" y="484" font-size="11" fill="#475569">10.1.0.4</text>
+    <rect x="614" y="447" width="112" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+    <text x="670" y="467" font-size="15" font-weight="600" fill="#0f172a">A-P3</text>
+    <text x="670" y="484" font-size="11" fill="#475569">10.1.0.3</text>
+
+    <rect x="444" y="587" width="112" height="46" rx="6" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.5"/>
+    <text x="500" y="607" font-size="15" font-weight="600" fill="#134e4a">A-PE2</text>
+    <text x="500" y="624" font-size="11" fill="#115e59">10.1.0.6</text>
+    <text x="500" y="652" font-size="11" font-weight="600" fill="#0f766e">Area 2</text>
+    <text x="500" y="320" font-size="11" font-weight="600" fill="#475569">Area 0</text>
+  </g>
+
+  <!-- role badges -->
+  <g font-size="10" font-weight="700" text-anchor="middle" fill="#ffffff">
+    <rect x="288" y="237" width="48" height="16" rx="8" fill="#334155"/><text x="312" y="249">PLR</text>
+    <rect x="264" y="497" width="84" height="16" rx="8" fill="#b45309"/><text x="306" y="509">MP Tunnel100</text>
+    <rect x="566" y="616" width="84" height="16" rx="8" fill="#be185d"/><text x="608" y="628">MP Tunnel101</text>
+  </g>
+
+  <!-- ============ LEFT PANEL: protected LSP ============ -->
+  <g>
+    <rect x="20" y="226" width="226" height="262" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="36" y="252" font-size="13.5" font-weight="700" fill="#1d4ed8">Protected LSP</text>
+    <text x="36" y="272" font-size="12" fill="#0f172a">Tunnel10 NORTH, LSP 616</text>
+    <text x="36" y="290" font-size="11.5" fill="#334155">A-PE1 > A-P1 > A-P4 > A-PE2</text>
+    <text x="36" y="308" font-size="11.5" fill="#334155">Gi4 is A-P1's link to A-P4</text>
+
+    <text x="36" y="346" font-size="13" font-weight="700" fill="#0f172a">Steady state</text>
+    <text x="36" y="364" font-size="11.5" fill="#334155">FRR database: LSP 616</text>
+    <text x="36" y="381" font-size="11.5" fill="#334155">on Tu101, status ready</text>
+
+    <text x="36" y="418" font-size="13" font-weight="700" fill="#0f172a">Gi4 shut</text>
+    <text x="36" y="436" font-size="11.5" fill="#334155">A-P1 switches LSP 616</text>
+    <text x="36" y="453" font-size="11.5" fill="#334155">to Tunnel101, status active,</text>
+    <text x="36" y="470" font-size="11.5" fill="#334155">FRR label implicit null</text>
+  </g>
+
+  <!-- ============ RIGHT PANEL: backups ============ -->
+  <g>
+    <rect x="754" y="226" width="226" height="262" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <line x1="770" y1="248" x2="800" y2="248" stroke="#b45309" stroke-width="3" stroke-dasharray="9 5"/>
+    <text x="808" y="252" font-size="13.5" font-weight="700" fill="#b45309">Tunnel100 - NHOP</text>
+    <text x="770" y="272" font-size="11.5" fill="#334155">protects the link Gi4</text>
+    <text x="770" y="289" font-size="11.5" fill="#334155">A-P1 > A-P3 > A-P4, strict</text>
+    <text x="770" y="306" font-size="11.5" fill="#334155">merge point A-P4, area 0</text>
+    <text x="770" y="323" font-size="11.5" fill="#334155">protected LSPs: 0</text>
+
+    <line x1="770" y1="364" x2="800" y2="364" stroke="#be185d" stroke-width="3" stroke-dasharray="9 5"/>
+    <text x="808" y="368" font-size="13.5" font-weight="700" fill="#be185d">Tunnel101 - NNHOP</text>
+    <text x="770" y="388" font-size="11.5" fill="#334155">protects the node A-P4</text>
+    <text x="770" y="405" font-size="11.5" fill="#334155">A-P1 > A-P3 > A-PE2, loose</text>
+    <text x="770" y="422" font-size="11.5" fill="#334155">merge point A-PE2, area 2</text>
+    <text x="770" y="439" font-size="11.5" fill="#334155">protected LSPs: 1 (LSP 616)</text>
+    <text x="770" y="472" font-size="11" fill="#64748b">Both cross the diagonal.</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g font-size="12" fill="#334155">
+    <line x1="24" y1="568" x2="60" y2="568" stroke="#3b82f6" stroke-width="12" stroke-opacity="0.28"/>
+    <text x="70" y="572">Protected LSP 616</text>
+    <line x1="24" y1="590" x2="60" y2="590" stroke="#c2410c" stroke-width="3"/>
+    <text x="70" y="594">Area 1 link</text>
+    <line x1="24" y1="612" x2="60" y2="612" stroke="#475569" stroke-width="2.5"/>
+    <text x="70" y="616">Area 0 link</text>
+    <line x1="24" y1="634" x2="60" y2="634" stroke="#0f766e" stroke-width="3"/>
+    <text x="70" y="638">Area 2 link</text>
+  </g>
+  <g font-size="12" fill="#334155">
+    <rect x="29" y="648" width="30" height="14" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/><text x="44" y="658.6" font-size="10" font-weight="600" text-anchor="middle">Gi3</text>
+    <text x="70" y="660">interface at that end of the link</text>
+  </g>
+</svg>

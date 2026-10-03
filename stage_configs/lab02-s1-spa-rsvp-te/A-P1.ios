@@ -1,0 +1,46 @@
+mpls traffic-eng tunnels
+!
+router ospf 1
+ mpls traffic-eng router-id Loopback0
+ mpls traffic-eng area 0
+ mpls traffic-eng area 1
+!
+interface GigabitEthernet2
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet3
+ mpls traffic-eng tunnels
+ mpls traffic-eng attribute-flags 0x80000000
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet4
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet5
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+!
+ip explicit-path name BKP-LINK-P1P3P4
+ next-address 10.1.0.3
+ next-address 10.1.0.4
+!
+interface Tunnel100
+ description FRR NHOP link-protect -> A-P4
+ ip unnumbered Loopback0
+ tunnel mode mpls traffic-eng
+ tunnel destination 10.1.0.4
+ tunnel mpls traffic-eng path-option 10 explicit name BKP-LINK-P1P3P4
+!
+ip explicit-path name BKP-NODE-VIA-P3
+ next-address loose 10.1.0.3
+ next-address loose 10.1.0.6
+!
+interface Tunnel101
+ description FRR NNHOP node-protect -> A-PE2 (inter-area)
+ ip unnumbered Loopback0
+ tunnel mode mpls traffic-eng
+ tunnel destination 10.1.0.6
+ tunnel mpls traffic-eng path-option 10 explicit name BKP-NODE-VIA-P3
+!
+interface GigabitEthernet4
+ mpls traffic-eng backup-path Tunnel100
+ mpls traffic-eng backup-path Tunnel101

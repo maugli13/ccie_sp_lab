@@ -1,0 +1,20 @@
+mpls traffic-eng tunnels
+!
+router ospf 1
+ mpls traffic-eng router-id Loopback0
+ mpls traffic-eng area 0
+ mpls traffic-eng area 2
+!
+interface GigabitEthernet2
+ mpls traffic-eng tunnels
+ mpls traffic-eng attribute-flags 0x80000000
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet3
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet4
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet5
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000

@@ -1,0 +1,46 @@
+mpls traffic-eng tunnels
+!
+router ospf 1
+ mpls traffic-eng router-id Loopback0
+ mpls traffic-eng area 1
+!
+interface GigabitEthernet2
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+interface GigabitEthernet3
+ mpls traffic-eng tunnels
+ ip rsvp bandwidth 1000000
+!
+ip explicit-path name NORTH-PE1-PE2
+ next-address loose 10.1.0.1
+ next-address loose 10.1.0.4
+ip explicit-path name SOUTH-PE1-PE2
+ next-address loose 10.1.0.2
+ next-address loose 10.1.0.3
+ip explicit-path name DIAG-PE1-PE2
+ next-address loose 10.1.0.1
+ next-address loose 10.1.0.3
+!
+interface Tunnel10
+ description TE to A-PE2 : NORTH primary / SOUTH secondary
+ ip unnumbered Loopback0
+ tunnel mode mpls traffic-eng
+ tunnel destination 10.1.0.6
+ tunnel mpls traffic-eng autoroute destination
+ tunnel mpls traffic-eng bandwidth 100000
+ tunnel mpls traffic-eng affinity 0x0 mask 0x80000000
+ tunnel mpls traffic-eng path-option 10 explicit name NORTH-PE1-PE2
+ tunnel mpls traffic-eng path-option 20 explicit name SOUTH-PE1-PE2
+ tunnel mpls traffic-eng path-option 30 explicit name ANYLOOSE-PE2
+ tunnel mpls traffic-eng fast-reroute node-protect
+!
+ip explicit-path name ANYLOOSE-PE2
+ next-address loose 10.1.0.6
+!
+interface Tunnel11
+ description TE to A-PE2 : explicit-path pinned to colored A-P1-A-P3 diagonal
+ ip unnumbered Loopback0
+ tunnel mode mpls traffic-eng
+ tunnel destination 10.1.0.6
+ tunnel mpls traffic-eng bandwidth 50000
+ tunnel mpls traffic-eng path-option 10 explicit name DIAG-PE1-PE2
