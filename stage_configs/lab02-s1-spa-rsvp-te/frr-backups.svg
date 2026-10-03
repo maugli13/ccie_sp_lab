@@ -2,7 +2,7 @@
   <rect width="1000" height="700" fill="#ffffff"/>
 
   <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a">FRR at A-P1 - two backup tunnels for Gi4</text>
-  <text x="32" y="63" font-size="13" fill="#64748b">Backup paths from the tunnels-brief output on A-P3, A-P4 and A-PE2; protection state from A-P1.</text>
+  <text x="32" y="63" font-size="13" fill="#64748b">Backup paths from show mpls traffic-eng tunnels brief on A-P3, A-P4 and A-PE2; protection state from A-P1.</text>
 
   <!-- ============ PROTECTED LSP HALO (Tunnel10 NORTH, LSP 616) ============ -->
   <g stroke-linecap="round" fill="none" stroke-width="14" stroke-opacity="0.28" stroke="#3b82f6">
@@ -42,7 +42,7 @@
   </g>
 
   <!-- ============ LABELS ON THE DRAWING ============ -->
-  <text x="342" y="364" font-size="11.5" font-weight="600" fill="#1d4ed8">Gi4 - protected</text>
+  <text x="342" y="364" font-size="11.5" font-weight="600" fill="#1d4ed8">protected</text>
   <text x="500" y="499" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">Tunnel100</text>
   <text x="608" y="560" font-size="11.5" font-weight="600" fill="#be185d">Tunnel101</text>
   <text x="560" y="372" font-size="11" fill="#475569" font-style="italic">diagonal</text>
@@ -105,25 +105,24 @@
 
   <!-- ============ LEFT PANEL: protected LSP ============ -->
   <g>
-    <rect x="20" y="226" width="226" height="262" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <rect x="20" y="226" width="226" height="244" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
     <text x="36" y="252" font-size="13.5" font-weight="700" fill="#1d4ed8">Protected LSP</text>
     <text x="36" y="272" font-size="12" fill="#0f172a">Tunnel10 NORTH, LSP 616</text>
     <text x="36" y="290" font-size="11.5" fill="#334155">A-PE1 > A-P1 > A-P4 > A-PE2</text>
-    <text x="36" y="308" font-size="11.5" fill="#334155">Gi4 is A-P1's link to A-P4</text>
 
-    <text x="36" y="346" font-size="13" font-weight="700" fill="#0f172a">Steady state</text>
-    <text x="36" y="364" font-size="11.5" fill="#334155">FRR database: LSP 616</text>
-    <text x="36" y="381" font-size="11.5" fill="#334155">on Tu101, status ready</text>
+    <text x="36" y="328" font-size="13" font-weight="700" fill="#0f172a">Steady state</text>
+    <text x="36" y="346" font-size="11.5" fill="#334155">FRR database: LSP 616</text>
+    <text x="36" y="363" font-size="11.5" fill="#334155">on Tu101, status ready</text>
 
-    <text x="36" y="418" font-size="13" font-weight="700" fill="#0f172a">Gi4 shut</text>
-    <text x="36" y="436" font-size="11.5" fill="#334155">A-P1 switches LSP 616</text>
-    <text x="36" y="453" font-size="11.5" fill="#334155">to Tunnel101, status active,</text>
-    <text x="36" y="470" font-size="11.5" fill="#334155">FRR label implicit null</text>
+    <text x="36" y="400" font-size="13" font-weight="700" fill="#0f172a">Gi4 shut</text>
+    <text x="36" y="418" font-size="11.5" fill="#334155">A-P1 switches LSP 616</text>
+    <text x="36" y="435" font-size="11.5" fill="#334155">to Tunnel101, status active,</text>
+    <text x="36" y="452" font-size="11.5" fill="#334155">FRR label implicit null</text>
   </g>
 
   <!-- ============ RIGHT PANEL: backups ============ -->
   <g>
-    <rect x="754" y="226" width="226" height="262" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <rect x="754" y="226" width="226" height="236" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
     <line x1="770" y1="248" x2="800" y2="248" stroke="#b45309" stroke-width="3" stroke-dasharray="9 5"/>
     <text x="808" y="252" font-size="13.5" font-weight="700" fill="#b45309">Tunnel100 - NHOP</text>
     <text x="770" y="272" font-size="11.5" fill="#334155">protects the link Gi4</text>
@@ -137,7 +136,6 @@
     <text x="770" y="405" font-size="11.5" fill="#334155">A-P1 > A-P3 > A-PE2, loose</text>
     <text x="770" y="422" font-size="11.5" fill="#334155">merge point A-PE2, area 2</text>
     <text x="770" y="439" font-size="11.5" fill="#334155">protected LSPs: 1 (LSP 616)</text>
-    <text x="770" y="472" font-size="11" fill="#64748b">Both cross the diagonal.</text>
   </g>
 
   <!-- ============ LEGEND ============ -->
