@@ -1,0 +1,14 @@
+segment-routing mpls
+ global-block 17000 17999
+ set-attributes
+  address-family ipv4
+   sr-label-preferred
+  exit-address-family
+ connected-prefix-sid-map
+  address-family ipv4
+   10.1.0.5/32 index 500 range 1
+  exit-address-family
+!
+router ospf 1
+ segment-routing area 1 mpls
+ segment-routing mpls

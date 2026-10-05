@@ -15,6 +15,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab01-s4-convergence/` | Lab 01, Stage 4 | 14 | BFD on every IGP adjacency on both providers, per protocol and per address family; IPv6 TI-LFA on the IOS-XR nodes | Convergence |
 | `lab01-s5-edge-l3vpn/` | Lab 01, Stage 5 | 10 | Dual-stack intra-AS L3VPN on both providers: per-PE RDs, per-provider RTs, PE-CE OSPFv2 + OSPFv3 on IOS-XE, PE-CE eBGP with `as-override` on IOS-XR, two orphan sites | Intra-AS L3VPN |
 | `lab02-s1-spa-rsvp-te/` | Lab 02, Stage 1 | 6 | SP-A inter-area RSVP-TE: loose-hop explicit paths through the ABRs, `autoroute destination`, a tunnel steered onto the A-P1 to A-P3 diagonal, FRR with NHOP and NNHOP backups on A-P1 | Inter-Area MPLS-TE |
+| `lab02-s2-spa-sr-ldp/` | Lab 02, Stage 2 | 5 | SP-A SR/LDP interworking: SR-MPLS over OSPF on A-PE1, A-P1 and A-P2 with an SRGB of 17000-17999, `sr-label-preferred` on A-PE1 only, a mapping server on A-RR for the LDP-only loopbacks, a second loopback on A-PE2 for the SR-to-LDP swap | SP-A SR/LDP Interworking |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -31,5 +32,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab01-s5-edge-l3vpn/` holds the four PEs and six CEs; no P router or route reflector takes configuration in this stage. On B-PE1 and B-PE2 the IPv4 PE-CE neighbor sits under `address-family ipv4 unicast`. The live lab shows `address-family ipv4 labeled-unicast` there, because the Carrier Supporting Carrier stage in Lab 04 changed it. `vrf-planes.svg` and `vrf-planes.png` are the article's diagram.
 
 `lab02-s1-spa-rsvp-te/` holds the four P routers and the two PEs; A-RR and A-ASBR take no configuration in this stage. The explicit paths are written as typed. The running configuration reads them back as `ip explicit-path name <name> enable` with an `index` on each `next-address`, and all ten paths match hop for hop. The four PE tunnels that set `bandwidth` also show `tunnel mpls traffic-eng priority 7 7`, the default setup and hold priority, in the running configuration. On the live lab, Tunnel10's description on A-PE1 reads `TE to A-PE2: NORTH primary / SOUTH secondary`, without the space before the colon. `tunnel10-paths` and `frr-backups` (SVG and PNG) are the article's diagrams.
+
+`lab02-s2-spa-sr-ldp/` holds A-PE1, A-P1, A-P2, A-RR and A-PE2. A-P3, A-P4 and A-ASBR stay LDP-only and take no configuration in this stage. On A-PE2, the running configuration reads the Loopback1 IPv6 address back in upper case, `2001:DB8:1::106/128`. `sr-ldp-swap` (SVG and PNG) is the article's diagram.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.
