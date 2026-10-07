@@ -1,0 +1,14 @@
+pseudowire-class VPWS_CB_CW
+ encapsulation mpls
+ control-word
+!
+interface GigabitEthernet5
+ description CustB multi-service UNI -- VLAN11 VPWS VC2011 | VLAN12 EVPN(S3B,reserved)
+ no ip address
+ no ipv6 address 2001:DB8:1:22::1/64
+ no keepalive
+ service instance 11 ethernet
+  description VPWS E-Line VC 2011 -> CustB-Hub<->Spk1
+  encapsulation dot1q 11
+  rewrite ingress tag pop 1 symmetric
+  xconnect 10.1.0.6 2011 encapsulation mpls pw-class VPWS_CB_CW

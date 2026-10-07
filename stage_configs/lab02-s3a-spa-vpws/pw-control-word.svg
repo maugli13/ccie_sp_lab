@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1000" height="440" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">The pseudowire packet from A-PE1 to A-PE2</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Labels from A-PE1's VC 2011 detail, MAC addresses from the CustB-Hub and CustB-Spk1 ARP tables.</text>
+  <text x="32" y="108" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">With the control word, configured on both PEs</text>
+  <rect x="32" y="122" width="104" height="58" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="84.0" y="148" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">1112</text>
+  <text x="84.0" y="166" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">Tunnel10</text>
+  <text x="84.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">4 B</text>
+  <rect x="142" y="122" width="104" height="58" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="194.0" y="148" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">1614</text>
+  <text x="194.0" y="166" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">VC label, bottom</text>
+  <text x="194.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">4 B</text>
+  <rect x="252" y="122" width="104" height="58" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <rect x="265.0" y="130" width="15.0" height="24" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.6"/>
+  <text x="268.0" y="148" font-size="15" font-weight="700" fill="#6d28d9" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">0000 ...</text>
+  <text x="304.0" y="166" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">control word</text>
+  <text x="304.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">4 B</text>
+  <rect x="362" y="122" width="150" height="58" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="437.0" y="148" font-size="15" font-weight="700" fill="#0f766e" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">aabb.cc00.1510</text>
+  <text x="437.0" y="166" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">destination MAC</text>
+  <text x="437.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">6 B</text>
+  <rect x="518" y="122" width="150" height="58" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="593.0" y="148" font-size="15" font-weight="700" fill="#0f766e" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">aabb.cc00.1410</text>
+  <text x="593.0" y="166" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">source MAC</text>
+  <text x="593.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">6 B</text>
+  <rect x="674" y="122" width="92" height="58" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="720.0" y="148" font-size="15" font-weight="700" fill="#0f766e" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">EtherType</text>
+  <text x="720.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">2 B</text>
+  <rect x="772" y="122" width="172" height="58" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="858.0" y="148" font-size="15" font-weight="700" fill="#475569" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">payload</text>
+  <text x="858.0" y="166" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">the ping</text>
+  <text x="858.0" y="197" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle"></text>
+  <line x1="272.5" y1="182" x2="272.5" y2="216" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="252" y="230" font-size="12" font-weight="400" fill="#334155" text-anchor="start">First 4 bits after the bottom label: 0, which is neither IPv4 nor IPv6. The router hashes on the bottom label.</text>
+  <text x="32" y="286" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">Without the control word</text>
+  <rect x="32" y="300" width="104" height="58" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="84.0" y="326" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">1112</text>
+  <text x="84.0" y="344" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">Tunnel10</text>
+  <text x="84.0" y="375" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">4 B</text>
+  <rect x="142" y="300" width="104" height="58" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="194.0" y="326" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">1614</text>
+  <text x="194.0" y="344" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">VC label, bottom</text>
+  <text x="194.0" y="375" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">4 B</text>
+  <rect x="252" y="300" width="150" height="58" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <rect x="261.0" y="308" width="15.0" height="24" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.6"/>
+  <text x="264.0" y="326" font-size="15" font-weight="700" fill="#0f766e" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">aabb.cc00.1510</text>
+  <text x="327.0" y="344" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">destination MAC</text>
+  <text x="327.0" y="375" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">6 B</text>
+  <rect x="408" y="300" width="150" height="58" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="483.0" y="326" font-size="15" font-weight="700" fill="#0f766e" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">aabb.cc00.1410</text>
+  <text x="483.0" y="344" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">source MAC</text>
+  <text x="483.0" y="375" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">6 B</text>
+  <rect x="564" y="300" width="92" height="58" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="610.0" y="326" font-size="15" font-weight="700" fill="#0f766e" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">EtherType</text>
+  <text x="610.0" y="375" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">2 B</text>
+  <rect x="662" y="300" width="282" height="58" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="803.0" y="326" font-size="15" font-weight="700" fill="#475569" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">payload</text>
+  <text x="803.0" y="344" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">the ping</text>
+  <text x="803.0" y="375" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle"></text>
+  <line x1="268.5" y1="360" x2="268.5" y2="394" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="252" y="408" font-size="12" font-weight="400" fill="#334155" text-anchor="start">First 4 bits after the bottom label: the first hex digit of the destination MAC. 4 or 6 is read as IPv4 or IPv6.</text>
+</svg>

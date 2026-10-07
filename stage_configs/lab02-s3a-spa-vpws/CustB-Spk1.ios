@@ -1,0 +1,10 @@
+interface Ethernet0/1
+ description to A-PE2 -- CustB multi-service UNI (802.1Q: VLAN11 VPWS | VLAN12 EVPN reserved)
+ no ip address
+ no ipv6 address 2001:DB8:1:23::2/64
+!
+interface Ethernet0/1.11
+ description VPWS E-Line (VLAN 11) -> CustB-Hub
+ encapsulation dot1Q 11
+ ip address 10.20.11.2 255.255.255.248
+ ipv6 address 2001:DB8:20:11::2/64
