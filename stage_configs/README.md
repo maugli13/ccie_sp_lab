@@ -18,6 +18,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab02-s2-spa-sr-ldp/` | Lab 02, Stage 2 | 5 | SP-A SR/LDP interworking: SR-MPLS over OSPF on A-PE1, A-P1 and A-P2 with an SRGB of 17000-17999, `sr-label-preferred` on A-PE1 only, a mapping server on A-RR for the LDP-only loopbacks, a second loopback on A-PE2 for the SR-to-LDP swap | SP-A SR/LDP Interworking |
 | `lab02-s3a-spa-vpws/` | Lab 02, Stage 3A | 4 | SP-A VPWS E-Line: an LDP-signalled pseudowire, VC 2011, between CustB-Hub and CustB-Spk1, attached to an 802.1Q service instance for VLAN 11 on Gi5 of A-PE1 and A-PE2, with the control word on | SP-A VPWS |
 | `lab02-s3b-spa-evpn/` | Lab 02, Stage 3B | 5 | SP-A single-homed EVPN-ELAN: EVI 12 on an 802.1Q service instance for VLAN 12 on Gi5 of A-PE1 and A-PE2, bridge domain 12, route distinguisher and route target derived by the PEs, ingress replication, the `l2vpn evpn` address family reflected by the IOS-XR route reflector | SP-A EVPN-ELAN |
+| `lab02-s4-spa-multicast/` | Lab 02, Stage 4 | 6 | SP-A IP multicast core: PIM sparse mode in the global table on the P router links and the PE uplinks, an anycast RP at 10.1.0.100 on A-P1 and A-P3 with MSDP between them, a static mroute on each PE that keeps the RPF lookup for the other PE's Loopback0 off its RSVP-TE tunnel | SP-A IP Multicast Core |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -40,5 +41,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab02-s3a-spa-vpws/` holds A-PE1, A-PE2, CustB-Hub and CustB-Spk1. The `no ipv6 address` lines remove the baseline PE-CE addresses from Gi5 and `Ethernet0/1`, and a negation does not show in a running configuration. On the live lab, CustB-Hub's `Ethernet0/1.11` has no description. `pw-control-word` and `pw-path` (SVG and PNG) are the article's diagrams.
 
 `lab02-s3b-spa-evpn/` holds A-PE1, A-PE2, A-RR, CustB-Hub and CustB-Spk1. The configuration on A-PE2 is the same as on A-PE1. `evpn-path` (SVG and PNG) is the article's diagram.
+
+`lab02-s4-spa-multicast/` holds the four P routers and the two PEs; A-RR and A-ASBR take no configuration in this stage. A-P3 differs from A-P1 only in the Loopback1 description and the MSDP peer, A-P4 is the same as A-P2, and A-PE2 differs from A-PE1 only in the static mroute. `tunnels-rpf` (SVG and PNG) is the article's diagram.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.

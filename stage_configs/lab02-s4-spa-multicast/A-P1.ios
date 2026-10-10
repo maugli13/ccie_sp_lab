@@ -1,0 +1,22 @@
+ip multicast-routing distributed
+!
+interface Loopback1
+ description ANYCAST-RP (shared with A-P3) -- 10.1.0.100
+ ip address 10.1.0.100 255.255.255.255
+ ip ospf 1 area 0
+!
+interface GigabitEthernet2
+ ip pim sparse-mode
+interface GigabitEthernet3
+ ip pim sparse-mode
+interface GigabitEthernet4
+ ip pim sparse-mode
+interface GigabitEthernet5
+ ip pim sparse-mode
+!
+ip pim ssm default
+ip pim rp-address 10.1.0.100
+!
+ip msdp peer 10.1.0.3 connect-source Loopback0
+ip msdp originator-id Loopback0
+ip msdp cache-sa-state
