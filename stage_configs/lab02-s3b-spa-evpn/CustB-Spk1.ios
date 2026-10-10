@@ -1,0 +1,6 @@
+interface Ethernet0/1.12
+ description EVPN-ELAN (VLAN 12) -> CustB-Hub
+ encapsulation dot1Q 12
+ ip address 10.20.12.2 255.255.255.248
+ ipv6 address 2001:DB8:20:12::2/64
+!

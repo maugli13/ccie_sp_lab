@@ -1,0 +1,12 @@
+router bgp 64501
+ address-family l2vpn evpn
+  retain route-target all
+ !
+ neighbor 10.1.0.5
+  address-family l2vpn evpn
+   route-reflector-client
+ !
+ neighbor 10.1.0.6
+  address-family l2vpn evpn
+   route-reflector-client
+!

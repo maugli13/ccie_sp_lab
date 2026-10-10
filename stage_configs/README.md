@@ -17,6 +17,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab02-s1-spa-rsvp-te/` | Lab 02, Stage 1 | 6 | SP-A inter-area RSVP-TE: loose-hop explicit paths through the ABRs, `autoroute destination`, a tunnel steered onto the A-P1 to A-P3 diagonal, FRR with NHOP and NNHOP backups on A-P1 | Inter-Area MPLS-TE |
 | `lab02-s2-spa-sr-ldp/` | Lab 02, Stage 2 | 5 | SP-A SR/LDP interworking: SR-MPLS over OSPF on A-PE1, A-P1 and A-P2 with an SRGB of 17000-17999, `sr-label-preferred` on A-PE1 only, a mapping server on A-RR for the LDP-only loopbacks, a second loopback on A-PE2 for the SR-to-LDP swap | SP-A SR/LDP Interworking |
 | `lab02-s3a-spa-vpws/` | Lab 02, Stage 3A | 4 | SP-A VPWS E-Line: an LDP-signalled pseudowire, VC 2011, between CustB-Hub and CustB-Spk1, attached to an 802.1Q service instance for VLAN 11 on Gi5 of A-PE1 and A-PE2, with the control word on | SP-A VPWS |
+| `lab02-s3b-spa-evpn/` | Lab 02, Stage 3B | 5 | SP-A single-homed EVPN-ELAN: EVI 12 on an 802.1Q service instance for VLAN 12 on Gi5 of A-PE1 and A-PE2, bridge domain 12, route distinguisher and route target derived by the PEs, ingress replication, the `l2vpn evpn` address family reflected by the IOS-XR route reflector | SP-A EVPN-ELAN |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -37,5 +38,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab02-s2-spa-sr-ldp/` holds A-PE1, A-P1, A-P2, A-RR and A-PE2. A-P3, A-P4 and A-ASBR stay LDP-only and take no configuration in this stage. On A-PE2, the running configuration reads the Loopback1 IPv6 address back in upper case, `2001:DB8:1::106/128`. `sr-ldp-swap` (SVG and PNG) is the article's diagram.
 
 `lab02-s3a-spa-vpws/` holds A-PE1, A-PE2, CustB-Hub and CustB-Spk1. The `no ipv6 address` lines remove the baseline PE-CE addresses from Gi5 and `Ethernet0/1`, and a negation does not show in a running configuration. On the live lab, CustB-Hub's `Ethernet0/1.11` has no description. `pw-control-word` and `pw-path` (SVG and PNG) are the article's diagrams.
+
+`lab02-s3b-spa-evpn/` holds A-PE1, A-PE2, A-RR, CustB-Hub and CustB-Spk1. The configuration on A-PE2 is the same as on A-PE1. `evpn-path` (SVG and PNG) is the article's diagram.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.

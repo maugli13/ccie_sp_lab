@@ -1,0 +1,21 @@
+l2vpn evpn
+ replication-type ingress
+ router-id Loopback0
+!
+l2vpn evpn instance 12 vlan-based
+!
+bridge-domain 12
+ member GigabitEthernet5 service-instance 12
+ member evpn-instance 12
+!
+interface GigabitEthernet5
+ service instance 12 ethernet
+  description EVPN-ELAN EVI 12 -> CustB ELAN (VLAN 12)
+  encapsulation dot1q 12
+  rewrite ingress tag pop 1 symmetric
+!
+router bgp 64501
+ address-family l2vpn evpn
+  neighbor 10.1.0.7 activate
+  neighbor 10.1.0.7 send-community both
+!
