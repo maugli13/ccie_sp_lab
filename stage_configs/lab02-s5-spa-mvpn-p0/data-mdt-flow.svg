@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 650" width="1420" height="650" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="650" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">CustA's test flow after the switchover to the data MDT</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Customer entries from show ip mroute vrf CustA 239.10.10.10; the data MDT from show ip pim mdt send and show ip mroute 232.1.10.0 on both PEs.</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">A-P1 and A-P3 from the RPF neighbors; the hop between them is not in this stage's captures. A-P2 and A-P4 not shown.</text>
+  <line x1="120" y1="215" x2="210" y2="215" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="1210" y1="215" x2="1300" y2="215" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="500" y1="385" x2="580" y2="385" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="670" y1="385" x2="750" y2="385" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="840" y1="385" x2="920" y2="385" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="120" y1="205" x2="202" y2="205" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(202,205) rotate(0)"/>
+  <line x1="1218" y1="205" x2="1293" y2="205" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(1293,205) rotate(0)"/>
+  <line x1="500" y1="375" x2="573" y2="375" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(573,375) rotate(0)"/>
+  <line x1="670" y1="375" x2="743" y2="375" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(743,375) rotate(0)"/>
+  <line x1="840" y1="375" x2="913" y2="375" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(913,375) rotate(0)"/>
+  <line x1="534" y1="122" x2="886" y2="122" stroke="#047857" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(534,122) rotate(180)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(886,122) rotate(0)"/>
+  <text x="710" y="108" font-size="12.5" font-weight="700" fill="#047857" text-anchor="middle">Default MDT 239.1.10.1, ASM through the provider RP 10.1.0.100</text>
+  <text x="710" y="144" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">customer PIM and Auto-RP for the customer RP 10.10.0.1,</text>
+  <text x="710" y="160" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">and A-PE1's announcement of the data MDT group 232.1.10.0</text>
+  <text x="710" y="270" font-size="12.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Data MDT (10.1.0.5, 232.1.10.0)</text>
+  <text x="710" y="287" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">SSM, no RP, only this customer flow</text>
+  <rect x="210" y="100" width="290" height="340" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="355" y="125" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <rect x="220" y="138" width="270" height="140" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="232" y="158" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <text x="232" y="180" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.10.0.1, 239.10.10.10), flag y</text>
+  <text x="232" y="198" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Gi4 from CustA-HQ</text>
+  <text x="232" y="216" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">out Tunnel1, sent on the data MDT</text>
+  <rect x="220" y="318" width="270" height="112" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="232" y="338" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Global table</text>
+  <text x="232" y="360" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.1.0.5, 232.1.10.0), flag s</text>
+  <text x="232" y="378" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Loopback0</text>
+  <text x="232" y="396" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">out Gi2 toward A-P1</text>
+  <line x1="455" y1="280" x2="455" y2="309" stroke="#7c3aed" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(455,309) rotate(90)"/>
+  <text x="447" y="302" font-size="11" font-weight="600" fill="#7c3aed" text-anchor="end">adds GRE</text>
+  <rect x="474" y="113" width="52" height="18" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="500" y="126" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Tunnel1</text>
+  <rect x="920" y="100" width="290" height="340" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1065" y="125" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <rect x="930" y="138" width="270" height="140" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="942" y="158" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <text x="942" y="180" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.10.0.1, 239.10.10.10), flag Y</text>
+  <text x="942" y="198" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Tunnel1, from the data MDT</text>
+  <text x="942" y="216" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">out Gi4 to CustA-Br1</text>
+  <rect x="930" y="318" width="270" height="112" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="942" y="338" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Global table</text>
+  <text x="942" y="360" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.1.0.5, 232.1.10.0), flag s</text>
+  <text x="942" y="378" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Gi2, RPF from the static mroute</text>
+  <text x="942" y="396" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">out MVRF CustA</text>
+  <line x1="1165" y1="316" x2="1165" y2="287" stroke="#7c3aed" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(1165,287) rotate(-90)"/>
+  <text x="1157" y="302" font-size="11" font-weight="600" fill="#7c3aed" text-anchor="end">removes GRE</text>
+  <rect x="894" y="113" width="52" height="18" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="920" y="126" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Tunnel1</text>
+  <rect x="20" y="192" width="100" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="70.0" y="212" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-HQ</text>
+  <text x="70.0" y="229" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.1</text>
+  <rect x="1300" y="192" width="100" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="1350.0" y="212" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-Br1</text>
+  <text x="1350.0" y="229" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.2</text>
+  <text x="70" y="257" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">source and</text>
+  <text x="70" y="273" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">customer RP</text>
+  <text x="1350" y="257" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">member of</text>
+  <text x="1350" y="273" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">239.10.10.10</text>
+  <text x="1350" y="289" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">on Loopback0</text>
+  <rect x="580" y="362" width="90" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="625.0" y="382" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="625.0" y="399" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="750" y="362" width="90" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="795.0" y="382" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P3</text>
+  <text x="795.0" y="399" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.3</text>
+  <rect x="123.5" y="207.5" width="33.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="140" y="218.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">E0/1</text>
+  <rect x="195.5" y="207.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="210" y="218.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="1195.5" y="207.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1210" y="218.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="1263.5" y="207.5" width="33.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1280" y="218.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">E0/1</text>
+  <rect x="485.5" y="377.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="500" y="388.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="545.5" y="377.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="560" y="388.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <rect x="675.5" y="377.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="690" y="388.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi3</text>
+  <rect x="715.5" y="377.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="730" y="388.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="845.5" y="377.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="860" y="388.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <rect x="905.5" y="377.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="920" y="388.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <text x="40" y="495" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">CustA-HQ to A-PE1</text>
+  <rect x="40" y="508" width="300" height="30" rx="4" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="190" y="528" font-size="12" font-weight="600" fill="#134e4a" text-anchor="middle">IP 10.10.0.1 to 239.10.10.10</text>
+  <rect x="40" y="542" width="300" height="30" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="190" y="562" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">customer data</text>
+  <text x="560" y="495" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">A-PE1 to A-PE2, on each core link</text>
+  <rect x="560" y="508" width="300" height="30" rx="4" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="710" y="528" font-size="12" font-weight="600" fill="#4c1d95" text-anchor="middle">IP 10.1.0.5 to 232.1.10.0</text>
+  <rect x="560" y="542" width="300" height="30" rx="4" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="710" y="562" font-size="12" font-weight="600" fill="#4c1d95" text-anchor="middle">GRE</text>
+  <rect x="560" y="576" width="300" height="30" rx="4" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="710" y="596" font-size="12" font-weight="600" fill="#134e4a" text-anchor="middle">IP 10.10.0.1 to 239.10.10.10</text>
+  <rect x="560" y="610" width="300" height="30" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="710" y="630" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">customer data</text>
+  <text x="1080" y="495" font-size="12.5" font-weight="700" fill="#0f172a" text-anchor="start">A-PE2 to CustA-Br1</text>
+  <rect x="1080" y="508" width="300" height="30" rx="4" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="1230" y="528" font-size="12" font-weight="600" fill="#134e4a" text-anchor="middle">IP 10.10.0.1 to 239.10.10.10</text>
+  <rect x="1080" y="542" width="300" height="30" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="1230" y="562" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">customer data</text>
+</svg>

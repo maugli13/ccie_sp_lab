@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 500" width="1420" height="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="500" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">VRF CustA multicast on A-PE1 and A-PE2</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Configuration from the stage files; Tunnel1 and its source from show ip pim vrf CustA mdt; uplinks from the RPF neighbors in show ip mroute 239.1.10.1. A-P2 and A-P4 not shown.</text>
+  <line x1="120" y1="270" x2="210" y2="270" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="1210" y1="270" x2="1300" y2="270" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="500" y1="405" x2="580" y2="405" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="670" y1="405" x2="750" y2="405" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="840" y1="405" x2="920" y2="405" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="534" y1="262" x2="886" y2="262" stroke="#047857" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(534,262) rotate(180)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(886,262) rotate(0)"/>
+  <line x1="530" y1="278" x2="886" y2="278" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(886,278) rotate(0)"/>
+  <text x="710" y="232" font-size="12.5" font-weight="700" fill="#047857" text-anchor="middle">Default MDT, group 239.1.10.1</text>
+  <text x="710" y="249" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">customer PIM and multicast in GRE, from each Loopback0</text>
+  <text x="710" y="298" font-size="12.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Data MDT, a group from 232.1.10.0/24</text>
+  <text x="710" y="315" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">one flow above 1 kbps, from the source's PE</text>
+  <text x="710" y="331" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">to the PEs with receivers only</text>
+  <rect x="210" y="110" width="290" height="330" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="355" y="135" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <rect x="220" y="148" width="270" height="152" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="232" y="168" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <text x="232" y="190" font-size="9.6" font-weight="400" fill="#0f172a" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">ip multicast-routing vrf CustA distributed</text>
+  <text x="232" y="208" font-size="9.6" font-weight="400" fill="#0f172a" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">mdt default 239.1.10.1</text>
+  <text x="232" y="226" font-size="9.6" font-weight="400" fill="#0f172a" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">mdt data 232.1.10.0 0.0.0.255 threshold 1</text>
+  <text x="232" y="246" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Gi4: PIM toward CustA-HQ</text>
+  <rect x="220" y="314" width="270" height="116" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="232" y="334" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Global table</text>
+  <text x="232" y="356" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">Loopback0 10.1.0.5: PIM,</text>
+  <text x="232" y="373" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">GRE source of Tunnel1</text>
+  <text x="232" y="410" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Gi2: PIM toward A-P1</text>
+  <rect x="474" y="253" width="52" height="34" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="500" y="273.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Tunnel1</text>
+  <rect x="195.5" y="262.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="210" y="273.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="485.5" y="397.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="500" y="408.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="920" y="110" width="290" height="330" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1065" y="135" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <rect x="930" y="148" width="270" height="152" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="942" y="168" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <text x="942" y="190" font-size="9.6" font-weight="400" fill="#0f172a" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">ip multicast-routing vrf CustA distributed</text>
+  <text x="942" y="208" font-size="9.6" font-weight="400" fill="#0f172a" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">mdt default 239.1.10.1</text>
+  <text x="942" y="226" font-size="9.6" font-weight="400" fill="#0f172a" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">mdt data 232.1.10.0 0.0.0.255 threshold 1</text>
+  <text x="942" y="246" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Gi4: PIM toward CustA-Br1</text>
+  <rect x="930" y="314" width="270" height="116" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="942" y="334" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Global table</text>
+  <text x="942" y="356" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">Loopback0 10.1.0.6: PIM,</text>
+  <text x="942" y="373" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">GRE source of Tunnel1</text>
+  <text x="942" y="410" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Gi2: PIM toward A-P3</text>
+  <rect x="894" y="253" width="52" height="34" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="920" y="273.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Tunnel1</text>
+  <rect x="1195.5" y="262.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1210" y="273.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="905.5" y="397.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="920" y="408.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="20" y="247" width="100" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="70.0" y="267" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-HQ</text>
+  <text x="70.0" y="284" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.1</text>
+  <rect x="1300" y="247" width="100" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="1350.0" y="267" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-Br1</text>
+  <text x="1350.0" y="284" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.2</text>
+  <rect x="580" y="382" width="90" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="625.0" y="402" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="625.0" y="419" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="750" y="382" width="90" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="795.0" y="402" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P3</text>
+  <text x="795.0" y="419" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.3</text>
+  <text x="625" y="450" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">RP 10.1.0.100</text>
+  <text x="795" y="450" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">RP 10.1.0.100</text>
+  <rect x="123.5" y="262.5" width="33.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="140" y="273.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">E0/1</text>
+  <rect x="1263.5" y="262.5" width="33.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1280" y="273.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">E0/1</text>
+  <rect x="545.5" y="397.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="560" y="408.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <rect x="675.5" y="397.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="690" y="408.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi3</text>
+  <rect x="715.5" y="397.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="730" y="408.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="845.5" y="397.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="860" y="408.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+</svg>

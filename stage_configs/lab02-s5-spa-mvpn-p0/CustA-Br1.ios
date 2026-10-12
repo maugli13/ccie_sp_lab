@@ -1,0 +1,12 @@
+ip multicast-routing
+!
+ip pim autorp listener
+!
+interface Loopback0
+ ip pim sparse-mode
+!
+interface Ethernet0/1
+ ip pim sparse-mode
+!
+ip pim send-rp-discovery Loopback0 scope 16
+!

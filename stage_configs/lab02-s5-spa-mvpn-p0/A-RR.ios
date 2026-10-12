@@ -1,0 +1,11 @@
+router bgp 64501
+ address-family ipv4 mdt
+ !
+ neighbor 10.1.0.5
+  address-family ipv4 mdt
+   route-reflector-client
+ !
+ neighbor 10.1.0.6
+  address-family ipv4 mdt
+   route-reflector-client
+!

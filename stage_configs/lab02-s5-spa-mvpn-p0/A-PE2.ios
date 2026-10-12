@@ -1,0 +1,21 @@
+ip multicast-routing vrf CustA distributed
+!
+vrf definition CustA
+ address-family ipv4
+  mdt default 239.1.10.1
+  mdt data 232.1.10.0 0.0.0.255 threshold 1
+ exit-address-family
+!
+interface Loopback0
+ ip pim sparse-mode
+!
+interface GigabitEthernet4
+ ip pim sparse-mode
+!
+ip pim vrf CustA autorp listener
+!
+router bgp 64501
+ address-family ipv4 mdt
+  neighbor 10.1.0.7 activate
+ exit-address-family
+!
