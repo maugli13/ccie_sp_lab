@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" width="900" height="680" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="900" height="680" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">SP-B links and IS-IS metrics in this stage</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Links from ipam.md; metrics from the LSPs in show isis database verbose on B-P1, B-PE1 and B-PE2, and from the first part of the lab.</text>
+  <line x1="434.9" y1="278.0" x2="345.1" y2="147.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="470.7" y1="278.0" x2="594.3" y2="147.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="470.7" y1="322.0" x2="594.3" y2="453.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="434.9" y1="322.0" x2="345.1" y2="453.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="394.0" y1="316.0" x2="174.0" y2="379.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="386.0" y1="125.0" x2="559.0" y2="125.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="278.2" y1="147.0" x2="169.8" y2="193.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="638.3" y1="147.0" x2="776.7" y2="278.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="638.3" y1="453.0" x2="776.7" y2="322.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="559.0" y1="475.0" x2="386.0" y2="475.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="615.0" y1="147.0" x2="615.0" y2="453.0" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="394.0" y1="285.7" x2="174.0" y2="229.3" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+  <line x1="394.0" y1="285.7" x2="174.0" y2="229.3" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="506.0" y1="300.0" x2="744.0" y2="300.0" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+  <line x1="506.0" y1="300.0" x2="744.0" y2="300.0" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="378.4" y="204.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="390" y="216.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="520.9" y="204.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="532.5" y="216.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="520.9" y="379.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="532.5" y="391.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="378.4" y="379.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="390" y="391.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="272.4" y="339.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="284" y="351.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="460.9" y="116.5" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="472.5" y="129" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="212.4" y="161.5" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="224" y="174" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="695.9" y="204.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="707.5" y="216.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="695.9" y="379.0" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="707.5" y="391.5" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="460.9" y="466.5" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="472.5" y="479" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="603.4" y="211.5" width="23.2" height="17" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="615" y="224" font-size="11" font-weight="600" fill="#334155" text-anchor="middle">10</text>
+  <rect x="252.6" y="249.0" width="62.8" height="17" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="284" y="261.5" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle">10 → 100</text>
+  <rect x="658.6" y="291.5" width="62.8" height="17" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="690" y="304" font-size="11" font-weight="700" fill="#1d4ed8" text-anchor="middle">10 → 100</text>
+  <rect x="398" y="282" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="450" y="305" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-P1</text>
+  <rect x="66" y="197" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="118" y="220" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE1</text>
+  <rect x="748" y="282" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="800" y="305" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE2</text>
+  <rect x="66" y="377" width="104" height="36" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="118" y="400" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-RR</text>
+  <text x="118" y="429" font-size="11" font-weight="500" fill="#64748b" text-anchor="middle">XRd, control plane only</text>
+  <rect x="278" y="107" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="330" y="130" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-P2</text>
+  <rect x="563" y="107" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="615" y="130" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-P3</text>
+  <rect x="563" y="457" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="615" y="480" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-P4</text>
+  <rect x="278" y="457" width="104" height="36" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="330" y="480" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-ASBR</text>
+  <text x="330" y="509" font-size="11" font-weight="500" fill="#64748b" text-anchor="middle">to SP-A (Inter-AS)</text>
+  <rect x="36" y="535" width="40" height="17" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="86" y="548" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">IOS-XR. B-P1, B-PE1 and B-PE2 take part in algorithm 128; B-RR does not.</text>
+  <rect x="36" y="559" width="40" height="17" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="86" y="572" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">IOS-XE on the CSR1000v routers, no Flex-Algo on this version.</text>
+  <line x1="36" y1="592" x2="76" y2="592" stroke="#1d4ed8" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="86" y="596" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">The two links from B-P1 to the PEs, raised from metric 10 to 100 in this stage.</text>
+  <text x="36" y="628" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">B-PE1 to B-PE2 with algorithm 0: the path via B-P1 costs 10 + 10 = 20 before this stage and 100 + 100 = 200 after;</text>
+  <text x="36" y="646" font-size="12.5" font-weight="600" fill="#0f172a" text-anchor="start">the path via B-P2 and B-P3 costs 10 + 10 + 10 = 30.</text>
+</svg>

@@ -20,6 +20,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab02-s3b-spa-evpn/` | Lab 02, Stage 3B | 5 | SP-A single-homed EVPN-ELAN: EVI 12 on an 802.1Q service instance for VLAN 12 on Gi5 of A-PE1 and A-PE2, bridge domain 12, route distinguisher and route target derived by the PEs, ingress replication, the `l2vpn evpn` address family reflected by the IOS-XR route reflector | SP-A EVPN-ELAN |
 | `lab02-s4-spa-multicast/` | Lab 02, Stage 4 | 6 | SP-A IP multicast core: PIM sparse mode in the global table on the P router links and the PE uplinks, an anycast RP at 10.1.0.100 on A-P1 and A-P3 with MSDP between them, a static mroute on each PE that keeps the RPF lookup for the other PE's Loopback0 off its RSVP-TE tunnel | SP-A IP Multicast Core |
 | `lab02-s5-spa-mvpn-p0/` | Lab 02, Stage 5 | 5 | SP-A draft-Rosen mVPN Profile 0 for the CustA VRF: a GRE default MDT on 239.1.10.1 through the anycast RP, an SSM data MDT pool 232.1.10.0/24 with a 1 kbps threshold, the BGP IPv4 MDT address family reflected by the IOS-XR route reflector, customer Auto-RP with the candidate RP on CustA-HQ and the mapping agent on CustA-Br1 | SP-A mVPN Profile 0 |
+| `lab03-s1-spb-flexalgo/` | Lab 03, Stage 1 | 3 | SP-B Flex-Algo 128 on the three XRv9k routers: a definition that excludes the CSR-EXIT affinity, advertised by all three with B-P1 at priority 200, an algorithm-128 prefix-SID on each Loopback0, the CSR-EXIT affinity on the PE links to the CSR routers, and IS-IS metric 100 on the two links through B-P1 | SP-B Flex-Algo |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -46,5 +47,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab02-s4-spa-multicast/` holds the four P routers and the two PEs; A-RR and A-ASBR take no configuration in this stage. A-P3 differs from A-P1 only in the Loopback1 description and the MSDP peer, A-P4 is the same as A-P2, and A-PE2 differs from A-PE1 only in the static mroute. `tunnels-rpf` (SVG and PNG) is the article's diagram.
 
 `lab02-s5-spa-mvpn-p0/` holds the two PEs, A-RR and the two CustA CEs. A-PE2 is the same as A-PE1, and CustA-Br1 differs from CustA-HQ only in the last line. The `mdt default`, `mdt data` and `address-family ipv4 mdt` lines are not in the running configuration, because a later stage moved CustA to an mLDP default MDT with the BGP `ipv4 mvpn` address family. They were checked against this stage's captures instead. `profile0-mdt` and `data-mdt-flow` (SVG and PNG) are the article's diagrams.
+
+`lab03-s1-spb-flexalgo/` holds B-P1, B-PE1 and B-PE2. The CSR routers, B-RR and B-ASBR take no configuration in this stage. `spb-metrics` and `flexalgo-paths` (SVG and PNG) are the article's diagrams.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.

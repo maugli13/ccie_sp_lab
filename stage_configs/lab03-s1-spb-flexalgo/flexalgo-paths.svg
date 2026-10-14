@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 680" width="1420" height="680" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="680" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">B-PE1 to B-PE2's Loopback0, 10.2.0.6, on algorithm 128 and algorithm 0</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Algorithm 128 from show mpls forwarding labels 16650 on B-PE1 and B-P1; algorithm 0 from B-PE1's show route 10.2.0.6/32 and its traceroute.</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Interface names from the captures and the baseline configs. B-P4, B-RR and B-ASBR not shown.</text>
+  <line x1="200" y1="124" x2="1212" y2="124" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(1212,124) rotate(0)"/>
+  <text x="710" y="112" font-size="12.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Algorithm 128: B-PE2's label 16650, metric 100 + 100 = 200</text>
+  <line x1="200" y1="580" x2="1212" y2="580" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(1212,580) rotate(0)"/>
+  <text x="710" y="602" font-size="12.5" font-weight="700" fill="#0f766e" text-anchor="middle">Algorithm 0: B-PE2's label 16600, metric 10 + 10 + 10 = 30</text>
+  <line x1="200" y1="255" x2="632" y2="255" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(632,255) rotate(0)"/>
+  <line x1="780" y1="255" x2="1212" y2="255" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(1212,255) rotate(0)"/>
+  <line x1="200" y1="420" x2="432" y2="420" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(432,420) rotate(0)"/>
+  <line x1="580" y1="420" x2="832" y2="420" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(832,420) rotate(0)"/>
+  <line x1="980" y1="420" x2="1212" y2="420" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(1212,420) rotate(0)"/>
+  <rect x="40" y="225" width="160" height="225" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="120.0" y="247" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE1</text>
+  <text x="120.0" y="264" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.5</text>
+  <rect x="1220" y="225" width="160" height="225" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1300.0" y="247" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE2</text>
+  <text x="1300.0" y="264" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.6</text>
+  <rect x="640" y="230" width="140" height="50" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="710.0" y="252" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-P1</text>
+  <text x="710.0" y="269" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.1</text>
+  <rect x="440" y="395" width="140" height="50" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="510.0" y="417" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-P2</text>
+  <text x="510.0" y="434" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.2</text>
+  <rect x="840" y="395" width="140" height="50" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="910.0" y="417" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-P3</text>
+  <text x="910.0" y="434" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.3</text>
+  <text x="120" y="300" font-size="11.5" font-weight="600" fill="#7c3aed" text-anchor="middle">label 16650</text>
+  <text x="120" y="316" font-size="11.5" font-weight="600" fill="#7c3aed" text-anchor="middle">out Gi0/0/0/0</text>
+  <text x="120" y="375" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">pushes 16600</text>
+  <text x="120" y="391" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">out Gi0/0/0/1</text>
+  <text x="710" y="300" font-size="11.5" font-weight="600" fill="#7c3aed" text-anchor="middle">pops 16650</text>
+  <text x="510" y="465" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">swaps 16600 for 16600</text>
+  <text x="910" y="465" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">pops 16600</text>
+  <rect x="210.1" y="231.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="242" y="242.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/0</text>
+  <rect x="566.1" y="231.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="598" y="242.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/3</text>
+  <rect x="790.1" y="231.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="822" y="242.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/6</text>
+  <rect x="1146.1" y="231.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1178" y="242.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/4</text>
+  <rect x="210.1" y="396.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="242" y="407.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/1</text>
+  <rect x="403.5" y="396.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="418" y="407.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="587.5" y="396.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="602" y="407.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi3</text>
+  <rect x="803.5" y="396.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="818" y="407.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi3</text>
+  <rect x="987.5" y="396.5" width="29.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1002" y="407.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <rect x="1146.1" y="396.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1178" y="407.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/0</text>
+  <rect x="385.0" y="265.5" width="70.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="420" y="276.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">metric 100</text>
+  <rect x="965.0" y="265.5" width="70.0" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1000" y="276.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">metric 100</text>
+  <rect x="257.1" y="430.5" width="125.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="320" y="441.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">metric 10, CSR-EXIT</text>
+  <rect x="678.1" y="430.5" width="63.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="710" y="441.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">metric 10</text>
+  <rect x="1037.1" y="430.5" width="125.8" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1100" y="441.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">metric 10, CSR-EXIT</text>
+  <rect x="335" y="150" width="170" height="26" rx="4" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="420" y="167.5" font-size="12" font-weight="600" fill="#4c1d95" text-anchor="middle">16650</text>
+  <rect x="335" y="180" width="170" height="26" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="420" y="197.5" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">packet to 10.2.0.6</text>
+  <rect x="915" y="150" width="170" height="26" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="1000" y="167.5" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">packet to 10.2.0.6</text>
+  <rect x="235" y="490" width="170" height="26" rx="4" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="320" y="507.5" font-size="12" font-weight="600" fill="#134e4a" text-anchor="middle">16600</text>
+  <rect x="235" y="520" width="170" height="26" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="320" y="537.5" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">packet to 10.2.0.6</text>
+  <rect x="625" y="490" width="170" height="26" rx="4" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.2"/>
+  <text x="710" y="507.5" font-size="12" font-weight="600" fill="#134e4a" text-anchor="middle">16600</text>
+  <rect x="625" y="520" width="170" height="26" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="710" y="537.5" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">packet to 10.2.0.6</text>
+  <rect x="1015" y="490" width="170" height="26" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="1100" y="507.5" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">packet to 10.2.0.6</text>
+  <text x="32" y="645" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">Each stack is the packet on that link, outermost label on top. Blue: XRv9k, takes part in algorithm 128. Grey: CSR1000v.</text>
+  <text x="32" y="665" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">In this stage, IP traffic from B-PE1 to 10.2.0.6 follows algorithm 0.</text>
+</svg>

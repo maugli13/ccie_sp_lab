@@ -1,0 +1,23 @@
+router isis 1
+ affinity-map CSR-EXIT bit-position 1
+ flex-algo 128
+  priority 200
+  affinity exclude-any CSR-EXIT
+  advertise-definition
+ !
+ interface Loopback0
+  address-family ipv4 unicast
+   prefix-sid algorithm 128 index 150
+  !
+ !
+ interface GigabitEthernet0/0/0/3
+  address-family ipv4 unicast
+   metric 100
+  !
+ !
+ interface GigabitEthernet0/0/0/6
+  address-family ipv4 unicast
+   metric 100
+  !
+ !
+!
