@@ -1,0 +1,15 @@
+pce
+ address ipv4 10.2.0.7
+!
+router bgp 64502
+ address-family link-state link-state
+ !
+ neighbor 10.2.0.5
+  address-family link-state link-state
+  !
+ !
+ neighbor 10.2.0.6
+  address-family link-state link-state
+  !
+ !
+!

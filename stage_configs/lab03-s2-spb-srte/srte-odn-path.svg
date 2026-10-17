@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 780" width="1420" height="780" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="780" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">CustC traffic from Core2 to Core3 through B-PE1's colour-128 ODN policy</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Labels from Core2's traceroute and B-PE1's CEF entry for 10.30.0.3; the policy from show segment-routing traffic-eng policy on B-PE1;</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">76 NLRIs from show bgp link-state link-state summary on B-RR. Interface names from the baseline configs.</text>
+  <rect x="290" y="110" width="160" height="400" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="370.0" y="132" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE1</text>
+  <text x="370.0" y="149" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.5</text>
+  <rect x="970" y="110" width="160" height="400" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1050.0" y="132" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE2</text>
+  <text x="1050.0" y="149" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.6</text>
+  <rect x="650" y="115" width="120" height="190" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="710.0" y="137" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-RR</text>
+  <text x="710.0" y="154" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.7</text>
+  <text x="1050" y="166" font-size="11.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">PCC</text>
+  <text x="370" y="166" font-size="11.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">PCC</text>
+  <text x="710" y="172" font-size="11.5" font-weight="600" fill="#1e3a8a" text-anchor="middle">SR-PCE</text>
+  <rect x="640" y="442" width="140" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="710.0" y="464" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-P1</text>
+  <text x="710.0" y="481" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.1</text>
+  <rect x="30" y="442" width="120" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="90.0" y="464" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">Core2</text>
+  <text x="90.0" y="481" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.30.0.2</text>
+  <rect x="1270" y="442" width="120" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="1330.0" y="464" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">Core3</text>
+  <text x="1330.0" y="481" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.30.0.3</text>
+  <line x1="970" y1="190" x2="770" y2="190" stroke="#b45309" stroke-width="2.5" stroke-dasharray="7,5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(770,190) rotate(180)"/>
+  <text x="870" y="170" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">VPNv4 10.30.0.3/32, C:128</text>
+  <line x1="650" y1="190" x2="450" y2="190" stroke="#b45309" stroke-width="2.5" stroke-dasharray="7,5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(450,190) rotate(180)"/>
+  <text x="550" y="163" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">10.30.0.3/32, C:128,</text>
+  <text x="550" y="178" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">next hop 10.2.0.6</text>
+  <text x="1050" y="198" font-size="11" font-weight="600" fill="#b45309" text-anchor="middle">adds C:128 to</text>
+  <text x="1050" y="213" font-size="11" font-weight="600" fill="#b45309" text-anchor="middle">10.30.0.3/32</text>
+  <line x1="450" y1="240" x2="650" y2="240" stroke="#0f766e" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(650,240) rotate(0)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(450,240) rotate(180)"/>
+  <text x="550" y="228" font-size="11" font-weight="600" fill="#0f766e" text-anchor="middle">PCEP: algorithm 128 to 10.2.0.6,</text>
+  <text x="550" y="258" font-size="11" font-weight="600" fill="#0f766e" text-anchor="middle">reply 16650</text>
+  <line x1="770" y1="240" x2="970" y2="240" stroke="#0f766e" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(970,240) rotate(0)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(770,240) rotate(180)"/>
+  <text x="870" y="228" font-size="11" font-weight="600" fill="#0f766e" text-anchor="middle">PCEP</text>
+  <line x1="450" y1="285" x2="650" y2="285" stroke="#64748b" stroke-width="2" stroke-dasharray="3,4"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#64748b" transform="translate(650,285) rotate(0)"/>
+  <text x="550" y="301" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">BGP-LS: 76 NLRIs</text>
+  <line x1="970" y1="285" x2="770" y2="285" stroke="#64748b" stroke-width="2" stroke-dasharray="3,4"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#64748b" transform="translate(770,285) rotate(180)"/>
+  <text x="870" y="301" font-size="11" font-weight="600" fill="#64748b" text-anchor="middle">BGP-LS: 76 NLRIs</text>
+  <line x1="450" y1="380" x2="962" y2="380" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(962,380) rotate(0)"/>
+  <text x="706" y="367" font-size="12.5" font-weight="700" fill="#7c3aed" text-anchor="middle">B-PE1's colour-128 ODN policy to 10.2.0.6: segment 16650, BSID 24013</text>
+  <line x1="150" y1="470" x2="282" y2="470" stroke="#64748b" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#64748b" transform="translate(282,470) rotate(0)"/>
+  <line x1="450" y1="470" x2="632" y2="470" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(632,470) rotate(0)"/>
+  <line x1="780" y1="470" x2="962" y2="470" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(962,470) rotate(0)"/>
+  <line x1="1130" y1="470" x2="1262" y2="470" stroke="#64748b" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#64748b" transform="translate(1262,470) rotate(0)"/>
+  <rect x="154.1" y="444" width="31.799999999999997" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="170" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="214.3" y="444" width="71.4" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="250" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi0/0/0/3</text>
+  <rect x="459.3" y="444" width="71.4" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="495" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi0/0/0/0</text>
+  <rect x="564.3" y="444" width="71.4" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="600" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi0/0/0/3</text>
+  <rect x="789.3" y="444" width="71.4" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="825" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi0/0/0/6</text>
+  <rect x="889.3" y="444" width="71.4" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="925" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi0/0/0/4</text>
+  <rect x="1134.3" y="444" width="71.4" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1170" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi0/0/0/3</text>
+  <rect x="1234.1" y="444" width="31.799999999999997" height="17" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1250" y="457" font-size="10.5" font-weight="500" fill="#334155" text-anchor="middle">Gi2</text>
+  <text x="370" y="410" font-size="11.5" font-weight="600" fill="#7c3aed" text-anchor="middle">10.30.0.3 via</text>
+  <text x="370" y="425" font-size="11.5" font-weight="600" fill="#7c3aed" text-anchor="middle">BSID 24013</text>
+  <text x="370" y="482" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">imposes 24006,</text>
+  <text x="370" y="497" font-size="11.5" font-weight="600" fill="#7c3aed" text-anchor="middle">policy adds 16650</text>
+  <text x="710" y="522" font-size="12" font-weight="600" fill="#7c3aed" text-anchor="middle">pops 16650</text>
+  <text x="1050" y="475" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">removes 24006,</text>
+  <text x="1050" y="490" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">sends to Core3</text>
+  <rect x="146" y="550" width="140" height="28" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="216" y="569" font-size="12.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.30.0.3</text>
+  <rect x="471" y="550" width="140" height="28" rx="4" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="541" y="569" font-size="12.5" font-weight="600" fill="#4c1d95" text-anchor="middle">16650</text>
+  <rect x="471" y="584" width="140" height="28" rx="4" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="541" y="603" font-size="12.5" font-weight="600" fill="#78350f" text-anchor="middle">24006</text>
+  <rect x="471" y="618" width="140" height="28" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="541" y="637" font-size="12.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.30.0.3</text>
+  <rect x="801" y="550" width="140" height="28" rx="4" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="871" y="569" font-size="12.5" font-weight="600" fill="#78350f" text-anchor="middle">24006</text>
+  <rect x="801" y="584" width="140" height="28" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="871" y="603" font-size="12.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.30.0.3</text>
+  <rect x="1126" y="550" width="140" height="28" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="1196" y="569" font-size="12.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.30.0.3</text>
+  <text x="32" y="712" font-size="13" font-weight="400" fill="#334155" text-anchor="start">Each stack is the packet on that link, outermost label on top. 16650: B-PE2's algorithm-128 prefix-SID. 24006: the VPN label for 10.30.0.3.</text>
+  <text x="32" y="734" font-size="13" font-weight="400" fill="#334155" text-anchor="start">Dashed amber: the BGP route with colour 128. Teal: PCEP sessions. Dotted grey: BGP-LS. Blue: IOS XR. Grey: CSR1000v.</text>
+  <text x="32" y="756" font-size="13" font-weight="400" fill="#334155" text-anchor="start">B-PE2 has its own colour-128 policy to 10.2.0.5 for traffic from Core3 to Core2.</text>
+</svg>
