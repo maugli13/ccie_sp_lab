@@ -1,0 +1,38 @@
+vrf definition CustC
+ rd 10.2.0.8:30
+ address-family ipv4
+  route-target export 64502:30
+  route-target import 64502:30
+ exit-address-family
+ address-family ipv6
+  route-target export 64502:30
+  route-target import 64502:30
+ exit-address-family
+!
+interface GigabitEthernet4
+ description to A-ASBR (Inter-AS)
+ no ip address
+ negotiation auto
+ cdp enable
+ no mop enabled
+ no mop sysid
+ service instance 4094 ethernet
+  encapsulation dot1q 4094
+ !
+!
+interface GigabitEthernet4.30
+ encapsulation dot1Q 30
+ vrf forwarding CustC
+ ip address 10.255.0.6 255.255.255.252
+ ipv6 address 2001:DB8:FF:30::2/64
+!
+router bgp 64502
+ address-family ipv4 vrf CustC
+  neighbor 10.255.0.5 remote-as 64501
+  neighbor 10.255.0.5 activate
+ exit-address-family
+ address-family ipv6 vrf CustC
+  neighbor 2001:DB8:FF:30::1 remote-as 64501
+  neighbor 2001:DB8:FF:30::1 activate
+ exit-address-family
+!

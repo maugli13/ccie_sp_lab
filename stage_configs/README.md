@@ -22,6 +22,7 @@ The `.ios` extension is what the Cisco IOS syntax-highlighting extensions for VS
 | `lab02-s5-spa-mvpn-p0/` | Lab 02, Stage 5 | 5 | SP-A draft-Rosen mVPN Profile 0 for the CustA VRF: a GRE default MDT on 239.1.10.1 through the anycast RP, an SSM data MDT pool 232.1.10.0/24 with a 1 kbps threshold, the BGP IPv4 MDT address family reflected by the IOS-XR route reflector, customer Auto-RP with the candidate RP on CustA-HQ and the mapping agent on CustA-Br1 | SP-A mVPN Profile 0 |
 | `lab03-s1-spb-flexalgo/` | Lab 03, Stage 1 | 3 | SP-B Flex-Algo 128 on the three XRv9k routers: a definition that excludes the CSR-EXIT affinity, advertised by all three with B-P1 at priority 200, an algorithm-128 prefix-SID on each Loopback0, the CSR-EXIT affinity on the PE links to the CSR routers, and IS-IS metric 100 on the two links through B-P1 | SP-B Flex-Algo |
 | `lab03-s2-spb-srte/` | Lab 03, Stage 2 | 3 | SP-B SR-TE with on-demand next-hop: BGP-LS from both PEs to B-RR as the SR-PCE, a route-policy that adds colour 128 to CustC's VPNv4 and VPNv6 routes sent to B-RR, an ODN template for colour 128 computed by the PCE over algorithm-128 prefix-SIDs, and an explicit colour-200 policy with one segment on each PE | SP-B SR-TE |
+| `lab03-s3-interas-opta/` | Lab 03, Stage 3 | 2 | Inter-AS L3VPN Option A between A-ASBR and B-ASBR: a CustC VRF on each ASBR with its own provider's RD and RT, the dot1Q sub-interface Gi4.30 in the VRF, dual-stack eBGP in the VRF between the ASBRs, and an EVC service instance on Gi4 that switches the CSR's virtual NIC into promiscuous mode so the sub-interfaces receive their tagged frames | Inter-AS Option A |
 
 Every line in every folder was checked against the running configuration of the lab, with the exceptions below.
 
@@ -52,5 +53,7 @@ Every line in every folder was checked against the running configuration of the 
 `lab03-s1-spb-flexalgo/` holds B-P1, B-PE1 and B-PE2. The CSR routers, B-RR and B-ASBR take no configuration in this stage. `spb-metrics` and `flexalgo-paths` (SVG and PNG) are the article's diagrams.
 
 `lab03-s2-spb-srte/` holds B-PE1, B-PE2 and B-RR. B-P1, the CSR routers and B-ASBR take no configuration in this stage. B-PE2 differs from B-PE1 only in the explicit policy, which points to B-PE1 with label 16550, and in the PCC source address. The running configuration indents the `128` under `extcommunity-set opaque FLEX128` by two spaces. `srte-odn-path` (SVG and PNG) is the article's diagram.
+
+`lab03-s3-interas-opta/` holds A-ASBR and B-ASBR. The PEs, P routers and route reflectors take no configuration in this stage; `as-override` on A-PE2 is in `lab01-s5-edge-l3vpn/`. B-ASBR differs from A-ASBR only in the description, the AS numbers, the RD and RT, and the addresses. `opta-path` (SVG and PNG) is the article's diagram.
 
 Topology and addressing for every node are in `topology.clab.yml` and `ipam.md` at the root of this repo.
