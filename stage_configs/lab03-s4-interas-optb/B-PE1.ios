@@ -1,0 +1,10 @@
+router ospf 10
+ vrf CustA
+  domain-id type 0005 value 00000000000A
+ !
+!
+router ospfv3 10
+ vrf CustA
+  domain-id type 0005 value 00000000000A
+ !
+!

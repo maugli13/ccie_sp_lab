@@ -1,0 +1,39 @@
+interface GigabitEthernet4.255
+ encapsulation dot1Q 255
+ ip address 10.255.0.2 255.255.255.252
+ ipv6 address 2001:DB8:FF::2/64
+!
+router bgp 64502
+ no bgp default route-target filter
+!
+ip extcommunity-list standard CUSTA-SPA permit rt 64501:10
+ip extcommunity-list standard CUSTA-SPB permit rt 64502:10
+!
+route-map RM-OPTB-IN permit 10
+ description Option B inbound: rewrite CustA RT 64501:10 -> 64502:10 (keep OSPF ext-comms)
+ match extcommunity CUSTA-SPA
+ set extcommunity rt 64502:10
+!
+route-map RM-OPTB-OUT permit 10
+ description Option B outbound: advertise ONLY CustA (64502:10); deny CustC 64502:30
+ match extcommunity CUSTA-SPB
+!
+router bgp 64502
+ neighbor 10.255.0.1 remote-as 64501
+ !
+ address-family vpnv4 unicast
+  neighbor 10.2.0.7 next-hop-self
+  neighbor 10.255.0.1 activate
+  neighbor 10.255.0.1 send-community extended
+  neighbor 10.255.0.1 route-map RM-OPTB-IN in
+  neighbor 10.255.0.1 route-map RM-OPTB-OUT out
+ exit-address-family
+ !
+ address-family vpnv6 unicast
+  neighbor 10.2.0.7 next-hop-self
+  neighbor 10.255.0.1 activate
+  neighbor 10.255.0.1 send-community extended
+  neighbor 10.255.0.1 route-map RM-OPTB-IN in
+  neighbor 10.255.0.1 route-map RM-OPTB-OUT out
+ exit-address-family
+!
