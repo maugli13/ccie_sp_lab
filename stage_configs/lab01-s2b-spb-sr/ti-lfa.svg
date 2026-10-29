@@ -79,8 +79,8 @@
 
   <!-- ============ CALLOUT ============ -->
   <g font-size="13" fill="#0f172a">
-    <text x="400" y="405"><tspan font-weight="700" fill="#14532d">P-space</tspan>: nodes S reaches without the S-E link. A and N.</text>
-    <text x="400" y="426"><tspan font-weight="700" fill="#78350f">Q-space</tspan>: nodes that reach D without the S-E link. Only M.</text>
+    <text x="400" y="405"><tspan font-weight="700" fill="#14532d">P-space</tspan>: nodes whose shortest paths from S avoid the S-E link. A and N.</text>
+    <text x="400" y="426"><tspan font-weight="700" fill="#78350f">Q-space</tspan>: nodes whose shortest paths to D avoid the S-E link. E, M and D.</text>
     <text x="400" y="447">N alone would forward to D by N-A-S-E-D (cost 4), back through S.</text>
     <text x="400" y="468">The adj-SID forces the N-M link for one hop; from M, D is the plain shortest path.</text>
   </g>
