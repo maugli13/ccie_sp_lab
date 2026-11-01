@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 890" width="1420" height="890" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b91c1c"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#047857"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker>
+  </defs>
+  <rect width="1420" height="890" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">CustA-HQ's flow to 239.10.10.20, with the data MDT and after removing it</text>
+  <text x="32" y="66" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Values from the A-PE1, A-PE2 and CustA-HQ captures in each state.</text>
+  <rect x="20" y="100" width="1380" height="410" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="1.5"/>
+  <text x="36" y="126" font-size="15" font-weight="700" fill="#7f1d1d" text-anchor="start">With the data MDT: A-PE1 moves 239.10.10.20 to a P2MP tree rooted at itself</text>
+  <path d="M 1090 249 C 1090 180, 340 180, 340 249" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#ap)"/>
+  <text x="715.0" y="153" font-size="12.5" font-weight="600" fill="#7c3aed" text-anchor="middle">Tunnel20, A-PE2's RSVP-TE tunnel to A-PE1, autoroute destination:</text>
+  <text x="715.0" y="171" font-size="12.5" font-weight="400" fill="#7c3aed" text-anchor="middle">its static route to 10.1.0.5 has no next-hop address</text>
+  <line x1="160.0" y1="275" x2="275.0" y2="275" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="405.0" y1="275" x2="525.0" y2="275" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="655.0" y1="275" x2="775.0" y2="275" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="905.0" y1="275" x2="1025.0" y2="275" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="1155.0" y1="275" x2="1260.0" y2="275" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="267.0" y="267" font-size="11" font-weight="600" fill="#334155" text-anchor="end">Gi4</text>
+  <text x="1163.0" y="267" font-size="11" font-weight="600" fill="#334155" text-anchor="start">Gi4</text>
+  <rect x="30.0" y="249" width="130" height="52" rx="6" fill="#fefce8" stroke="#a16207" stroke-width="2.0"/>
+  <text x="95" y="271" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-HQ</text>
+  <text x="95" y="289" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.1</text>
+  <rect x="275.0" y="249" width="130" height="52" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.0"/>
+  <text x="340" y="271" font-size="14" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <text x="340" y="289" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.5</text>
+  <rect x="525.0" y="249" width="130" height="52" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.0"/>
+  <text x="590" y="271" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="590" y="289" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="775.0" y="249" width="130" height="52" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.0"/>
+  <text x="840" y="271" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">A-P3</text>
+  <text x="840" y="289" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.3</text>
+  <rect x="1025.0" y="249" width="130" height="52" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.0"/>
+  <text x="1090" y="271" font-size="14" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <text x="1090" y="289" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.6</text>
+  <rect x="1260.0" y="249" width="130" height="52" rx="6" fill="#fefce8" stroke="#a16207" stroke-width="2.0"/>
+  <text x="1325" y="271" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-Br1</text>
+  <text x="1325" y="289" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.2</text>
+  <line x1="164.0" y1="315" x2="269.0" y2="315" stroke="#b91c1c" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="207.5" y="339" font-size="12" font-weight="700" fill="#7f1d1d" text-anchor="middle">239.10.10.20</text>
+  <line x1="409.0" y1="315" x2="495.0" y2="315" stroke="#b91c1c" stroke-width="3" stroke-dasharray="2 0"/>
+  <line x1="498.0" y1="306" x2="516.0" y2="324" stroke="#b91c1c" stroke-width="3.5"/>
+  <line x1="498.0" y1="324" x2="516.0" y2="306" stroke="#b91c1c" stroke-width="3.5"/>
+  <text x="411.0" y="337" font-size="12" font-weight="700" fill="#7f1d1d" text-anchor="start">P2MP tree [mdt 64501:10 1]:</text>
+  <text x="411.0" y="354" font-size="12" font-weight="700" fill="#7f1d1d" text-anchor="start">no branch to A-PE2</text>
+  <line x1="1021.0" y1="315" x2="935.0" y2="315" stroke="#b91c1c" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <line x1="914.0" y1="306" x2="932.0" y2="324" stroke="#b91c1c" stroke-width="3.5"/>
+  <line x1="914.0" y1="324" x2="932.0" y2="306" stroke="#b91c1c" stroke-width="3.5"/>
+  <text x="1019.0" y="337" font-size="12" font-weight="700" fill="#7f1d1d" text-anchor="end">label mapping toward 10.1.0.5:</text>
+  <text x="1019.0" y="354" font-size="12" font-weight="700" fill="#7f1d1d" text-anchor="end">not sent, LDP nbr: NULL</text>
+  <rect x="36" y="380" width="400" height="110" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="48" y="402" font-size="12.5" font-weight="700" fill="#7f1d1d" text-anchor="start">A-PE1</text>
+  <text x="48" y="424" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Type 3 route for (10.10.0.1, 239.10.10.20), tunnel type 2</text>
+  <text x="48" y="444" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">(S,G) flags TyGq: y = Sending to MDT-data group</text>
+  <text x="48" y="464" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mdt send: (10.10.0.1, 239.10.10.20) on MDT-data number 1</text>
+  <rect x="452" y="380" width="300" height="110" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="464" y="402" font-size="12.5" font-weight="700" fill="#7f1d1d" text-anchor="start">CustA-HQ</text>
+  <text x="464" y="424" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">ping 239.10.10.20:</text>
+  <text x="464" y="444" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">replies only to requests 0 to 8</text>
+  <rect x="768" y="380" width="616" height="110" rx="6" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.2"/>
+  <text x="780" y="402" font-size="12.5" font-weight="700" fill="#7f1d1d" text-anchor="start">A-PE2</text>
+  <text x="780" y="424" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mLDP root 10.1.0.5: via Tunnel20 (via unicast RT), path 0.0.0.0, LDP nbr: NULL</text>
+  <text x="780" y="444" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">P2MP tree [mdt 64501:10 1]: Upstream client(s): None</text>
+  <text x="780" y="464" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">(S,G) flags TYgQ: Y = Joined MDT-data group</text>
+  <rect x="20" y="530" width="1380" height="320" rx="6" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+  <text x="36" y="556" font-size="15" font-weight="700" fill="#064e3b" text-anchor="start">After removing the data MDT: 239.10.10.20 on the MP2MP default MDT</text>
+  <line x1="160.0" y1="625" x2="275.0" y2="625" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="405.0" y1="625" x2="525.0" y2="625" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="655.0" y1="625" x2="775.0" y2="625" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="905.0" y1="625" x2="1025.0" y2="625" stroke="#94a3b8" stroke-width="2.5"/>
+  <line x1="1155.0" y1="625" x2="1260.0" y2="625" stroke="#94a3b8" stroke-width="2.5"/>
+  <text x="267.0" y="617" font-size="11" font-weight="600" fill="#334155" text-anchor="end">Gi4</text>
+  <text x="1163.0" y="617" font-size="11" font-weight="600" fill="#334155" text-anchor="start">Gi4</text>
+  <rect x="30.0" y="599" width="130" height="52" rx="6" fill="#fefce8" stroke="#a16207" stroke-width="2.0"/>
+  <text x="95" y="621" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-HQ</text>
+  <text x="95" y="639" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.1</text>
+  <rect x="275.0" y="599" width="130" height="52" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.0"/>
+  <text x="340" y="621" font-size="14" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <text x="340" y="639" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.5</text>
+  <rect x="525.0" y="599" width="130" height="52" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.0"/>
+  <text x="590" y="621" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="590" y="639" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="775.0" y="599" width="130" height="52" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.0"/>
+  <text x="840" y="621" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">A-P3</text>
+  <text x="840" y="639" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.3</text>
+  <rect x="1025.0" y="599" width="130" height="52" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.0"/>
+  <text x="1090" y="621" font-size="14" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <text x="1090" y="639" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.6</text>
+  <rect x="1260.0" y="599" width="130" height="52" rx="6" fill="#fefce8" stroke="#a16207" stroke-width="2.0"/>
+  <text x="1325" y="621" font-size="14" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-Br1</text>
+  <text x="1325" y="639" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.2</text>
+  <line x1="164.0" y1="665" x2="269.0" y2="665" stroke="#047857" stroke-width="3" marker-end="url(#ag)"/>
+  <line x1="409.0" y1="665" x2="519.0" y2="665" stroke="#047857" stroke-width="3" marker-end="url(#ag)"/>
+  <line x1="659.0" y1="665" x2="769.0" y2="665" stroke="#047857" stroke-width="3" marker-end="url(#ag)"/>
+  <line x1="909.0" y1="665" x2="1019.0" y2="665" stroke="#047857" stroke-width="3" marker-end="url(#ag)"/>
+  <line x1="1159.0" y1="665" x2="1254.0" y2="665" stroke="#047857" stroke-width="3" marker-end="url(#ag)"/>
+  <text x="207.5" y="689" font-size="12" font-weight="700" fill="#064e3b" text-anchor="middle">239.10.10.20</text>
+  <text x="715.0" y="687" font-size="12.5" font-weight="700" fill="#064e3b" text-anchor="middle">default MDT: the MP2MP trees through A-P1 and A-P3, Lspvif0 on both PEs</text>
+  <rect x="36" y="715" width="400" height="110" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="48" y="737" font-size="12.5" font-weight="700" fill="#064e3b" text-anchor="start">A-PE1</text>
+  <text x="48" y="759" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">no Type 3 route</text>
+  <text x="48" y="779" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">(S,G) flags TGq, outgoing Lspvif0</text>
+  <text x="48" y="799" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mdt send: empty</text>
+  <rect x="452" y="715" width="300" height="110" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="464" y="737" font-size="12.5" font-weight="700" fill="#064e3b" text-anchor="start">CustA-HQ</text>
+  <text x="464" y="759" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">ping 239.10.10.20:</text>
+  <text x="464" y="779" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">replies to all 20 requests</text>
+  <rect x="768" y="715" width="616" height="110" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="780" y="737" font-size="12.5" font-weight="700" fill="#064e3b" text-anchor="start">A-PE2</text>
+  <text x="780" y="759" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mLDP roots: 10.1.0.1 and 10.1.0.3 only</text>
+  <text x="780" y="779" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">(S,G) flags TgQ, incoming Lspvif0, RPF nbr 10.1.0.5</text>
+  <text x="780" y="799" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mdt receive: empty</text>
+  <text x="32" y="876" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">Tunnel20 is drawn as one logical link; its hops through the core are not shown.</text>
+</svg>

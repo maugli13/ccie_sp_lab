@@ -1,0 +1,10 @@
+vrf definition CustA
+ vpn id 64501:10
+ address-family ipv4
+  no mdt auto-discovery pim
+  no mdt default 232.0.10.1
+  mdt auto-discovery mldp
+  mdt default mpls mldp 10.1.0.1
+  mdt default mpls mldp 10.1.0.3
+ exit-address-family
+!

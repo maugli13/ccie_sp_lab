@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 610" width="1420" height="610" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="610" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">CustA's default MDT: two MP2MP trees</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Labels from show mpls mldp database on A-PE1, A-P1, A-P3, and A-PE2; byte counts from show mpls forwarding-table</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">| i mdt on A-P1 with CustA-HQ sending to 239.10.10.10; metrics from show mpls mldp root on A-PE2.</text>
+  <rect x="75" y="110" width="150" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="150" y="134" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <text x="150" y="152" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.5</text>
+  <rect x="455" y="110" width="150" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="530" y="134" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="530" y="152" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="815" y="110" width="150" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="890" y="134" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P3</text>
+  <text x="890" y="152" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.3</text>
+  <rect x="1195" y="110" width="150" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1270" y="134" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <text x="1270" y="152" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.6</text>
+  <text x="530" y="186" font-size="12" font-weight="700" fill="#1d4ed8" text-anchor="middle">root of tree 1</text>
+  <text x="890" y="186" font-size="12" font-weight="700" fill="#047857" text-anchor="middle">root of tree 2</text>
+  <line x1="225" y1="138" x2="455" y2="138" stroke="#334155" stroke-width="2.5"/>
+  <text x="232" y="130" font-size="11" font-weight="600" fill="#334155" text-anchor="start">Gi2 .22</text>
+  <text x="448" y="130" font-size="11" font-weight="600" fill="#334155" text-anchor="end">Gi5 .21</text>
+  <text x="340.0" y="156" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">10.1.1.20/30</text>
+  <line x1="605" y1="138" x2="815" y2="138" stroke="#334155" stroke-width="2.5"/>
+  <text x="612" y="130" font-size="11" font-weight="600" fill="#334155" text-anchor="start">Gi3 .17</text>
+  <text x="808" y="130" font-size="11" font-weight="600" fill="#334155" text-anchor="end">Gi2 .18</text>
+  <text x="710.0" y="156" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">10.1.1.16/30</text>
+  <line x1="965" y1="138" x2="1195" y2="138" stroke="#334155" stroke-width="2.5"/>
+  <text x="972" y="130" font-size="11" font-weight="600" fill="#334155" text-anchor="start">Gi5 .29</text>
+  <text x="1188" y="130" font-size="11" font-weight="600" fill="#334155" text-anchor="end">Gi2 .30</text>
+  <text x="1080.0" y="156" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">10.1.1.28/30</text>
+  <rect x="32" y="214" width="1356" height="84" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="48" y="238" font-size="13" font-weight="700" fill="#1e3a8a" text-anchor="start">Tree 1, rooted at A-P1, 10.1.0.1</text>
+  <text x="340.0" y="258" font-size="14" font-weight="700" fill="#1e3a8a" text-anchor="middle">1124 →</text>
+  <text x="340.0" y="282" font-size="14" font-weight="700" fill="#1e3a8a" text-anchor="middle">← 1521</text>
+  <text x="710.0" y="258" font-size="14" font-weight="700" fill="#1e3a8a" text-anchor="middle">1307 →</text>
+  <text x="710.0" y="282" font-size="14" font-weight="700" fill="#1e3a8a" text-anchor="middle">← 1127</text>
+  <text x="1080.0" y="258" font-size="14" font-weight="700" fill="#1e3a8a" text-anchor="middle">1618 →</text>
+  <text x="1080.0" y="282" font-size="14" font-weight="700" fill="#1e3a8a" text-anchor="middle">← 1306</text>
+  <rect x="32" y="314" width="1356" height="84" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="1.5"/>
+  <text x="48" y="338" font-size="13" font-weight="700" fill="#064e3b" text-anchor="start">Tree 2, rooted at A-P3, 10.1.0.3</text>
+  <text x="340.0" y="358" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">1125 →</text>
+  <text x="340.0" y="382" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">← 1522</text>
+  <text x="710.0" y="358" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">1303 →</text>
+  <text x="710.0" y="382" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">← 1126</text>
+  <text x="1080.0" y="358" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">1619 →</text>
+  <text x="1080.0" y="382" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">← 1315</text>
+  <rect x="75" y="430" width="300" height="96" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="87" y="452" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="start">A-PE1</text>
+  <text x="87" y="474" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">RNR active LSP: tree 1</text>
+  <text x="87" y="494" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">joins both trees through A-P1,</text>
+  <text x="87" y="512" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">10.1.1.21 on Gi2</text>
+  <rect x="400" y="430" width="260" height="96" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="412" y="452" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">A-P1 LFIB</text>
+  <text x="412" y="474" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">label 1124 (tree 1): 35360 bytes</text>
+  <text x="412" y="494" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">label 1125 (tree 2): 0 bytes</text>
+  <rect x="1045" y="430" width="300" height="96" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.2"/>
+  <text x="1057" y="452" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="start">A-PE2</text>
+  <text x="1057" y="474" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">RNR active LSP: tree 2</text>
+  <text x="1057" y="494" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">metric 2 to 10.1.0.3</text>
+  <text x="1057" y="512" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">metric 3 to 10.1.0.1</text>
+  <text x="32" y="560" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">→ label on packets sent left to right, ← label on packets sent right to left. Both trees have the opaque value [mdt 64501:10 0].</text>
+  <text x="32" y="582" font-size="12.5" font-weight="400" fill="#334155" text-anchor="start">A-P2 and A-P4: mLDP database empty, on neither tree.</text>
+</svg>
