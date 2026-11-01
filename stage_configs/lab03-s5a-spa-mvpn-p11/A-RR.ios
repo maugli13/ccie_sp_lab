@@ -1,0 +1,15 @@
+router bgp 64501
+ no address-family ipv4 mdt
+ !
+ address-family ipv4 mvpn
+ !
+ neighbor 10.1.0.5
+  no address-family ipv4 mdt
+  address-family ipv4 mvpn
+   route-reflector-client
+ !
+ neighbor 10.1.0.6
+  no address-family ipv4 mdt
+  address-family ipv4 mvpn
+   route-reflector-client
+!

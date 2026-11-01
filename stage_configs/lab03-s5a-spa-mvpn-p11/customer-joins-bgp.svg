@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 560" width="1420" height="560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="560" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Br1's joins as BGP routes, and the Source Active route back</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Routes from show bgp ipv4 mvpn all on A-PE1 and A-PE2 and show bgp ipv4 mvpn on A-RR; entries from show ip mroute vrf CustA</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">239.10.10.10 on both PEs and show ip mroute 239.10.10.10 on CustA-HQ and CustA-Br1.</text>
+  <rect x="190" y="130" width="310" height="380" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="345.0" y="155" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <rect x="920" y="130" width="310" height="380" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1075.0" y="155" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <rect x="550" y="130" width="320" height="380" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="710" y="155" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="710" y="172" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7, reflects the routes</text>
+  <rect x="562" y="186" width="296" height="168" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="582" cy="206" r="10" fill="#b45309"/>
+  <text x="582" y="210" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="598" y="210" font-size="12" font-weight="700" fill="#92400e" text-anchor="start">Type 6, Shared Tree Join</text>
+  <text x="574" y="232" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[6][10.1.0.5:10][64501]</text>
+  <text x="574" y="249" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[10.10.0.1/32][239.10.10.10/32]</text>
+  <text x="598" y="278" font-size="12" font-weight="700" fill="#92400e" text-anchor="start">Type 7, Source Tree Join</text>
+  <text x="574" y="300" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[7][10.1.0.5:10][64501]</text>
+  <text x="574" y="317" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[10.10.0.1/32][239.10.10.10/32]</text>
+  <text x="574" y="342" font-size="11" font-weight="400" fill="#334155" text-anchor="start">next hop 10.1.0.6, RD 10.1.0.5:10</text>
+  <rect x="562" y="380" width="296" height="116" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="582" cy="400" r="10" fill="#b45309"/>
+  <text x="582" y="404" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="598" y="404" font-size="12" font-weight="700" fill="#92400e" text-anchor="start">Type 5, Source Active A-D</text>
+  <text x="574" y="426" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[5][10.1.0.5:10][10.10.0.1]</text>
+  <text x="574" y="443" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[239.10.10.10]</text>
+  <text x="574" y="480" font-size="11" font-weight="400" fill="#334155" text-anchor="start">next hop 10.1.0.5</text>
+  <line x1="920" y1="270" x2="866" y2="270" stroke="#b45309" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(859,270) rotate(180)"/>
+  <line x1="562" y1="270" x2="508" y2="270" stroke="#b45309" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(501,270) rotate(180)"/>
+  <line x1="500" y1="438" x2="554" y2="438" stroke="#b45309" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(561,438) rotate(0)"/>
+  <line x1="858" y1="438" x2="912" y2="438" stroke="#b45309" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(919,438) rotate(0)"/>
+  <rect x="200" y="170" width="290" height="140" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="212" y="190" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <text x="212" y="214" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(*, 239.10.10.10), flags SG</text>
+  <text x="212" y="233" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.10.0.1, 239.10.10.10), flags TyGq</text>
+  <text x="212" y="252" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Gi4 from CustA-HQ, out Tunnel1</text>
+  <text x="212" y="271" font-size="12" font-weight="400" fill="#92400e" text-anchor="start">G: Received BGP C-Mroute</text>
+  <text x="212" y="290" font-size="12" font-weight="400" fill="#92400e" text-anchor="start">q: Sent BGP S-A Route</text>
+  <rect x="930" y="170" width="290" height="140" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="942" y="190" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <text x="942" y="214" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(*, 239.10.10.10), flags Sg</text>
+  <text x="942" y="233" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.10.0.1, 239.10.10.10), flags TYgQ</text>
+  <text x="942" y="252" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Tunnel1, out Gi4 to CustA-Br1</text>
+  <text x="942" y="271" font-size="12" font-weight="400" fill="#92400e" text-anchor="start">g: Sent BGP C-Mroute</text>
+  <text x="942" y="290" font-size="12" font-weight="400" fill="#92400e" text-anchor="start">Q: Received BGP S-A Route</text>
+  <rect x="20" y="377" width="100" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="70.0" y="397" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-HQ</text>
+  <text x="70.0" y="414" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.1</text>
+  <rect x="1300" y="377" width="100" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="1350.0" y="397" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">CustA-Br1</text>
+  <text x="1350.0" y="414" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.10.0.2</text>
+  <line x1="120" y1="400" x2="190" y2="400" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="1230" y1="400" x2="1300" y2="400" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="1300" y1="390" x2="1238" y2="390" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(1231,390) rotate(180)"/>
+  <line x1="190" y1="390" x2="128" y2="390" stroke="#0f766e" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0f766e" transform="translate(121,390) rotate(180)"/>
+  <rect x="123.5" y="392.5" width="33" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="140" y="403.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">E0/1</text>
+  <rect x="161.0" y="392.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="174" y="403.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="1233.0" y="392.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1246" y="403.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="1263.5" y="392.5" width="33" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1280" y="403.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">E0/1</text>
+  <text x="70" y="442" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">source and</text>
+  <text x="70" y="458" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">customer RP</text>
+  <text x="1350" y="442" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">member of</text>
+  <text x="1350" y="458" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="middle">239.10.10.10</text>
+  <circle cx="214" cy="340" r="10" fill="#0f766e"/>
+  <text x="214" y="344" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="230" y="344" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="start">PIM joins toward CustA-HQ</text>
+  <text x="230" y="360" font-size="11.5" font-weight="400" fill="#334155" text-anchor="start">on Gi4, for both entries</text>
+  <circle cx="1206" cy="340" r="10" fill="#0f766e"/>
+  <text x="1206" y="344" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="1190" y="344" font-size="11.5" font-weight="600" fill="#0f766e" text-anchor="end">CustA-Br1's PIM joins on Gi4:</text>
+  <text x="1190" y="360" font-size="11.5" font-weight="400" fill="#334155" text-anchor="end">(*, 239.10.10.10) and</text>
+  <text x="1190" y="376" font-size="11.5" font-weight="400" fill="#334155" text-anchor="end">(10.10.0.1, 239.10.10.10)</text>
+</svg>

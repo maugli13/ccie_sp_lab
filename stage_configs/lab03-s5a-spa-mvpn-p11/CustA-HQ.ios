@@ -1,0 +1,2 @@
+ip pim rp-address 10.10.0.1
+!

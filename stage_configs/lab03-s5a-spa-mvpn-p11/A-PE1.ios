@@ -1,0 +1,18 @@
+vrf definition CustA
+ address-family ipv4
+  no mdt default 239.1.10.1
+  mdt auto-discovery pim
+  mdt default 232.0.10.1
+  mdt overlay use-bgp
+ exit-address-family
+!
+router bgp 64501
+ no address-family ipv4 mdt
+ !
+ address-family ipv4 mvpn
+  neighbor 10.1.0.7 activate
+  neighbor 10.1.0.7 send-community extended
+ exit-address-family
+!
+ip pim vrf CustA rp-address 10.10.0.1
+!

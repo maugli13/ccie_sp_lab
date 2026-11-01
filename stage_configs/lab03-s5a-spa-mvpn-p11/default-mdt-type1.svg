@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 560" width="1420" height="560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="560" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Type 1 routes and the default MDT</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Type 1 routes from show bgp ipv4 mvpn all on A-PE1 and A-PE2 and show bgp ipv4 mvpn on A-RR; the two trees from</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">show ip mroute 232.0.10.1 on A-PE1, A-P1, A-P3, and A-PE2. A-P2 and A-P4 not shown.</text>
+  <rect x="650" y="104" width="120" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="710.0" y="124" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="710.0" y="141" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7</text>
+  <text x="710" y="168" font-size="11.5" font-weight="600" fill="#92400e" text-anchor="middle">reflects both Type 1 routes</text>
+  <rect x="150" y="190" width="350" height="320" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="325.0" y="215" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <rect x="920" y="190" width="350" height="320" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1095.0" y="215" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <rect x="160" y="228" width="330" height="78" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <text x="172" y="248" font-size="12.5" font-weight="700" fill="#92400e" text-anchor="start">BGP, IPv4 MVPN</text>
+  <text x="172" y="270" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">sends [1][10.1.0.5:10][10.1.0.5]</text>
+  <text x="172" y="290" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">receives [1][10.1.0.6:10][10.1.0.6]</text>
+  <rect x="930" y="228" width="330" height="78" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <text x="942" y="248" font-size="12.5" font-weight="700" fill="#92400e" text-anchor="start">BGP, IPv4 MVPN</text>
+  <text x="942" y="270" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">sends [1][10.1.0.6:10][10.1.0.6]</text>
+  <text x="942" y="290" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">receives [1][10.1.0.5:10][10.1.0.5]</text>
+  <rect x="160" y="372" width="330" height="126" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="172" y="392" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Global table</text>
+  <text x="172" y="415" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.1.0.5, 232.0.10.1), flag s</text>
+  <text x="172" y="434" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Loopback0, out Gi2</text>
+  <text x="172" y="453" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.1.0.6, 232.0.10.1), flag s</text>
+  <text x="172" y="472" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Gi2, out MVRF CustA</text>
+  <rect x="930" y="372" width="330" height="126" rx="5" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/>
+  <text x="942" y="392" font-size="12.5" font-weight="700" fill="#334155" text-anchor="start">Global table</text>
+  <text x="942" y="415" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.1.0.6, 232.0.10.1), flag s</text>
+  <text x="942" y="434" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Loopback0, out Gi2</text>
+  <text x="942" y="453" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.1.0.5, 232.0.10.1), flag s</text>
+  <text x="942" y="472" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Gi2, out MVRF CustA</text>
+  <line x1="450" y1="308" x2="450" y2="363" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(450,369) rotate(90)"/>
+  <text x="440" y="334" font-size="11" font-weight="600" fill="#92400e" text-anchor="end">joins 10.1.0.6,</text>
+  <text x="440" y="349" font-size="11" font-weight="600" fill="#92400e" text-anchor="end">the source in A-PE2's Type 1</text>
+  <line x1="1220" y1="308" x2="1220" y2="363" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(1220,369) rotate(90)"/>
+  <text x="1210" y="334" font-size="11" font-weight="600" fill="#92400e" text-anchor="end">joins 10.1.0.5,</text>
+  <text x="1210" y="349" font-size="11" font-weight="600" fill="#92400e" text-anchor="end">the source in A-PE1's Type 1</text>
+  <line x1="500" y1="262" x2="650" y2="140" stroke="#b45309" stroke-width="2.5"/>
+  <line x1="770" y1="140" x2="920" y2="262" stroke="#b45309" stroke-width="2.5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(645,142) rotate(-31)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(505,259) rotate(149)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(775,142) rotate(211)"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(915,259) rotate(31)"/>
+  <rect x="575" y="432" width="90" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="620.0" y="452" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="620.0" y="469" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="755" y="432" width="90" height="46" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="800.0" y="452" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-P3</text>
+  <text x="800.0" y="469" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.3</text>
+  <line x1="500" y1="455" x2="575" y2="455" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="500" y1="444" x2="567" y2="444" stroke="#047857" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(574,444) rotate(0)"/>
+  <line x1="575" y1="466" x2="508" y2="466" stroke="#0e7490" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0e7490" transform="translate(501,466) rotate(180)"/>
+  <line x1="665" y1="455" x2="755" y2="455" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="665" y1="444" x2="747" y2="444" stroke="#047857" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(754,444) rotate(0)"/>
+  <line x1="755" y1="466" x2="673" y2="466" stroke="#0e7490" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0e7490" transform="translate(666,466) rotate(180)"/>
+  <line x1="845" y1="455" x2="920" y2="455" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="845" y1="444" x2="912" y2="444" stroke="#047857" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#047857" transform="translate(919,444) rotate(0)"/>
+  <line x1="920" y1="466" x2="853" y2="466" stroke="#0e7490" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#0e7490" transform="translate(846,466) rotate(180)"/>
+  <rect x="502.0" y="447.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="515" y="458.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="547.0" y="447.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="560" y="458.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <rect x="667.0" y="447.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="680" y="458.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi3</text>
+  <rect x="727.0" y="447.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="740" y="458.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="847.0" y="447.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="860" y="458.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <rect x="892.0" y="447.5" width="26" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="905" y="458.5" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <text x="710" y="404" font-size="12.5" font-weight="700" fill="#047857" text-anchor="middle">(10.1.0.5, 232.0.10.1): A-PE1 to A-PE2</text>
+  <text x="710" y="512" font-size="12.5" font-weight="700" fill="#0e7490" text-anchor="middle">(10.1.0.6, 232.0.10.1): A-PE2 to A-PE1</text>
+  <text x="710" y="530" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">SSM, no RP</text>
+</svg>

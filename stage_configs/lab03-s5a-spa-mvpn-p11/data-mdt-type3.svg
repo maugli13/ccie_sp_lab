@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 400" width="1420" height="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="400" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">The Type 3 route and the data MDT</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">From show ip mroute vrf CustA 239.10.10.10 count and show ip pim vrf CustA mdt send on A-PE1, show bgp ipv4 mvpn all on both PEs,</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">show bgp ipv4 mvpn on A-RR, and show ip pim vrf CustA mdt receive on A-PE2. The core path of the data MDT is not in these captures.</text>
+  <rect x="150" y="130" width="350" height="180" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="325.0" y="155" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <rect x="920" y="130" width="350" height="180" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1095.0" y="155" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <rect x="565" y="130" width="290" height="186" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="710" y="155" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="710" y="172" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7, reflects the route</text>
+  <rect x="577" y="182" width="266" height="120" rx="5" fill="#fffbeb" stroke="#b45309" stroke-width="1.2"/>
+  <circle cx="597" cy="206" r="10" fill="#b45309"/>
+  <text x="597" y="210" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="613" y="210" font-size="12" font-weight="700" fill="#92400e" text-anchor="start">Type 3, S-PMSI A-D</text>
+  <text x="589" y="232" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[3][10.1.0.5:10][10.10.0.1]</text>
+  <text x="589" y="249" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">[239.10.10.10][10.1.0.5]</text>
+  <text x="589" y="274" font-size="12" font-weight="400" fill="#334155" text-anchor="start">flow (10.10.0.1, 239.10.10.10),</text>
+  <text x="589" y="291" font-size="12" font-weight="400" fill="#334155" text-anchor="start">originated by 10.1.0.5</text>
+  <line x1="500" y1="252" x2="569" y2="252" stroke="#b45309" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(576,252) rotate(0)"/>
+  <line x1="843" y1="252" x2="912" y2="252" stroke="#b45309" stroke-width="3"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#b45309" transform="translate(919,252) rotate(0)"/>
+  <rect x="160" y="170" width="330" height="124" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="172" y="190" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <circle cx="470" cy="186" r="10" fill="#7c3aed"/>
+  <text x="470" y="190" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="172" y="214" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.10.0.1, 239.10.10.10), flags TyGq</text>
+  <text x="172" y="233" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">Kilobits per second: 11, threshold 1</text>
+  <text x="172" y="252" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mdt send: MDT-data group 232.1.10.0</text>
+  <text x="172" y="271" font-size="12" font-weight="400" fill="#7c3aed" text-anchor="start">y: Sending to MDT-data group</text>
+  <rect x="930" y="170" width="330" height="124" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.2"/>
+  <text x="942" y="190" font-size="12.5" font-weight="700" fill="#065f46" text-anchor="start">VRF CustA</text>
+  <circle cx="1240" cy="186" r="10" fill="#7c3aed"/>
+  <text x="1240" y="190" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="942" y="214" font-size="12" font-weight="600" fill="#0f172a" text-anchor="start">(10.10.0.1, 239.10.10.10), flags TYgQ</text>
+  <text x="942" y="233" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">in Tunnel1, MDT:[10.1.0.5,232.1.10.0]</text>
+  <text x="942" y="252" font-size="12" font-weight="400" fill="#0f172a" text-anchor="start">mdt receive: [232.1.10.0 : 10.1.0.5]</text>
+  <text x="942" y="271" font-size="12" font-weight="400" fill="#7c3aed" text-anchor="start">Y: Joined MDT-data group</text>
+  <line x1="500" y1="352" x2="912" y2="352" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M-7,-6 L7,0 L-7,6 z" fill="#7c3aed" transform="translate(919,352) rotate(0)"/>
+  <line x1="500" y1="310" x2="500" y2="352" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="920" y1="310" x2="920" y2="352" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="710" y="342" font-size="12.5" font-weight="700" fill="#7c3aed" text-anchor="middle">Data MDT (10.1.0.5, 232.1.10.0)</text>
+  <text x="710" y="374" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle">SSM, no RP, only this customer flow</text>
+</svg>
