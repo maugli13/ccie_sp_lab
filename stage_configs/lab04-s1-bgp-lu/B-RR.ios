@@ -1,0 +1,21 @@
+router bgp 64502
+ !
+ address-family ipv4 unicast
+  allocate-label all
+ !
+ neighbor 10.2.0.5
+  address-family ipv4 labeled-unicast
+   route-reflector-client
+  !
+ !
+ neighbor 10.2.0.6
+  address-family ipv4 labeled-unicast
+   route-reflector-client
+  !
+ !
+ neighbor 10.2.0.8
+  address-family ipv4 labeled-unicast
+   route-reflector-client
+  !
+ !
+!

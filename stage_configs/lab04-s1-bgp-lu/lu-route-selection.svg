@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 470" width="1420" height="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="470" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">The route each node installs for a loopback</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Installed routes from show ip route on A-PE2 and A-ASBR and show route detail on B-PE1. Labelled unicast paths from show bgp ipv4 unicast</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">10.1.0.5/32 on A-PE2, show bgp ipv4 unicast labels on A-ASBR and show bgp ipv4 labeled-unicast labels on B-PE1.</text>
+  <rect x="32" y="110" width="420" height="330" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="242.0" y="142" font-size="17" font-weight="700" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <text x="242.0" y="164" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">route to 10.1.0.5/32, A-PE1</text>
+  <rect x="52" y="186" width="380" height="104" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="2.5"/>
+  <text x="68" y="210" font-size="12" font-weight="700" fill="#047857" text-anchor="start">installed, forwards</text>
+  <text x="68" y="238" font-size="15" font-weight="600" fill="#0f172a" text-anchor="start">static, distance 1</text>
+  <text x="68" y="262" font-size="13" font-weight="400" fill="#334155" text-anchor="start">via Tunnel20</text>
+  <rect x="52" y="308" width="380" height="112" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="68" y="332" font-size="12" font-weight="700" fill="#64748b" text-anchor="start">not installed</text>
+  <text x="68" y="360" font-size="15" font-weight="600" fill="#475569" text-anchor="start">iBGP labelled unicast, distance 200</text>
+  <text x="68" y="384" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">from A-RR, label imp-null</text>
+  <text x="68" y="406" font-size="13" font-weight="600" fill="#b91c1c" text-anchor="start">RIB-failure</text>
+  <rect x="492" y="110" width="420" height="330" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="702.0" y="142" font-size="17" font-weight="700" fill="#1e3a8a" text-anchor="middle">A-ASBR</text>
+  <text x="702.0" y="164" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">route to 10.1.0.5/32, A-PE1</text>
+  <rect x="512" y="186" width="380" height="104" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="2.5"/>
+  <text x="528" y="210" font-size="12" font-weight="700" fill="#047857" text-anchor="start">installed, forwards</text>
+  <text x="528" y="238" font-size="15" font-weight="600" fill="#0f172a" text-anchor="start">OSPF, distance 110</text>
+  <text x="528" y="262" font-size="13" font-weight="400" fill="#334155" text-anchor="start">via GigabitEthernet2</text>
+  <rect x="512" y="308" width="380" height="112" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="528" y="332" font-size="12" font-weight="700" fill="#64748b" text-anchor="start">not installed</text>
+  <text x="528" y="360" font-size="15" font-weight="600" fill="#475569" text-anchor="start">iBGP labelled unicast, distance 200</text>
+  <text x="528" y="384" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">from A-RR, label imp-null</text>
+  <rect x="952" y="110" width="420" height="330" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1162.0" y="142" font-size="17" font-weight="700" fill="#1e3a8a" text-anchor="middle">B-PE1</text>
+  <text x="1162.0" y="164" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">route to 10.2.0.6/32, B-PE2</text>
+  <rect x="972" y="186" width="380" height="104" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="2.5"/>
+  <text x="988" y="210" font-size="12" font-weight="700" fill="#047857" text-anchor="start">installed, forwards</text>
+  <text x="988" y="238" font-size="15" font-weight="600" fill="#0f172a" text-anchor="start">IS-IS, distance 115</text>
+  <text x="988" y="262" font-size="13" font-weight="400" fill="#334155" text-anchor="start">SR label 16600</text>
+  <rect x="972" y="308" width="380" height="112" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+  <text x="988" y="332" font-size="12" font-weight="700" fill="#64748b" text-anchor="start">not installed</text>
+  <text x="988" y="360" font-size="15" font-weight="600" fill="#475569" text-anchor="start">iBGP labelled unicast, distance 200</text>
+  <text x="988" y="384" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">from B-RR, label 3</text>
+</svg>

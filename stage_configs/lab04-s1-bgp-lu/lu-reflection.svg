@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 520" width="1420" height="520" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1420" height="520" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">One loopback per provider, through its route reflector</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Labels from show bgp ipv4 unicast labels (A-PE1) and show bgp ipv4 labeled-unicast labels (B-PE1, A-RR, B-RR).</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Paths from show bgp ipv4 unicast 10.1.0.5/32 (A-PE2) and show bgp ipv4 labeled-unicast 10.2.0.5/32 (B-PE2).</text>
+  <text x="32" y="99" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Routes from show ip route 10.1.0.5 (A-PE2) and show route 10.2.0.5/32 detail (B-PE2).</text>
+  <text x="32" y="146" font-size="13" font-weight="700" fill="#334155" text-anchor="start">SP-A, AS 64501</text>
+  <rect x="155" y="168" width="150" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="230" y="192" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <text x="230" y="210" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.5</text>
+  <rect x="635" y="168" width="150" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="710" y="192" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="710" y="210" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7</text>
+  <rect x="1115" y="168" width="150" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1190" y="192" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">A-PE2</text>
+  <text x="1190" y="210" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.6</text>
+  <line x1="305" y1="196" x2="625" y2="196" stroke="#334155" stroke-width="2" stroke-dasharray="7 5"/>
+  <polygon points="635,196 623,190 623,202" fill="#334155"/>
+  <text x="470.0" y="186" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="middle">10.1.0.5/32, next hop 10.1.0.5, label 3</text>
+  <text x="470.0" y="216" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">iBGP, labelled unicast</text>
+  <line x1="785" y1="196" x2="1105" y2="196" stroke="#334155" stroke-width="2" stroke-dasharray="7 5"/>
+  <polygon points="1115,196 1103,190 1103,202" fill="#334155"/>
+  <text x="950.0" y="186" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="middle">10.1.0.5/32, next hop 10.1.0.5, label 3</text>
+  <text x="950.0" y="216" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">iBGP, labelled unicast</text>
+  <text x="230" y="248" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">In label imp-null</text>
+  <text x="230" y="266" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">for its own 10.1.0.5/32</text>
+  <text x="710" y="248" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Rcvd Label 3</text>
+  <text x="710" y="266" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">passes label 3 on unchanged</text>
+  <text x="1190" y="248" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Out label imp-null, RIB-failure</text>
+  <text x="1190" y="266" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">route: static, distance 1, Tunnel20</text>
+  <text x="32" y="356" font-size="13" font-weight="700" fill="#334155" text-anchor="start">SP-B, AS 64502</text>
+  <rect x="155" y="378" width="150" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="230" y="402" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE1</text>
+  <text x="230" y="420" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.5</text>
+  <rect x="635" y="378" width="150" height="56" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/>
+  <text x="710" y="402" font-size="15" font-weight="600" fill="#0f172a" text-anchor="middle">B-RR</text>
+  <text x="710" y="420" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.7</text>
+  <rect x="1115" y="378" width="150" height="56" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1190" y="402" font-size="15" font-weight="600" fill="#1e3a8a" text-anchor="middle">B-PE2</text>
+  <text x="1190" y="420" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.6</text>
+  <line x1="305" y1="406" x2="625" y2="406" stroke="#334155" stroke-width="2" stroke-dasharray="7 5"/>
+  <polygon points="635,406 623,400 623,412" fill="#334155"/>
+  <text x="470.0" y="396" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="middle">10.2.0.5/32, next hop 10.2.0.5, label 3</text>
+  <text x="470.0" y="426" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">iBGP, labelled unicast</text>
+  <line x1="785" y1="406" x2="1105" y2="406" stroke="#334155" stroke-width="2" stroke-dasharray="7 5"/>
+  <polygon points="1115,406 1103,400 1103,412" fill="#334155"/>
+  <text x="950.0" y="396" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="middle">10.2.0.5/32, next hop 10.2.0.5, label 3</text>
+  <text x="950.0" y="426" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">iBGP, labelled unicast</text>
+  <text x="230" y="458" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Local Label 3</text>
+  <text x="230" y="476" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">for its own 10.2.0.5/32</text>
+  <text x="710" y="458" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Rcvd Label 3</text>
+  <text x="710" y="476" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">passes label 3 on unchanged</text>
+  <text x="1190" y="458" font-size="12" font-weight="600" fill="#0f172a" text-anchor="middle">Received Label 3 from 10.2.0.7</text>
+  <text x="1190" y="476" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">route: isis 1, distance 115, label 16500</text>
+</svg>

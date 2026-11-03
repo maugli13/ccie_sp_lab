@@ -1,0 +1,11 @@
+router bgp 64502
+ !
+ address-family ipv4 unicast
+  network 10.2.0.5/32
+  allocate-label all
+ !
+ neighbor 10.2.0.7
+  address-family ipv4 labeled-unicast
+  !
+ !
+!
