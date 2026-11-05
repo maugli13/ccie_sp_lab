@@ -1,0 +1,29 @@
+vrf definition CustD
+ rd 10.1.0.5:40
+ !
+ address-family ipv4
+  route-target export 64501:40
+  route-target import 64501:40
+  route-target import 64502:40
+ exit-address-family
+ !
+ address-family ipv6
+  route-target export 64501:40
+  route-target import 64501:40
+  route-target import 64502:40
+ exit-address-family
+!
+interface Loopback40
+ vrf forwarding CustD
+ ip address 10.40.0.1 255.255.255.255
+ ipv6 address 2001:DB8:40::1/128
+!
+router bgp 64501
+ address-family ipv4 vrf CustD
+  redistribute connected
+ exit-address-family
+ !
+ address-family ipv6 vrf CustD
+  redistribute connected
+ exit-address-family
+!

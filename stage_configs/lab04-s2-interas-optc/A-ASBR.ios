@@ -1,0 +1,26 @@
+interface GigabitEthernet4.254
+ encapsulation dot1Q 254
+ ip address 10.255.0.9 255.255.255.252
+ ipv6 address 2001:DB8:FF:FE::1/64
+!
+ip prefix-list PL-SPA-LU-EXPORT seq 5 permit 10.1.0.5/32
+ip prefix-list PL-SPA-LU-EXPORT seq 10 permit 10.1.0.7/32
+!
+route-map RM-LU-OUT permit 10
+ match ip address prefix-list PL-SPA-LU-EXPORT
+ set mpls-label
+!
+router bgp 64501
+ neighbor 10.255.0.10 remote-as 64502
+ !
+ address-family ipv4
+  neighbor 10.255.0.10 activate
+  neighbor 10.255.0.10 route-map RM-LU-OUT out
+  neighbor 10.255.0.10 send-label
+ exit-address-family
+!
+router bgp 64501
+ address-family ipv4
+  neighbor 10.1.0.7 next-hop-self
+ exit-address-family
+!

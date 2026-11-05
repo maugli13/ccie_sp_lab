@@ -1,0 +1,39 @@
+router bgp 64501
+ address-family ipv4 unicast
+  network 10.1.0.7/32
+ !
+!
+route-policy PASS
+  pass
+end-policy
+!
+extcommunity-set rt RT_CUSTD
+  64501:40,
+  64502:40
+end-set
+!
+route-policy SCOPE_CUSTD_OUT
+  if extcommunity rt matches-any RT_CUSTD then
+    pass
+  else
+    drop
+  endif
+end-policy
+!
+router bgp 64501
+ neighbor 10.2.0.7
+  remote-as 64502
+  ebgp-multihop 255
+  update-source Loopback0
+  address-family vpnv4 unicast
+   route-policy PASS in
+   route-policy SCOPE_CUSTD_OUT out
+   next-hop-unchanged
+  !
+  address-family vpnv6 unicast
+   route-policy PASS in
+   route-policy SCOPE_CUSTD_OUT out
+   next-hop-unchanged
+  !
+ !
+!

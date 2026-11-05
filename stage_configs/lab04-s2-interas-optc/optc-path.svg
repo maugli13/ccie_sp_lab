@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2120 860" width="2120" height="860" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="2120" height="860" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">CustD traffic from A-PE1 to B-PE2 across the Inter-AS Option C link</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Labels from A-PE1&#39;s traceroute to 10.40.0.2 and its CEF entry; 24, 1813 and imp-null from the ASBRs&#39; labelled unicast tables; next hops and RT from the BGP entries on A-PE1 and A-RR.</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">17800 and 16600 removed at A-P1 and B-P4, as in those routers&#39; forwarding tables from earlier stages. Interface names from the baseline and stage configs.</text>
+  <rect x="30" y="112" width="800" height="690" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="44" y="132" font-size="12.5" font-weight="700" fill="#475569" text-anchor="start">SP-A, AS 64501</text>
+  <rect x="980" y="112" width="1116" height="690" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="994" y="132" font-size="12.5" font-weight="700" fill="#475569" text-anchor="start">SP-B, AS 64502</text>
+  <text x="905" y="150" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">B-PE2&#39;s route, 10.40.0.2/32, advertised from right to left</text>
+  <rect x="366.0" y="166" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="428" y="190" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="428" y="209" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7</text>
+  <rect x="1320.0" y="166" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="1382" y="190" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-RR</text>
+  <text x="1382" y="209" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.7</text>
+  <line x1="2018" y1="194.0" x2="1448.0" y2="194.0" stroke="#b45309" stroke-width="2.2" stroke-dasharray="7,5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(1448.0,194.0) rotate(180)"/>
+  <text x="1731.0" y="181.0" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">VPNv4, RT 64502:40, next hop 10.2.0.6, label 24018</text>
+  <line x1="1316.0" y1="194.0" x2="494.0" y2="194.0" stroke="#b45309" stroke-width="2.2" stroke-dasharray="7,5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(494.0,194.0) rotate(180)"/>
+  <text x="905.0" y="181.0" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">multihop eBGP, next hop stays 10.2.0.6</text>
+  <line x1="362.0" y1="194.0" x2="110" y2="194.0" stroke="#b45309" stroke-width="2.2" stroke-dasharray="7,5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(110,194.0) rotate(180)"/>
+  <text x="238.0" y="181.0" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">VPNv4, next hop 10.2.0.6</text>
+  <text x="905" y="254" font-size="12.5" font-weight="700" fill="#b45309" text-anchor="middle">B-PE2&#39;s loopback, 10.2.0.6/32, advertised from right to left</text>
+  <line x1="2018" y1="292" x2="1068" y2="292" stroke="#b45309" stroke-width="2.2" stroke-dasharray="7,5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(1068,292) rotate(180)"/>
+  <text x="1541.0" y="279" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">labelled unicast through B-RR, implicit-null, next hop 10.2.0.6</text>
+  <line x1="1060" y1="292" x2="750" y2="292" stroke="#b45309" stroke-width="2.2" stroke-dasharray="7,5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(750,292) rotate(180)"/>
+  <text x="905.0" y="279" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">eBGP, label 24, next hop 10.255.0.10</text>
+  <line x1="742" y1="292" x2="110" y2="292" stroke="#b45309" stroke-width="2.2" stroke-dasharray="7,5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#b45309" transform="translate(110,292) rotate(180)"/>
+  <text x="428.0" y="279" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">labelled unicast through A-RR, label 1813, next hop 10.1.0.8</text>
+  <line x1="110" y1="345" x2="2018" y2="345" stroke="#ddd6fe" stroke-width="11" stroke-linecap="round"/>
+  <line x1="110" y1="345" x2="2018" y2="345" stroke="#6d28d9" stroke-width="2.2"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#6d28d9" transform="translate(2018,345)"/>
+  <text x="1064.0" y="334" font-size="12.5" font-weight="600" fill="#6d28d9" text-anchor="middle">VPN label 24018, allocated by B-PE2</text>
+  <line x1="110" y1="402" x2="746" y2="402" stroke="#99f6e4" stroke-width="11" stroke-linecap="round"/>
+  <line x1="110" y1="402" x2="746" y2="402" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#0f766e" transform="translate(746,402)"/>
+  <text x="428.0" y="391" font-size="12.5" font-weight="600" fill="#0f766e" text-anchor="middle">labelled unicast 1813, allocated by A-ASBR</text>
+  <line x1="746" y1="402" x2="1064" y2="402" stroke="#99f6e4" stroke-width="11" stroke-linecap="round"/>
+  <line x1="746" y1="402" x2="1064" y2="402" stroke="#0f766e" stroke-width="2.2"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#0f766e" transform="translate(1064,402)"/>
+  <text x="905.0" y="391" font-size="12.5" font-weight="600" fill="#0f766e" text-anchor="middle">24, allocated by B-ASBR</text>
+  <line x1="110" y1="459" x2="746" y2="459" stroke="#bfdbfe" stroke-width="11" stroke-linecap="round"/>
+  <line x1="110" y1="459" x2="746" y2="459" stroke="#1d4ed8" stroke-width="2.2"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#1d4ed8" transform="translate(746,459)"/>
+  <text x="428.0" y="448" font-size="12.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">SR label 17800 to 10.1.0.8, removed at A-P1</text>
+  <line x1="1064" y1="459" x2="2018" y2="459" stroke="#bfdbfe" stroke-width="11" stroke-linecap="round"/>
+  <line x1="1064" y1="459" x2="2018" y2="459" stroke="#1d4ed8" stroke-width="2.2"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#1d4ed8" transform="translate(2018,459)"/>
+  <text x="1541.0" y="448" font-size="12.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">SR label 16600 to 10.2.0.6, removed at B-P4</text>
+  <line x1="110" y1="350" x2="110" y2="512" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="746" y1="350" x2="746" y2="512" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="1064" y1="350" x2="1064" y2="512" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="2018" y1="350" x2="2018" y2="512" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <line x1="172.0" y1="540.0" x2="366.0" y2="540.0" stroke="#475569" stroke-width="2.5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#475569" transform="translate(366.0,540.0)"/>
+  <rect x="176.0" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="187.6" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="334.8" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="346.4" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi5</text>
+  <line x1="490.0" y1="540.0" x2="684.0" y2="540.0" stroke="#475569" stroke-width="2.5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#475569" transform="translate(684.0,540.0)"/>
+  <rect x="494.0" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="505.6" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi7</text>
+  <rect x="652.8" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="664.4" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <line x1="808.0" y1="540.0" x2="1002.0" y2="540.0" stroke="#475569" stroke-width="2.5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#475569" transform="translate(1002.0,540.0)"/>
+  <rect x="812.0" y="516.0" width="48.800000000000004" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="836.4" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4.254</text>
+  <rect x="945.2" y="516.0" width="48.800000000000004" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="969.6" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4.254</text>
+  <line x1="1126.0" y1="540.0" x2="1320.0" y2="540.0" stroke="#475569" stroke-width="2.5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#475569" transform="translate(1320.0,540.0)"/>
+  <rect x="1130.0" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1141.6" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <rect x="1250.4" y="516.0" width="61.6" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1281.2" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/5</text>
+  <line x1="1444.0" y1="540.0" x2="1638.0" y2="540.0" stroke="#475569" stroke-width="2.5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#475569" transform="translate(1638.0,540.0)"/>
+  <rect x="1448.0" y="516.0" width="61.6" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1478.8" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/2</text>
+  <rect x="1606.8" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1618.4" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi2</text>
+  <line x1="1762.0" y1="540.0" x2="1956.0" y2="540.0" stroke="#475569" stroke-width="2.5"/>
+  <path d="M-6,-6 L7,0 L-6,6 z" fill="#475569" transform="translate(1956.0,540.0)"/>
+  <rect x="1766.0" y="516.0" width="23.200000000000003" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1777.6" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi4</text>
+  <rect x="1886.4" y="516.0" width="61.6" height="15" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="1917.2" y="527.0" font-size="10" font-weight="600" fill="#334155" text-anchor="middle">Gi0/0/0/1</text>
+  <rect x="48.0" y="512" width="124" height="56" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="110" y="536" font-size="15" font-weight="700" fill="#1e3a8a" text-anchor="middle">A-PE1</text>
+  <text x="110" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.5</text>
+  <rect x="366.0" y="512" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="428" y="536" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">A-P1</text>
+  <text x="428" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.1</text>
+  <rect x="684.0" y="512" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="746" y="536" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">A-ASBR</text>
+  <text x="746" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.8</text>
+  <rect x="1002.0" y="512" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="1064" y="536" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-ASBR</text>
+  <text x="1064" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.8</text>
+  <rect x="1320.0" y="512" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="1382" y="536" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-P1</text>
+  <text x="1382" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.1</text>
+  <rect x="1638.0" y="512" width="124" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="1700" y="536" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-P4</text>
+  <text x="1700" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.4</text>
+  <rect x="1956.0" y="512" width="124" height="56" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="2018" y="536" font-size="15" font-weight="700" fill="#1e3a8a" text-anchor="middle">B-PE2</text>
+  <text x="2018" y="555" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.6</text>
+  <text x="110" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">VRF CustD lookup,</text>
+  <text x="110" y="610" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">pushes 24018,</text>
+  <text x="110" y="628" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">1813, 17800</text>
+  <text x="428" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">removes 17800</text>
+  <text x="746" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">swaps 1813</text>
+  <text x="746" y="610" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">for 24</text>
+  <text x="1064" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">removes 24,</text>
+  <text x="1064" y="610" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">pushes 16600</text>
+  <text x="1382" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">swaps 16600</text>
+  <text x="1382" y="610" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">for 16600</text>
+  <text x="1700" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">removes 16600</text>
+  <text x="2018" y="592" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">removes 24018,</text>
+  <text x="2018" y="610" font-size="12.5" font-weight="500" fill="#334155" text-anchor="middle">VRF CustD lookup</text>
+  <rect x="203.0" y="634" width="132" height="30" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="269.0" y="654" font-size="13.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">17800</text>
+  <rect x="203.0" y="672" width="132" height="30" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="269.0" y="692" font-size="13.5" font-weight="600" fill="#0f766e" text-anchor="middle">1813</text>
+  <rect x="203.0" y="710" width="132" height="30" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <text x="269.0" y="730" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle">24018</text>
+  <rect x="203.0" y="748" width="132" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="269.0" y="768" font-size="13.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.40.0.2</text>
+  <rect x="521.0" y="634" width="132" height="30" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="587.0" y="654" font-size="13.5" font-weight="600" fill="#0f766e" text-anchor="middle">1813</text>
+  <rect x="521.0" y="672" width="132" height="30" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <text x="587.0" y="692" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle">24018</text>
+  <rect x="521.0" y="710" width="132" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="587.0" y="730" font-size="13.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.40.0.2</text>
+  <rect x="839.0" y="634" width="132" height="30" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="905.0" y="654" font-size="13.5" font-weight="600" fill="#b45309" text-anchor="middle">VLAN 254</text>
+  <rect x="839.0" y="672" width="132" height="30" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="905.0" y="692" font-size="13.5" font-weight="600" fill="#0f766e" text-anchor="middle">24</text>
+  <rect x="839.0" y="710" width="132" height="30" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <text x="905.0" y="730" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle">24018</text>
+  <rect x="839.0" y="748" width="132" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="905.0" y="768" font-size="13.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.40.0.2</text>
+  <rect x="1157.0" y="634" width="132" height="30" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="1223.0" y="654" font-size="13.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">16600</text>
+  <rect x="1157.0" y="672" width="132" height="30" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <text x="1223.0" y="692" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle">24018</text>
+  <rect x="1157.0" y="710" width="132" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1223.0" y="730" font-size="13.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.40.0.2</text>
+  <rect x="1475.0" y="634" width="132" height="30" rx="6" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="1541.0" y="654" font-size="13.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">16600</text>
+  <rect x="1475.0" y="672" width="132" height="30" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <text x="1541.0" y="692" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle">24018</text>
+  <rect x="1475.0" y="710" width="132" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1541.0" y="730" font-size="13.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.40.0.2</text>
+  <rect x="1793.0" y="634" width="132" height="30" rx="6" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.2"/>
+  <text x="1859.0" y="654" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle">24018</text>
+  <rect x="1793.0" y="672" width="132" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="1859.0" y="692" font-size="13.5" font-weight="600" fill="#334155" text-anchor="middle">IP to 10.40.0.2</text>
+  <text x="32" y="834" font-size="13.5" font-weight="400" fill="#475569" text-anchor="start">Each stack is the packet on that link, outermost header on top. Blue boxes: the routers with VRF CustD.</text>
+</svg>

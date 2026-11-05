@@ -1,0 +1,36 @@
+vrf CustD
+ address-family ipv4 unicast
+  import route-target
+   64501:40
+   64502:40
+  !
+  export route-target
+   64502:40
+  !
+ !
+ address-family ipv6 unicast
+  import route-target
+   64501:40
+   64502:40
+  !
+  export route-target
+   64502:40
+  !
+ !
+!
+interface Loopback40
+ vrf CustD
+ ipv4 address 10.40.0.2 255.255.255.255
+ ipv6 address 2001:db8:40::2/128
+!
+router bgp 64502
+ vrf CustD
+  rd 10.2.0.6:40
+  address-family ipv4 unicast
+   redistribute connected
+  !
+  address-family ipv6 unicast
+   redistribute connected
+  !
+ !
+!
