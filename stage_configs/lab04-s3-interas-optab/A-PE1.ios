@@ -1,0 +1,28 @@
+vrf definition CustF
+ rd 10.1.0.5:60
+ !
+ address-family ipv4
+  route-target export 64501:60
+  route-target import 64501:60
+ exit-address-family
+ !
+ address-family ipv6
+  route-target export 64501:60
+  route-target import 64501:60
+ exit-address-family
+!
+interface Loopback60
+ vrf forwarding CustF
+ ip address 10.60.0.1 255.255.255.255
+ ipv6 address 2001:DB8:60::1/128
+!
+router bgp 64501
+ !
+ address-family ipv4 vrf CustF
+  redistribute connected
+ exit-address-family
+ !
+ address-family ipv6 vrf CustF
+  redistribute connected
+ exit-address-family
+!

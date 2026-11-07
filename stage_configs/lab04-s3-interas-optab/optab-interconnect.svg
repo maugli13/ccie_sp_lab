@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="470" fill="#ffffff"/>
+  <text x="28" y="36" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">The Option AB interconnect between SP-A and SP-B</text>
+  <text x="28" y="58" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Sub-interfaces, addresses, sessions and route targets from the ASBRs&#x27; configurations; next hops from their BGP and routing tables.</text>
+  <path d="M 40,190 C 30,118 108,76 185,82 C 250,87 296,108 306,165 C 312,230 298,298 306,360 C 310,422 252,462 170,458 C 88,454 36,420 32,345 C 28,290 50,252 40,190 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M 1160,190 C 1170,118 1092,76 1015,82 C 950,87 904,108 894,165 C 888,230 902,298 894,360 C 890,422 948,462 1030,458 C 1112,454 1164,420 1168,345 C 1172,290 1150,252 1160,190 Z" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="100" y="250" font-size="24" font-weight="700" fill="#334155" text-anchor="middle">SP-A</text>
+  <text x="100" y="274" font-size="14.5" font-weight="500" fill="#475569" text-anchor="middle">AS 64501</text>
+  <text x="1100" y="250" font-size="24" font-weight="700" fill="#334155" text-anchor="middle">SP-B</text>
+  <text x="1100" y="274" font-size="14.5" font-weight="500" fill="#475569" text-anchor="middle">AS 64502</text>
+  <rect x="375" y="100" width="450" height="304" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="600" y="121" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">One link, Gi4 on both ASBRs</text>
+  <rect x="175" y="92" width="200" height="320" rx="10" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="275" y="116" font-size="17" font-weight="700" fill="#0f172a" text-anchor="middle">A-ASBR</text>
+  <text x="275" y="134" font-size="13" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.8</text>
+  <rect x="187" y="146" width="176" height="72" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="275" y="166" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Global table</text>
+  <text x="275" y="186" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">neighbor 10.255.0.30</text>
+  <text x="275" y="203" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">inter-as-hybrid</text>
+  <line x1="203" y1="220" x2="203" y2="251" stroke="#1d4ed8" stroke-width="2"/>
+  <polygon points="203,261 197,249 209,249" fill="#1d4ed8"/>
+  <text x="215" y="244" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">import RT 64502:60</text>
+  <rect x="187" y="262" width="176" height="138" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="275" y="282" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">VRF CustF</text>
+  <text x="275" y="304" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">IPv4 address family:</text>
+  <text x="275" y="321" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">inter-as-hybrid</text>
+  <text x="275" y="337" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">next-hop 10.255.0.14</text>
+  <text x="275" y="361" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">IPv6 address family:</text>
+  <text x="275" y="378" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">no inter-as-hybrid</text>
+  <rect x="825" y="92" width="200" height="320" rx="10" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="925" y="116" font-size="17" font-weight="700" fill="#0f172a" text-anchor="middle">B-ASBR</text>
+  <text x="925" y="134" font-size="13" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.8</text>
+  <rect x="837" y="146" width="176" height="72" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="925" y="166" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Global table</text>
+  <text x="925" y="186" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">neighbor 10.255.0.29</text>
+  <text x="925" y="203" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">inter-as-hybrid</text>
+  <line x1="853" y1="220" x2="853" y2="251" stroke="#1d4ed8" stroke-width="2"/>
+  <polygon points="853,261 847,249 859,249" fill="#1d4ed8"/>
+  <text x="865" y="244" font-size="12" font-weight="600" fill="#1d4ed8" text-anchor="start" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">import RT 64501:60</text>
+  <rect x="837" y="262" width="176" height="138" rx="6" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="925" y="282" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">VRF CustF</text>
+  <text x="925" y="304" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">IPv4 address family:</text>
+  <text x="925" y="321" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">inter-as-hybrid</text>
+  <text x="925" y="337" font-size="12" font-weight="500" fill="#334155" text-anchor="middle" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace">next-hop 10.255.0.13</text>
+  <text x="925" y="361" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">IPv6 address family:</text>
+  <text x="925" y="378" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">no inter-as-hybrid</text>
+  <text x="600" y="148" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">Gi4.251, VLAN 251, global table, IPv4 only</text>
+  <text x="385" y="170" font-size="13.5" font-weight="500" fill="#334155" text-anchor="start">10.255.0.29</text>
+  <text x="815" y="170" font-size="13.5" font-weight="500" fill="#334155" text-anchor="end">10.255.0.30</text>
+  <line x1="373" y1="182" x2="827" y2="182" stroke="#b45309" stroke-width="2" stroke-dasharray="8 5"/>
+  <polygon points="363,182 375,176 375,188" fill="#b45309"/>
+  <polygon points="837,182 825,176 825,188" fill="#b45309"/>
+  <rect x="525.1" y="171" width="149.8" height="22" rx="11" fill="#ffffff" stroke="#b45309" stroke-width="1.2"/>
+  <text x="600" y="187" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle">VPNv4 eBGP session</text>
+  <text x="600" y="209" font-size="13.5" font-weight="400" fill="#334155" text-anchor="middle">CustF&#x27;s IPv4 routes, with the BGP next hop on this link</text>
+  <text x="600" y="227" font-size="13.5" font-weight="400" fill="#334155" text-anchor="middle">No customer traffic</text>
+  <line x1="385" y1="240" x2="815" y2="240" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text x="600" y="264" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle">Gi4.253, VLAN 253, VRF CustF, dual-stack</text>
+  <text x="385" y="290" font-size="13.5" font-weight="500" fill="#334155" text-anchor="start">10.255.0.13</text>
+  <text x="815" y="290" font-size="13.5" font-weight="500" fill="#334155" text-anchor="end">10.255.0.14</text>
+  <line x1="373" y1="302" x2="827" y2="302" stroke="#334155" stroke-width="3"/>
+  <polygon points="363,302 375,296 375,308" fill="#334155"/>
+  <polygon points="837,302 825,296 825,308" fill="#334155"/>
+  <rect x="471.85" y="291" width="256.29999999999995" height="22" rx="11" fill="#ffffff" stroke="#334155" stroke-width="1.2"/>
+  <text x="600" y="307" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">IPv4 and IPv6 traffic as plain IP</text>
+  <text x="385" y="330" font-size="13.5" font-weight="500" fill="#334155" text-anchor="start">2001:DB8:FF:FD::1</text>
+  <text x="815" y="330" font-size="13.5" font-weight="500" fill="#334155" text-anchor="end">2001:DB8:FF:FD::2</text>
+  <line x1="373" y1="346" x2="827" y2="346" stroke="#b45309" stroke-width="2" stroke-dasharray="8 5"/>
+  <polygon points="363,346 375,340 375,352" fill="#b45309"/>
+  <polygon points="837,346 825,340 825,352" fill="#b45309"/>
+  <rect x="493.15" y="335" width="213.7" height="22" rx="11" fill="#ffffff" stroke="#b45309" stroke-width="1.2"/>
+  <text x="600" y="351" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle">IPv6 eBGP session, Option A</text>
+  <text x="600" y="382" font-size="13.5" font-weight="400" fill="#334155" text-anchor="middle">IPv4 routing-table next hop and IPv6 BGP next hop on this link</text>
+  <text x="600" y="437" font-size="13" font-weight="400" fill="#64748b" text-anchor="middle">Gi4 also carries Gi4.30 (Option A, CustC), Gi4.254 (Option C) and Gi4.255 (Option B, CustA).</text>
+</svg>

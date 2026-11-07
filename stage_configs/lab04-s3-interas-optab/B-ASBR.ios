@@ -1,0 +1,40 @@
+interface GigabitEthernet4.251
+ encapsulation dot1Q 251
+ ip address 10.255.0.30 255.255.255.252
+!
+interface GigabitEthernet4.253
+ encapsulation dot1Q 253
+ vrf forwarding CustF
+ ip address 10.255.0.14 255.255.255.252
+ ipv6 address 2001:DB8:FF:FD::2/64
+!
+vrf definition CustF
+ rd 10.2.0.8:60
+ !
+ address-family ipv4
+  route-target export 64502:60
+  route-target import 64502:60
+  route-target import 64501:60
+  inter-as-hybrid next-hop 10.255.0.13
+ exit-address-family
+ !
+ address-family ipv6
+  route-target export 64502:60
+  route-target import 64502:60
+ exit-address-family
+!
+router bgp 64502
+ neighbor 10.255.0.29 remote-as 64501
+ !
+ address-family vpnv4
+  neighbor 10.255.0.29 activate
+  neighbor 10.255.0.29 send-community extended
+  neighbor 10.255.0.29 inter-as-hybrid
+ exit-address-family
+!
+router bgp 64502
+ address-family ipv6 vrf CustF
+  neighbor 2001:DB8:FF:FD::1 remote-as 64501
+  neighbor 2001:DB8:FF:FD::1 activate
+ exit-address-family
+!
