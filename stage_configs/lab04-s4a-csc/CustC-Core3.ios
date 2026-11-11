@@ -1,0 +1,50 @@
+router bgp 64530
+ address-family ipv4
+  neighbor 10.2.12.5 send-label
+ exit-address-family
+!
+vrf definition CustE
+ rd 10.30.0.3:50
+ !
+ address-family ipv4
+  route-target export 64530:50
+  route-target import 64530:50
+ exit-address-family
+ !
+ address-family ipv6
+  route-target export 64530:50
+  route-target import 64530:50
+ exit-address-family
+!
+interface Loopback50
+ vrf forwarding CustE
+ ip address 10.50.0.3 255.255.255.255
+ ipv6 address 2001:DB8:50::3/128
+!
+router bgp 64530
+ neighbor 10.30.0.2 remote-as 64530
+ neighbor 10.30.0.2 update-source Loopback0
+ !
+ address-family vpnv4
+  neighbor 10.30.0.2 activate
+  neighbor 10.30.0.2 send-community extended
+ exit-address-family
+ !
+ address-family vpnv6
+  neighbor 10.30.0.2 activate
+  neighbor 10.30.0.2 send-community extended
+ exit-address-family
+ !
+ address-family ipv4 vrf CustE
+  redistribute connected
+ exit-address-family
+ !
+ address-family ipv6 vrf CustE
+  redistribute connected
+ exit-address-family
+!
+router bgp 64530
+ address-family ipv4
+  no neighbor 10.30.0.2 activate
+ exit-address-family
+!

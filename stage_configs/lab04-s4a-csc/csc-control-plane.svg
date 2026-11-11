@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1860 1010" width="1860" height="1010" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1860" height="1010" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Control plane for CustE between CustC-Core2 and CustC-Core3</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">BGP sessions, the SR policy and the IGP, with what each one advertises for Core3&#x27;s routes. Values from the routers&#x27; BGP tables,</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">label tables and forwarding entries, B-PE1&#x27;s colour-128 policy and B-RR&#x27;s VPNv4 table.</text>
+  <rect x="410" y="110" width="1040" height="760" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="1436" y="130" font-size="12.5" font-weight="700" fill="#475569" text-anchor="end">SP-B, AS 64502</text>
+  <text x="130" y="130" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">CustC, AS 64530</text>
+  <text x="1730" y="130" font-size="12.5" font-weight="700" fill="#475569" text-anchor="middle">CustC, AS 64530</text>
+  <line x1="130" y1="170" x2="130" y2="760" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="530" y1="358" x2="530" y2="760" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="930" y1="680" x2="930" y2="760" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="1330" y1="358" x2="1330" y2="760" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="1730" y1="170" x2="1730" y2="760" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/>
+  <rect x="130" y="165" width="1600" height="10" rx="5" fill="#ede9fe" stroke="#ede9fe" stroke-width="1"/>
+  <line x1="140" y1="170" x2="1728" y2="170" stroke="#6d28d9" stroke-width="2.4"/>
+  <polygon points="130,170 142,164 142,176" fill="#6d28d9"/>
+  <text x="930" y="158" font-size="13.5" font-weight="600" fill="#6d28d9" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">iBGP VPNv4 and VPNv6 between the Loopback0 addresses, 10.30.0.3 to 10.30.0.2</text>
+  <text x="930" y="194" font-size="13" font-weight="500" fill="#6d28d9" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.50.0.3/32, VPN label 17, next hop 10.30.0.3</text>
+  <text x="930" y="212" font-size="13" font-weight="500" fill="#6d28d9" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">2001:DB8:50::3/128, VPN label 18, next hop ::FFFF:10.30.0.3</text>
+  <rect x="860" y="236" width="140" height="46" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="930" y="256" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">B-ASBR</text>
+  <text x="930" y="274" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.8</text>
+  <line x1="930" y1="282" x2="930" y2="316" stroke="#1d4ed8" stroke-width="2.0"/>
+  <polygon points="930,328 924,316 936,316" fill="#1d4ed8"/>
+  <text x="1014" y="252" font-size="12.5" font-weight="500" fill="#1d4ed8" text-anchor="start">VPNv4 10.30.0.1/32, RD 10.2.0.8:30, AS path 64501 64530</text>
+  <text x="1014" y="270" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">CustC-Core1&#x27;s loopback, learned from SP-A over Option A without a label</text>
+  <rect x="860" y="328" width="140" height="62" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.2"/>
+  <text x="930" y="350" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-RR</text>
+  <text x="930" y="367" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.7</text>
+  <text x="930" y="383" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">route reflector, PCE</text>
+  <rect x="1000" y="353" width="330" height="10" rx="5" fill="#dbeafe" stroke="#dbeafe" stroke-width="1"/>
+  <line x1="1010" y1="358" x2="1328" y2="358" stroke="#1d4ed8" stroke-width="2.4"/>
+  <polygon points="1000,358 1012,352 1012,364" fill="#1d4ed8"/>
+  <rect x="530" y="353" width="330" height="10" rx="5" fill="#dbeafe" stroke="#dbeafe" stroke-width="1"/>
+  <line x1="540" y1="358" x2="858" y2="358" stroke="#1d4ed8" stroke-width="2.4"/>
+  <polygon points="530,358 542,352 542,364" fill="#1d4ed8"/>
+  <text x="1165.0" y="346" font-size="13" font-weight="600" fill="#1d4ed8" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.30.0.3/32, RD 10.2.0.6:30, label 24011</text>
+  <text x="1165.0" y="382" font-size="13" font-weight="500" fill="#1d4ed8" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">Color:128 and RT 64502:30, next hop 10.2.0.6</text>
+  <text x="695.0" y="346" font-size="13" font-weight="600" fill="#1d4ed8" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">the same route, reflected</text>
+  <text x="695.0" y="382" font-size="13" font-weight="500" fill="#1d4ed8" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">originator 10.2.0.6, cluster list 10.2.0.7</text>
+  <text x="1342" y="408" font-size="12.5" font-weight="500" fill="#334155" text-anchor="start">B-PE2 allocates 24011 and adds</text>
+  <text x="1342" y="425" font-size="12.5" font-weight="500" fill="#334155" text-anchor="start">Color:128 on the way to B-RR</text>
+  <line x1="930" y1="390" x2="930" y2="446" stroke="#be123c" stroke-width="2.0"/>
+  <polygon points="930,390 924,402 936,402" fill="#be123c"/>
+  <rect x="530" y="441" width="400" height="10" rx="5" fill="#ffe4e6" stroke="#ffe4e6" stroke-width="1"/>
+  <line x1="540" y1="446" x2="928" y2="446" stroke="#be123c" stroke-width="2.4"/>
+  <polygon points="530,446 542,440 542,452" fill="#be123c"/>
+  <text x="730.0" y="434" font-size="13" font-weight="600" fill="#be123c" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">PCEP: on-demand colour-128 policy to 10.2.0.6</text>
+  <text x="730.0" y="470" font-size="13" font-weight="500" fill="#be123c" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">path from the PCE: 16650, binding SID 24014</text>
+  <text x="518" y="416" font-size="12.5" font-weight="500" fill="#334155" text-anchor="end">B-PE1 imports the route into</text>
+  <text x="518" y="433" font-size="12.5" font-weight="500" fill="#334155" text-anchor="end">VRF CustC and allocates 24020</text>
+  <text x="142" y="300" font-size="12.5" font-weight="500" fill="#334155" text-anchor="start">Core2 resolves next hop</text>
+  <text x="142" y="317" font-size="12.5" font-weight="500" fill="#334155" text-anchor="start">10.30.0.3 through 24020</text>
+  <text x="142" y="334" font-size="12.5" font-weight="500" fill="#334155" text-anchor="start">from B-PE1</text>
+  <rect x="1330" y="535" width="400" height="10" rx="5" fill="#fef3c7" stroke="#fef3c7" stroke-width="1"/>
+  <line x1="1340" y1="540" x2="1728" y2="540" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="1330,540 1342,534 1342,546" fill="#b45309"/>
+  <rect x="130" y="535" width="400" height="10" rx="5" fill="#fef3c7" stroke="#fef3c7" stroke-width="1"/>
+  <line x1="140" y1="540" x2="528" y2="540" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="130,540 142,534 142,546" fill="#b45309"/>
+  <text x="1530.0" y="528" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.30.0.3/32, implicit null</text>
+  <text x="330.0" y="510" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.30.0.3/32, label 24020</text>
+  <text x="330.0" y="528" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.30.0.1/32, label 24019</text>
+  <text x="1530.0" y="562" font-size="12.5" font-weight="500" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">eBGP IPv4 labelled unicast</text>
+  <text x="330.0" y="562" font-size="12.5" font-weight="500" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">eBGP IPv4 labelled unicast</text>
+  <rect x="1330" y="601" width="400" height="10" rx="5" fill="#f1f5f9" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="1340" y1="606" x2="1728" y2="606" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <polygon points="1330,606 1342,600 1342,612" fill="#64748b"/>
+  <rect x="130" y="601" width="400" height="10" rx="5" fill="#f1f5f9" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="140" y1="606" x2="528" y2="606" stroke="#64748b" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <polygon points="130,606 142,600 142,612" fill="#64748b"/>
+  <text x="1530.0" y="594" font-size="13" font-weight="500" fill="#64748b" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">2001:db8:30::3/128, no label</text>
+  <text x="330.0" y="594" font-size="13" font-weight="500" fill="#64748b" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">2001:db8:30::3/128, no label</text>
+  <text x="1530.0" y="628" font-size="12.5" font-weight="500" fill="#64748b" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">eBGP IPv6 unicast, unchanged</text>
+  <text x="330.0" y="628" font-size="12.5" font-weight="500" fill="#64748b" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">eBGP IPv6 unicast, unchanged</text>
+  <rect x="530" y="675" width="800" height="10" rx="5" fill="#dcfce7" stroke="#dcfce7" stroke-width="1"/>
+  <line x1="540" y1="680" x2="1328" y2="680" stroke="#15803d" stroke-width="2.4"/>
+  <polygon points="530,680 542,674 542,686" fill="#15803d"/>
+  <text x="930" y="668" font-size="13" font-weight="600" fill="#15803d" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">IS-IS level 2 with segment routing</text>
+  <text x="930" y="704" font-size="13" font-weight="500" fill="#15803d" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">16650, B-PE2&#x27;s algorithm-128 prefix-SID for 10.2.0.6</text>
+  <line x1="222.0" y1="806.0" x2="438.0" y2="806.0" stroke="#334155" stroke-width="2.2"/>
+  <line x1="622.0" y1="806.0" x2="838.0" y2="806.0" stroke="#334155" stroke-width="2.2"/>
+  <line x1="1022.0" y1="806.0" x2="1238.0" y2="806.0" stroke="#334155" stroke-width="2.2"/>
+  <line x1="1422.0" y1="806.0" x2="1638.0" y2="806.0" stroke="#334155" stroke-width="2.2"/>
+  <text x="330.0" y="798.0" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">10.2.12.0/30</text>
+  <text x="230.0" y="798.0" font-size="12" font-weight="600" fill="#475569" text-anchor="start">.2</text>
+  <text x="430.0" y="798.0" font-size="12" font-weight="600" fill="#475569" text-anchor="end">.1</text>
+  <text x="1530.0" y="798.0" font-size="12" font-weight="500" fill="#475569" text-anchor="middle">10.2.12.4/30</text>
+  <text x="1430.0" y="798.0" font-size="12" font-weight="600" fill="#475569" text-anchor="start">.5</text>
+  <text x="1630.0" y="798.0" font-size="12" font-weight="600" fill="#475569" text-anchor="end">.6</text>
+  <rect x="38.0" y="760" width="184" height="92" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="130" y="784" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">CustC-Core2</text>
+  <text x="130" y="804" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo0 10.30.0.2</text>
+  <text x="130" y="821" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">VRF CustE,</text>
+  <text x="130" y="838" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo50 10.50.0.2</text>
+  <rect x="438.0" y="760" width="184" height="92" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="530" y="784" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-PE1</text>
+  <text x="530" y="804" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo0 10.2.0.5</text>
+  <text x="530" y="821" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">VRF CustC, static</text>
+  <text x="530" y="838" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.12.2/32</text>
+  <rect x="838.0" y="760" width="184" height="92" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2.5"/>
+  <text x="930" y="784" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-P1</text>
+  <text x="930" y="804" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo0 10.2.0.1</text>
+  <rect x="1238.0" y="760" width="184" height="92" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2.5"/>
+  <text x="1330" y="784" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-PE2</text>
+  <text x="1330" y="804" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo0 10.2.0.6</text>
+  <text x="1330" y="821" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">VRF CustC, static</text>
+  <text x="1330" y="838" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.12.6/32</text>
+  <rect x="1638.0" y="760" width="184" height="92" rx="8" fill="#ede9fe" stroke="#6d28d9" stroke-width="2.5"/>
+  <text x="1730" y="784" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">CustC-Core3</text>
+  <text x="1730" y="804" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo0 10.30.0.3</text>
+  <text x="1730" y="821" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">VRF CustE,</text>
+  <text x="1730" y="838" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">Lo50 10.50.0.3</text>
+  <rect x="32" y="907" width="44" height="10" rx="5" fill="#ede9fe" stroke="#ede9fe" stroke-width="1"/>
+  <line x1="34" y1="912" x2="64" y2="912" stroke="#6d28d9" stroke-width="2.4"/>
+  <polygon points="76,912 64,906 64,918" fill="#6d28d9"/>
+  <text x="86" y="917" font-size="13" font-weight="500" fill="#334155" text-anchor="start">iBGP inside CustC</text>
+  <rect x="248.4" y="907" width="44" height="10" rx="5" fill="#dbeafe" stroke="#dbeafe" stroke-width="1"/>
+  <line x1="250.4" y1="912" x2="280.4" y2="912" stroke="#1d4ed8" stroke-width="2.4"/>
+  <polygon points="292.4,912 280.4,906 280.4,918" fill="#1d4ed8"/>
+  <text x="302.4" y="917" font-size="13" font-weight="500" fill="#334155" text-anchor="start">iBGP inside SP-B</text>
+  <rect x="457.6" y="907" width="44" height="10" rx="5" fill="#ffe4e6" stroke="#ffe4e6" stroke-width="1"/>
+  <line x1="459.6" y1="912" x2="489.6" y2="912" stroke="#be123c" stroke-width="2.4"/>
+  <polygon points="501.6,912 489.6,906 489.6,918" fill="#be123c"/>
+  <text x="511.6" y="917" font-size="13" font-weight="500" fill="#334155" text-anchor="start">PCEP</text>
+  <rect x="580.4" y="907" width="44" height="10" rx="5" fill="#fef3c7" stroke="#fef3c7" stroke-width="1"/>
+  <line x1="582.4" y1="912" x2="612.4" y2="912" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="624.4,912 612.4,906 612.4,918" fill="#b45309"/>
+  <text x="634.4" y="917" font-size="13" font-weight="500" fill="#334155" text-anchor="start">eBGP IPv4 labelled unicast</text>
+  <rect x="861.6" y="907" width="44" height="10" rx="5" fill="#f1f5f9" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="863.6" y1="912" x2="893.6" y2="912" stroke="#64748b" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <polygon points="905.6,912 893.6,906 893.6,918" fill="#64748b"/>
+  <text x="915.6" y="917" font-size="13" font-weight="500" fill="#334155" text-anchor="start">eBGP IPv6 unicast</text>
+  <rect x="1078.0" y="907" width="44" height="10" rx="5" fill="#dcfce7" stroke="#dcfce7" stroke-width="1"/>
+  <line x1="1080.0" y1="912" x2="1110.0" y2="912" stroke="#15803d" stroke-width="2.4"/>
+  <polygon points="1122.0,912 1110.0,906 1110.0,918" fill="#15803d"/>
+  <text x="1132.0" y="917" font-size="13" font-weight="500" fill="#334155" text-anchor="start">IS-IS with segment routing</text>
+  <text x="32" y="950" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Each arrow points in the direction of the advertisement, and shows what that session carries for Core3&#x27;s routes. Core2&#x27;s routes go the other way</text>
+  <text x="32" y="970" font-size="13" font-weight="400" fill="#475569" text-anchor="start">with their own labels: 16 from Core2 for 10.50.0.2, 24013 from B-PE1, 24022 from B-PE2. B-PE2 has its own colour-128 policy to 10.2.0.5.</text>
+</svg>
