@@ -1,0 +1,32 @@
+interface GigabitEthernet4.252
+ encapsulation dot1Q 252
+ ip address 10.255.0.22 255.255.255.252
+ ipv6 address 2001:DB8:FF:FC::2/64
+!
+ip prefix-list PL-SPB-UMPLS-EXPORT seq 5 permit 10.2.0.5/32
+!
+route-map RM-UMPLS-OUT permit 10
+ match ip address prefix-list PL-SPB-UMPLS-EXPORT
+ set mpls-label
+!
+router bgp 64502
+ neighbor 10.255.0.21 remote-as 64501
+ !
+ address-family ipv4
+  neighbor 10.255.0.21 activate
+  neighbor 10.255.0.21 route-map RM-UMPLS-OUT out
+  neighbor 10.255.0.21 send-label
+ exit-address-family
+!
+router bgp 64502
+ neighbor 10.2.0.5 remote-as 64502
+ neighbor 10.2.0.5 update-source Loopback0
+ neighbor 10.2.0.5 password BGP_AUTH
+ !
+ address-family ipv4
+  neighbor 10.2.0.5 activate
+  neighbor 10.2.0.5 send-label
+  neighbor 10.2.0.5 route-reflector-client
+  neighbor 10.2.0.5 next-hop-self all
+ exit-address-family
+!

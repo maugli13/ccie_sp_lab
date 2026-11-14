@@ -1,0 +1,10 @@
+router bgp 64501
+ neighbor 10.1.0.8 remote-as 64501
+ neighbor 10.1.0.8 update-source Loopback0
+ neighbor 10.1.0.8 password BGP_AUTH
+ !
+ address-family ipv4
+  neighbor 10.1.0.8 activate
+  neighbor 10.1.0.8 send-label
+ exit-address-family
+!

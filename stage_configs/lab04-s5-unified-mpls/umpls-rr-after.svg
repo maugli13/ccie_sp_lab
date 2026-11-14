@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" width="1100" height="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1100" height="400" fill="#ffffff"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#0f172a" text-anchor="start">After this stage</text>
+  <text x="24" y="54" font-size="12.5" font-weight="400" fill="#64748b" text-anchor="start">New sessions from the stage configs. Loopbacks from A-ASBR&#x27;s and B-ASBR&#x27;s labelled-unicast tables.</text>
+  <rect x="20" y="72" width="500" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <rect x="580" y="72" width="500" height="268" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="34" y="94" font-size="12.5" font-weight="700" fill="#475569" text-anchor="start">SP-A, AS 64501</text>
+  <text x="1066" y="94" font-size="12.5" font-weight="700" fill="#475569" text-anchor="end">SP-B, AS 64502</text>
+  <line x1="150" y1="140" x2="240" y2="140" stroke="#64748b" stroke-width="2.0"/>
+  <line x1="270" y1="164" x2="120" y2="256" stroke="#64748b" stroke-width="2.0"/>
+  <line x1="330" y1="164" x2="410" y2="256" stroke="#64748b" stroke-width="2.0"/>
+  <line x1="950" y1="140" x2="860" y2="140" stroke="#64748b" stroke-width="2.0"/>
+  <line x1="830" y1="164" x2="980" y2="256" stroke="#64748b" stroke-width="2.0"/>
+  <line x1="770" y1="164" x2="690" y2="256" stroke="#64748b" stroke-width="2.0"/>
+  <line x1="500" y1="268" x2="600" y2="268" stroke="#1d4ed8" stroke-width="2.4"/>
+  <text x="550" y="260" font-size="11.5" font-weight="600" fill="#1d4ed8" text-anchor="middle">Gi4.254</text>
+  <line x1="500" y1="292" x2="600" y2="292" stroke="#b45309" stroke-width="2.6"/>
+  <text x="550" y="312" font-size="11.5" font-weight="600" fill="#b45309" text-anchor="middle">Gi4.252</text>
+  <line x1="150" y1="280" x2="380" y2="280" stroke="#b45309" stroke-width="2.6"/>
+  <line x1="720" y1="280" x2="950" y2="280" stroke="#b45309" stroke-width="2.6"/>
+  <text x="440" y="326" font-size="12.5" font-weight="600" fill="#b45309" text-anchor="middle">route reflector for A-PE2</text>
+  <text x="660" y="326" font-size="12.5" font-weight="600" fill="#b45309" text-anchor="middle">route reflector for B-PE1</text>
+  <rect x="30" y="116" width="120" height="48" rx="8" fill="#ffffff" stroke="#334155" stroke-width="1.6"/>
+  <text x="90" y="137" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">A-PE1</text>
+  <text x="90" y="154" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.5</text>
+  <rect x="240" y="116" width="120" height="48" rx="8" fill="#ffffff" stroke="#334155" stroke-width="1.6"/>
+  <text x="300" y="137" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="300" y="154" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7</text>
+  <rect x="30" y="256" width="120" height="48" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="90" y="277" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">A-PE2</text>
+  <text x="90" y="294" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.6</text>
+  <rect x="380" y="256" width="120" height="48" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="440" y="277" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">A-ASBR</text>
+  <text x="440" y="294" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.8</text>
+  <rect x="950" y="116" width="120" height="48" rx="8" fill="#ffffff" stroke="#334155" stroke-width="1.6"/>
+  <text x="1010" y="137" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">B-PE2</text>
+  <text x="1010" y="154" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.6</text>
+  <rect x="740" y="116" width="120" height="48" rx="8" fill="#ffffff" stroke="#334155" stroke-width="1.6"/>
+  <text x="800" y="137" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">B-RR</text>
+  <text x="800" y="154" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.7</text>
+  <rect x="950" y="256" width="120" height="48" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1010" y="277" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">B-PE1</text>
+  <text x="1010" y="294" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.5</text>
+  <rect x="600" y="256" width="120" height="48" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="660" y="277" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">B-ASBR</text>
+  <text x="660" y="294" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.8</text>
+  <text x="24" y="366" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">Amber: sessions added in this stage. Over Gi4.252, A-ASBR sends A-PE2&#x27;s loopback and B-ASBR sends B-PE1&#x27;s.</text>
+  <text x="24" y="384" font-size="12.5" font-weight="400" fill="#475569" text-anchor="start">Grey and blue: the sessions from before. None of them reset.</text>
+</svg>

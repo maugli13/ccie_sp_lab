@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 800" width="2000" height="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="2000" height="800" fill="#ffffff"/>
+  <text x="32" y="42" font-size="19" font-weight="700" fill="#0f172a" text-anchor="start">Labelled-unicast BGP for A-PE2&#x27;s and B-PE1&#x27;s loopbacks</text>
+  <text x="32" y="63" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Sessions and labels from A-PE2&#x27;s and B-PE1&#x27;s BGP entries and A-ASBR&#x27;s and B-ASBR&#x27;s labelled-unicast tables.</text>
+  <text x="32" y="81" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">IGP next hops from A-PE2&#x27;s and B-PE1&#x27;s routing tables.</text>
+  <rect x="40" y="110" width="830" height="600" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <rect x="1130" y="110" width="830" height="600" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="60" y="136" font-size="13" font-weight="700" fill="#475569" text-anchor="start">SP-A, AS 64501</text>
+  <text x="1940" y="136" font-size="13" font-weight="700" fill="#475569" text-anchor="end">SP-B, AS 64502</text>
+  <line x1="660" y1="440" x2="495" y2="260" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <polygon points="495.0,260.0 498.7,272.9 507.5,264.8" fill="#94a3b8"/>
+  <line x1="355" y1="260" x2="190" y2="440" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <polygon points="190.0,440.0 202.5,435.2 193.7,427.1" fill="#94a3b8"/>
+  <line x1="1340" y1="440" x2="1505" y2="260" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <polygon points="1505.0,260.0 1492.5,264.8 1501.3,272.9" fill="#94a3b8"/>
+  <line x1="1645" y1="260" x2="1810" y2="440" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 5"/>
+  <polygon points="1810.0,440.0 1806.3,427.1 1797.5,435.2" fill="#94a3b8"/>
+  <text x="612.5" y="340.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="start" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.2.0.5/32, next hop 10.1.0.8,</text>
+  <text x="612.5" y="358.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="start" stroke="#ffffff" stroke-width="5" paint-order="stroke">label 1836</text>
+  <text x="217.5" y="340.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="end" stroke="#ffffff" stroke-width="5" paint-order="stroke">reflected to A-PE2,</text>
+  <text x="217.5" y="358.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="end" stroke="#ffffff" stroke-width="5" paint-order="stroke">cluster list 10.1.0.7</text>
+  <text x="1387.5" y="340.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="end" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.1.0.6/32, next hop 10.2.0.8,</text>
+  <text x="1387.5" y="358.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="end" stroke="#ffffff" stroke-width="5" paint-order="stroke">label 18</text>
+  <text x="1782.5" y="340.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="start" stroke="#ffffff" stroke-width="5" paint-order="stroke">reflected to B-PE1,</text>
+  <text x="1782.5" y="358.0" font-size="12.5" font-weight="500" fill="#475569" text-anchor="start" stroke="#ffffff" stroke-width="5" paint-order="stroke">cluster list 10.2.0.7</text>
+  <line x1="230" y1="460" x2="620" y2="460" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="620.0,460.0 608.0,454.0 608.0,466.0" fill="#b45309"/>
+  <line x1="620" y1="480" x2="230" y2="480" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="230.0,480.0 242.0,486.0 242.0,474.0" fill="#b45309"/>
+  <text x="425.0" y="448" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.1.0.6/32, implicit null</text>
+  <text x="425.0" y="506" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.2.0.5/32, next hop 10.1.0.8, label 1836</text>
+  <text x="425.0" y="534" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">iBGP, A-PE2 is a route-reflector</text>
+  <text x="425.0" y="552" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">client of A-ASBR</text>
+  <line x1="780" y1="460" x2="1220" y2="460" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="1220.0,460.0 1208.0,454.0 1208.0,466.0" fill="#b45309"/>
+  <line x1="1220" y1="480" x2="780" y2="480" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="780.0,480.0 792.0,486.0 792.0,474.0" fill="#b45309"/>
+  <text x="1000.0" y="448" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.1.0.6/32, next hop 10.255.0.21, label 1806</text>
+  <text x="1000.0" y="506" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.2.0.5/32, next hop 10.255.0.22, label 46</text>
+  <text x="1000.0" y="534" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">eBGP over Gi4.252</text>
+  <line x1="1380" y1="460" x2="1770" y2="460" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="1770.0,460.0 1758.0,454.0 1758.0,466.0" fill="#b45309"/>
+  <line x1="1770" y1="480" x2="1380" y2="480" stroke="#b45309" stroke-width="2.4"/>
+  <polygon points="1380.0,480.0 1392.0,486.0 1392.0,474.0" fill="#b45309"/>
+  <text x="1575.0" y="448" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.1.0.6/32, next hop 10.2.0.8, label 18</text>
+  <text x="1575.0" y="506" font-size="13" font-weight="600" fill="#b45309" text-anchor="middle" stroke="#ffffff" stroke-width="5" paint-order="stroke">10.2.0.5/32, implicit null</text>
+  <text x="1575.0" y="534" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">iBGP, B-PE1 is a route-reflector</text>
+  <text x="1575.0" y="552" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">client of B-ASBR</text>
+  <rect x="350.0" y="202" width="150" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="1.6"/>
+  <text x="425" y="226" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">A-RR</text>
+  <text x="425" y="246" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.7</text>
+  <rect x="1500.0" y="202" width="150" height="56" rx="8" fill="#ffffff" stroke="#334155" stroke-width="1.6"/>
+  <text x="1575" y="226" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-RR</text>
+  <text x="1575" y="246" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.7</text>
+  <rect x="75.0" y="442" width="150" height="56" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="150" y="466" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">A-PE2</text>
+  <text x="150" y="486" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.6</text>
+  <rect x="625.0" y="442" width="150" height="56" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="700" y="466" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">A-ASBR</text>
+  <text x="700" y="486" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.1.0.8</text>
+  <rect x="1225.0" y="442" width="150" height="56" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1300" y="466" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-ASBR</text>
+  <text x="1300" y="486" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.8</text>
+  <rect x="1775.0" y="442" width="150" height="56" rx="8" fill="#fff7ed" stroke="#b45309" stroke-width="1.6"/>
+  <text x="1850" y="466" font-size="15" font-weight="700" fill="#0f172a" text-anchor="middle">B-PE1</text>
+  <text x="1850" y="486" font-size="12.5" font-weight="400" fill="#475569" text-anchor="middle">10.2.0.5</text>
+  <rect x="150" y="625" width="550" height="10" rx="5" fill="#dbeafe"/>
+  <line x1="152" y1="630" x2="690" y2="630" stroke="#1d4ed8" stroke-width="2.4"/>
+  <polygon points="700,630 688,624 688,636" fill="#1d4ed8"/>
+  <text x="425.0" y="656" font-size="13" font-weight="600" fill="#1d4ed8" text-anchor="middle">OSPF process 1 and LDP: A-PE2 reaches 10.1.0.8 through A-P4</text>
+  <rect x="1300" y="625" width="550" height="10" rx="5" fill="#dbeafe"/>
+  <line x1="1310" y1="630" x2="1848" y2="630" stroke="#1d4ed8" stroke-width="2.4"/>
+  <polygon points="1300,630 1312,624 1312,636" fill="#1d4ed8"/>
+  <text x="1575.0" y="656" font-size="13" font-weight="600" fill="#1d4ed8" text-anchor="middle">IS-IS and SR: B-PE1 reaches 10.2.0.8</text>
+  <text x="32" y="746" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Amber arrows: sessions added in this stage, one arrow per direction with the route it advertises. Dashed grey arrows: the same routes over</text>
+  <text x="32" y="766" font-size="13" font-weight="400" fill="#475569" text-anchor="start">the route reflector sessions from the BGP labelled unicast stage. Blue arrows: the IGP route each PE uses to reach its ASBR.</text>
+</svg>

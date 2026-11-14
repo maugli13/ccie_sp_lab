@@ -1,0 +1,10 @@
+router bgp 64502
+ !
+ neighbor 10.2.0.8
+  remote-as 64502
+  update-source Loopback0
+  password encrypted 072D067C71282C313F
+  address-family ipv4 labeled-unicast
+  !
+ !
+!
